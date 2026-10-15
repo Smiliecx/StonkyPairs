@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+results/
+data/
+tests/synthetic/
+tests/synthetic_results/

@@ -1,0 +1,7 @@
+numpy
+pandas
+statsmodels
+matplotlib
+yfinance
+requests
+lxml

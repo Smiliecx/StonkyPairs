@@ -1,0 +1,18 @@
+# Tickers to include beyond the S&P 500 and the ETF list, one per line.
+# Foreign ADRs and notable non-index names often useful as hedges or anchors.
+TSM    # Taiwan Semiconductor
+ASML   # ASML
+ARM    # Arm Holdings
+SHOP   # Shopify
+CRWD   # CrowdStrike (in case it is not in the index)
+SNOW   # Snowflake
+MDB    # MongoDB
+NET    # Cloudflare
+DDOG   # Datadog
+CIEN   # Ciena
+CRDO   # Credo
+COHR   # Coherent
+VRT    # Vertiv
+SNDK   # Sandisk
+WDC    # Western Digital
+SMCI   # Super Micro Computer
