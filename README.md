@@ -6,7 +6,7 @@ Three tools for building small long/short baskets from the S&P 500 plus ~50 ETFs
 |---|---|---|---|---|
 | 1. Mean-reverting hedge | `hedge.py` | a stock you want to buy | 3 positions that make the combined position snap back to an average | "What can I pair this with to trade the swings?" |
 | 2. Protection | `protect.py` | a stock you own | 3 positions that cut its risk the most | "What cushions this if it drops?" |
-| 3. Theme baskets | `theme.py` | a theme (list of tickers) | 4 stocks within it, balanced long/short, that swing around an average | "Inside this theme, what moves in a stable relative band?" |
+| 3. Theme baskets | `theme.py` | a theme (list of tickers) | 4-stock balanced baskets: 1-2 theme stocks plus names from the whole market that move with or against the theme | "What moves in a stable band around this theme, including its opposites?" |
 
 Every mode judges itself on data it never saw, and modes 1 and 3 also run the same procedure
 on random-walk prices so you can see what luck alone produces.
@@ -19,11 +19,11 @@ git clone --branch data --depth 1 https://github.com/Smiliecx/StonkyPairs.git da
 
 python hedge.py DELL                                  # mode 1 (~1.5 min)
 python protect.py DELL                                # mode 2 (seconds)
-python theme.py ai_infrastructure                     # mode 3 (~2 min)
+python theme.py ai_infrastructure                     # mode 3 (~3 min)
 
 python hedge.py DELL --pick MU,CRM,SPY                # evaluate an exact basket in any mode
 python protect.py DELL --pick NTAP,HPE,ANET
-python theme.py ai_infrastructure --pick SMH,ASML,MU,STX
+python theme.py ai_infrastructure --pick NVDA,MU,ADBE,WDAY
 python theme.py --tickers NVDA,AMD,AVGO,MU,TSM,ASML,ANET,SMH    # ad-hoc theme
 ```
 
@@ -62,23 +62,28 @@ less than the stock alone.
 
 ## Mode 3: theme baskets (`theme.py`)
 
-Themes live in `themes/<name>.txt` (one ticker per line). `ai_infrastructure.txt` has 37
-names across chips, equipment, memory, servers, networking, power and data centers.
+Themes live in `themes/<name>.txt` (one ticker per line). The theme defines what a basket is
+*about*, not where it can look: every basket holds 1-2 theme stocks, and its other legs come
+from the whole market. `ai_infrastructure.txt` has 37 names across chips, equipment, memory,
+servers, networking, power and data centers.
 
 | Stage | What happens |
 |---|---|
-| Gate | Every 4-stock basket is fitted on the last 12 months ($1 gross) and must pass a cointegration test with a 3–30 day half-life, be roughly balanced (net long/short ≤ 50% of gross) and have no leg under 5%. |
-| Rank | Survivors ranked by their **24-month track record**: each month, refit on the prior 12 months, trade the next month with weights frozen. "Held up" = stayed within 3 sd and came back to its average. Each basket is also placed as a percentile among all possible baskets in the theme. |
-| Check | The whole procedure walk-forward over another 24 months: each month pick the top basket using only past data, trade it the next month. |
+| Links | Equal-weight theme index; every other stock's returns correlated with it after removing the market (SPY), over the last 12 months. The 12 strongest opposite-movers and 12 strongest co-movers are shortlisted, and both lists are printed (for AI Infrastructure the opposites are mostly software and data-services names). |
+| Gate | Every 4-stock basket (1-2 theme names + shortlisted names) is fitted on the last 12 months ($1 gross) and must pass a cointegration test with a 3–30 day half-life, be roughly balanced (net long/short ≤ 50% of gross) and have no leg under 5%. |
+| Rank | Survivors ranked by their **24-month track record**: each month, refit on the prior 12 months, trade the next month with weights frozen. "Held up" = stayed within 3 sd and came back to its average. Each pick is also placed as a percentile among comparable baskets. |
+| Check | The whole procedure walk-forward over another 24 months, using only past data each month. |
 | Chance | The identical procedure on random-walk prices. |
+
+`--pick` takes any tickers in the data, theme or not.
 
 **What testing showed:** with 6-month fits, even a genuinely mean-reverting basket was
 indistinguishable from luck, so fits use 12 months (refit monthly). Track records separate
 real from fake well for a basket **you name** (`--pick`): a planted basket scored in the top
-1%, unrelated names mid-pack. When the tool **searches** thousands of baskets, the best
-coincidences reach similar records by luck, so treat search results as ideas and trust the
-procedure check and chance comparison. Best use: pick names for an economic reason, then
-check them with `--pick`.
+1%, unrelated names mid-pack. When the tool **searches** hundreds of thousands of baskets,
+the best coincidences reach similar records by luck, so treat search results as ideas and
+trust the procedure check and chance comparison. Best use: pick names for an economic reason
+(often guided by the opposite-mover list), then check them with `--pick`.
 
 ## Data
 
