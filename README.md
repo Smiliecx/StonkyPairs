@@ -28,7 +28,7 @@ python theme.py ai_infrastructure --pick NVDA,MU,ADBE,WDAY
 python theme.py --tickers NVDA,AMD,AVGO,MU,TSM,ASML,ANET,SMH    # ad-hoc theme
 ```
 
-Each run prints a report and writes a chart (`results/*.png`) and full results (`results/*.json`).
+Each run prints a text report and writes full results to `results/*.json`.
 
 ## Mode 1: mean-reverting hedge (`hedge.py`)
 

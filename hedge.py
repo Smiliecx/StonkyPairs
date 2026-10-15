@@ -384,31 +384,6 @@ def describe(ctx, ev, title, cfg, notional=10_000):
     return "\n".join(L)
 
 
-def chart(ctx, ev, path):
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    idx, w = ev["idx"], ev["w_trva"]
-    s = ctx.L_all[:, idx] @ w
-    z = (s - ev["trva"]["mu"]) / ev["trva"]["sd"]
-    d = ctx.dates
-    fig, ax = plt.subplots(figsize=(11, 4.2), dpi=130)
-    ax.plot(d[: ctx.va0], z[: ctx.va0], lw=1, color="#3b6ea5", label="training")
-    ax.plot(d[ctx.va0 - 1: ctx.te0], z[ctx.va0 - 1: ctx.te0], lw=1, color="#6a9f58", label="validation")
-    ax.plot(d[ctx.te0 - 1:], z[ctx.te0 - 1:], lw=1, color="#d9822b", label="unseen (weights frozen)")
-    for y, ls in [(0, "-"), (2, "--"), (-2, "--")]:
-        ax.axhline(y, color="#888", lw=0.8, ls=ls)
-    for x in (ctx.va0 - 1, ctx.te0 - 1):
-        ax.axvline(d[x], color="#444", lw=0.6)
-    legs = "  ".join(("+" if v > 0 else "-") + f"{abs(v):.2f} {ctx.tickers[j]}" for j, v in zip(idx, w))
-    ax.set_title(f"Spread z-score:  {legs}", fontsize=10)
-    ax.set_ylabel("z")
-    ax.legend(loc="best", fontsize=8, frameon=False)
-    ax.grid(alpha=0.2)
-    fig.tight_layout()
-    fig.savefig(path)
-    plt.close(fig)
-
 
 def ev_json(ctx, ev):
     return dict(tickers=[ctx.tickers[j] for j in ev["idx"]], w_train=np.round(ev["w_tr"], 4).tolist(),
@@ -454,7 +429,6 @@ def main():
         print(describe(ctx, ev, f"{anchor} + {', '.join(legs)}", cfg))
         if not ev["fit_pass"]:
             print("Note: fails the training checks (half-life / cointegration).")
-        chart(ctx, ev, out / f"{anchor}_{'_'.join(legs)}.png")
         return
 
     res = search(ctx, a, cfg)
@@ -487,7 +461,6 @@ def main():
 
     best_ev = evaluate(ctx, best["idx"], cfg)
     print(describe(ctx, best_ev, "Top pick (strongest over training + validation)", cfg) + "\n")
-    chart(ctx, best_ev, out / f"{anchor}_best.png")
 
     # Other strong baskets: the next survivors, skipping near-duplicates of ones already shown.
     shown, others = [set(best["idx"][1:])], []
@@ -529,7 +502,7 @@ def main():
             print("   -> Not clearly better than luck. Lean on the unseen-year results, and size small.")
 
     (out / f"{anchor}_report.json").write_text(json.dumps(report, indent=1, default=float))
-    print(f"\nChart: {out / f'{anchor}_best.png'}   Full results: {out / f'{anchor}_report.json'}")
+    print(f"\nFull results: {out / f'{anchor}_report.json'}")
 
 
 if __name__ == "__main__":

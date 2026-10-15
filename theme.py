@@ -271,37 +271,6 @@ def summarize(rec):
 
 # ------------------------------------------------------------- report ----
 
-def chart(dates, L, b, rec, sims, tick, cfg, path):
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.dates as mdates
-    import matplotlib.pyplot as plt
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(12, 4), dpi=130, gridspec_kw=dict(width_ratios=[1.1, 1]))
-    n0 = len(L) - cfg["fit_days"]
-    s = L[n0:, b["idx"]] @ b["w"]
-    a1.plot(dates[n0:], (s - s.mean()) / s.std(), lw=1.1, color="#3b6ea5")
-    for y, ls in [(0, "-"), (cfg["entry_z"], "--"), (-cfg["entry_z"], "--")]:
-        a1.axhline(y, color="#888", lw=0.8, ls=ls)
-    legs = " ".join(("+" if w > 0 else "-") + tick[j] for j, w in zip(b["idx"], b["w"]))
-    a1.set_title(f"Top pick, last 12 months (z-score)\n{legs}", fontsize=9)
-    a1.grid(alpha=0.2)
-    if rec:
-        ends = [dates[min(r["end"] + cfg["step_days"] - 1, len(dates) - 1)] for r in rec]
-        a2.plot(ends, np.cumsum([r["ret"] for r in rec]) * 100, lw=1.6, color="#d9822b", marker="o", ms=3,
-                label="real prices")
-        for i, sr in enumerate(sims):
-            a2.plot(ends[: len(sr)], np.cumsum([r["ret"] for r in sr]) * 100, lw=0.9, color="#999",
-                    label="random-walk prices" if i == 0 else None)
-        a2.legend(fontsize=8, frameon=False)
-    a2.axhline(0, color="#444", lw=0.6)
-    a2.set_title("Procedure walk-forward: pick monthly, trade next month\ncumulative P&L, % of gross", fontsize=9)
-    a2.grid(alpha=0.2)
-    for ax in (a1, a2):
-        ax.xaxis.set_major_formatter(mdates.ConciseDateFormatter(ax.xaxis.get_major_locator()))
-    fig.tight_layout()
-    fig.savefig(path)
-    plt.close(fig)
-
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -433,14 +402,13 @@ def main():
         print("A record well above comparable baskets is the evidence you want. Picking names for an economic "
               "reason and checking them here avoids the luck that comes with searching.\n")
 
-    chart(dates, L, picks[0], rec, sims, tick, cfg, out / f"theme_{stem}.png")
     rep = dict(theme=title, config=cfg, opposite_movers={tick[j]: float(cmap[j]) for j in neg},
                co_movers={tick[j]: float(cmap[j]) for j in pos}, picks=rows,
                walk_forward=summarize(rec) if rec else None,
                months=[dict(end=str(dates[r["end"] - 1].date()), held=r["held"], ret=r["ret"],
                             tickers=[tick[j] for j in r["idx"]] if r["found"] else []) for r in rec])
     (out / f"theme_{stem}.json").write_text(json.dumps(rep, indent=1, default=float))
-    print(f"Chart: {out / f'theme_{stem}.png'}   Full results: {out / f'theme_{stem}.json'}")
+    print(f"Full results: {out / f'theme_{stem}.json'}")
 
 
 if __name__ == "__main__":

@@ -174,25 +174,6 @@ def describe(ctx, ev, title, notional=10_000):
     return "\n".join(L)
 
 
-def chart(ctx, rows, path):
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    d = ctx.dates[ctx.te0:]
-    fig, ax = plt.subplots(figsize=(11, 4.2), dpi=130)
-    a = rows[0][1]["idx"][0]
-    ax.plot(d, rows[0][1]["eq_a"] * 100, lw=1.4, color="#888", label=f"{ctx.tickers[a]} alone")
-    for (name, ev), c in zip(rows, ["#3b6ea5", "#d9822b", "#6a9f58"]):
-        ax.plot(d, ev["eq_h"] * 100, lw=1.2, color=c, label=name)
-    ax.axhline(0, color="#444", lw=0.6)
-    ax.set_ylabel("cumulative P&L, % of anchor $")
-    ax.set_title(f"Unseen period: {ctx.tickers[a]} alone vs hedged (sizes frozen)", fontsize=10)
-    ax.legend(loc="best", fontsize=8, frameon=False)
-    ax.grid(alpha=0.2)
-    fig.tight_layout()
-    fig.savefig(path)
-    plt.close(fig)
-
 
 def short_legs(ctx, ev):
     return ", ".join(("+" if w > 0 else "-") + ctx.tickers[j] for j, w in zip(ev["idx"][1:], ev["w"][1:]))
@@ -230,7 +211,6 @@ def main():
             sys.exit(f"Not in data: {', '.join(miss)}")
         ev = evaluate(ctx, [a] + [ctx.ix[t] for t in legs])
         print(describe(ctx, ev, f"{anchor} hedged with {', '.join(legs)}"))
-        chart(ctx, [(short_legs(ctx, ev), ev)], out / f"{anchor}_protect_{'_'.join(legs)}.png")
         return
 
     sl = shortlist(ctx, a, cfg)
@@ -273,18 +253,13 @@ def main():
     if spy and best_ev["vr_te"] < spy["vr_te"] + 0.05:
         print("   -> The 3-leg hedge isn't clearly better than just shorting SPY; the simple hedge may be enough.")
 
-    rows = [("Top 3-leg hedge: " + short_legs(ctx, best_ev), best_ev)]
-    if spy:
-        rows.append(("Short SPY only", spy))
-    rows.append(("Best single: " + short_legs(ctx, best1), best1))
-    chart(ctx, rows, out / f"{anchor}_protect.png")
     keep = lambda e: {k: (v.tolist() if isinstance(v, np.ndarray) else v) for k, v in e.items() if k not in ("eq_a", "eq_h")}
     rep = dict(anchor=anchor, config=cfg, groups=[[ctx.tickers[j] for j in g] for g in groups],
                best=keep(best_ev) | {"tickers": [ctx.tickers[j] for j in best_ev["idx"]]},
                spy=keep(spy) if spy else None,
                grid=[keep(g) | {"tickers": [ctx.tickers[j] for j in g["idx"]]} for g in grid])
     (out / f"{anchor}_protect.json").write_text(json.dumps(rep, indent=1, default=float))
-    print(f"\nChart: {out / f'{anchor}_protect.png'}   Full results: {out / f'{anchor}_protect.json'}")
+    print(f"\nFull results: {out / f'{anchor}_protect.json'}")
 
 
 if __name__ == "__main__":

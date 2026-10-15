@@ -134,33 +134,6 @@ def scenario_value(row, bt, r, contracts, cost, amount, is_own, band=0.0):
     return (amount * r + payoff - cost) / amount
 
 
-def chart(rows, cfg, name, path):
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    xs = np.linspace(-0.5, 0.4, 91)
-    fig, ax = plt.subplots(figsize=(10, 5), dpi=130)
-    ax.plot(xs * 100, xs * 100, color="#888", lw=1.6, label=f"{name} alone")
-    colors = ["#3b6ea5", "#d9822b", "#6a9f58", "#a05195", "#c94040", "#2f9e9e", "#8c6d31", "#555"]
-    for (lab, row, bt, k, cost, own), c in zip(rows, colors):
-        mid = [scenario_value(row, bt, x, k, cost, cfg["amount"], own) * 100 for x in xs]
-        ax.plot(xs * 100, mid, lw=1.3, color=c, label=lab)
-        if not own:
-            sd = bt["resid"] * math.sqrt(max(row["days"], 1) / cfg["horizon_days"])
-            lo = [scenario_value(row, bt, x, k, cost, cfg["amount"], own, +sd) * 100 for x in xs]
-            hi = [scenario_value(row, bt, x, k, cost, cfg["amount"], own, -sd) * 100 for x in xs]
-            ax.fill_between(xs * 100, lo, hi, color=c, alpha=0.06)
-    ax.axhline(0, color="#444", lw=0.6); ax.axvline(0, color="#444", lw=0.6)
-    ax.set_xlabel(f"{name} move by expiry (%)")
-    ax.set_ylabel("position return incl. put cost (%)")
-    ax.set_title(f"{name} + puts at ~{cfg['scenario_months']} months: return at expiry "
-                 "(shaded = typical range for puts on other tickers)", fontsize=9)
-    ax.legend(fontsize=8, frameon=False, loc="upper left")
-    ax.grid(alpha=0.2)
-    fig.tight_layout()
-    fig.savefig(path)
-    plt.close(fig)
-
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -285,11 +258,9 @@ def main():
     print("   Values are at expiry. Before expiry, puts are worth more than these payoffs (remaining time value).")
 
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
-    if chosen:
-        chart(chosen[:5], cfg, name, out / f"{name}_puts.png")     # first 5 keeps the chart readable
     (out / f"{name}_puts.json").write_text(json.dumps(dict(name=name, amount=amount, options_asof=asof,
                                                            candidates=table, scenarios=rows_json), indent=1, default=float))
-    print(f"\nChart: {out / f'{name}_puts.png'}   Full results: {out / f'{name}_puts.json'}")
+    print(f"\nFull results: {out / f'{name}_puts.json'}")
     print("Not investment advice; projections use historical relationships, which can change.")
 
 
