@@ -1,0 +1,58 @@
+# Tickers whose put chains are downloaded every weekday during market hours
+# (.github/workflows/options.yml, schedule). One per line.
+# AI roles: foundry & equipment
+TSM
+ASML
+AMAT
+LRCX
+KLAC
+# GPU designers
+NVDA
+AMD
+INTC
+ARM
+# custom-chip designers
+AVGO
+MRVL
+# networking & optics
+ANET
+CSCO
+CIEN
+COHR
+CRDO
+LITE
+GLW
+APH
+# memory & storage
+MU
+SNDK
+WDC
+STX
+# servers
+DELL
+HPE
+SMCI
+# power, cooling, data centers
+VRT
+ETN
+GEV
+PWR
+VST
+CEG
+NRG
+EQIX
+DLR
+# GPU clouds
+CRWV
+NBIS
+ORCL
+# hyperscalers
+MSFT
+GOOGL
+AMZN
+META
+# ETFs
+SMH
+SOXX
+QQQ
+XLK

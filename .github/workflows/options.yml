@@ -1,9 +1,12 @@
 name: Download option chains
 
-# Runs when a request is pushed to the 'requests' branch (request.txt = one
-# ticker per line), or by hand from the Actions tab. Publishes today's put
-# chains to the 'options' branch as a single commit.
+# Runs (1) every weekday at ~11am ET for options_watchlist.txt, so volume, open
+# interest and bid/ask are live market-hours values; (2) when a request is
+# pushed to the 'requests' branch (request.txt = one ticker per line); (3) by
+# hand from the Actions tab. Publishes put chains to the 'options' branch.
 on:
+  schedule:
+    - cron: "0 15 * * 1-5"
   push:
     branches: [requests]
   workflow_dispatch:
@@ -18,7 +21,7 @@ permissions:
 jobs:
   options:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -33,6 +36,8 @@ jobs:
         run: |
           if [ -n "${{ github.event.inputs.tickers }}" ]; then
             python download_options.py --tickers "${{ github.event.inputs.tickers }}" --out out
+          elif [ "${{ github.event_name }}" = "schedule" ] || [ ! -f request.txt ]; then
+            python download_options.py --file options_watchlist.txt --out out
           else
             python download_options.py --file request.txt --out out
           fi
