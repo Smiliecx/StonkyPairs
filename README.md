@@ -6,6 +6,7 @@ Three tools for building small long/short baskets from the S&P 500 plus ~50 ETFs
 |---|---|---|---|---|
 | 1. Mean-reverting hedge | `hedge.py` | a stock you want to buy | 3 positions that make the combined position snap back to an average | "What can I pair this with to trade the swings?" |
 | 2. Protection | `protect.py` | a stock you own | 3 positions that cut its risk the most | "What cushions this if it drops?" |
+| Puts planner | `puts.py` | a stock you hold + position size | put contracts (expiry, strike, qty, cost) on it, its ETFs and related stocks | "What would protecting this with puts cost, and what would I get back?" |
 | 3. Theme baskets | `theme.py` | a theme (list of tickers) | 4-stock balanced baskets: 1-2 theme stocks plus names from the whole market that move with or against the theme | "What moves in a stable band around this theme, including its opposites?" |
 
 Every mode judges itself on data it never saw, and modes 1 and 3 also run the same procedure
@@ -84,6 +85,31 @@ real from fake well for a basket **you name** (`--pick`): a planted basket score
 the best coincidences reach similar records by luck, so treat search results as ideas and
 trust the procedure check and chance comparison. Best use: pick names for an economic reason
 (often guided by the opposite-mover list), then check them with `--pick`.
+
+## Puts planner (`puts.py`)
+
+For a long-term position you want to protect with puts. Give a name and a position size; it
+compares puts on the stock itself, on ETFs, and on the stocks most tied to it:
+
+```bash
+./fetch_options.sh $(python puts.py NVDA --plan)      # today's put chains via GitHub (1-3 min)
+python puts.py NVDA --amount 25000                     # report
+python puts.py NVDA --hedges NVDA,SMH,AMD --otm 0.15 --months 6,12 --scenario-months 12
+```
+
+- **How each underlying moves with your stock:** from ~3 years of 3-month moves, separately for
+  down and up periods ("if NVDA falls 20%, SMH typically falls ~13%").
+- **Put candidates** at ~3, 6 and 12 months, strike ~10% below today: price, implied vol,
+  exact contracts for your position, total cost, cost per year, the position size one
+  contract covers, and a liquidity flag.
+- **Scenarios at expiry** (stock −40% … +30%): return of stock + puts including their cost,
+  with a typical range for puts on other tickers, plus a "stock-only −30%" case where your
+  stock falls but the other underlying doesn't.
+
+Option prices come from Yahoo via `.github/workflows/options.yml`, triggered by pushing
+`request.txt` to the `requests` branch (`fetch_options.sh` does this) and published to the
+`options` branch. Outside US market hours Yahoo has no live quotes, so the planner falls back
+to last trades (flagged) and computes implied volatility itself.
 
 ## Data
 
