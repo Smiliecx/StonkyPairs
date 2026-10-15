@@ -14,7 +14,7 @@ git clone -q --depth 1 --branch main "$REPO" "$tmp/r"
   cd "$tmp/r"
   git checkout -q -b requests
   printf "%s\n" "$@" > request.txt
-  git add request.txt
+  git add -f request.txt
   git -c user.name="stonkypairs" -c user.email="noreply@github.com" commit -q -m "Request put chains: $*"
   git push -q --force origin requests 2>/dev/null
 )
