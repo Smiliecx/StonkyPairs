@@ -1,0 +1,50 @@
+name: Download option chains
+
+# Runs when a request is pushed to the 'requests' branch (request.txt = one
+# ticker per line), or by hand from the Actions tab. Publishes today's put
+# chains to the 'options' branch as a single commit.
+on:
+  push:
+    branches: [requests]
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Comma-separated tickers"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  options:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install yfinance pandas
+
+      - name: Download put chains
+        run: |
+          if [ -n "${{ github.event.inputs.tickers }}" ]; then
+            python download_options.py --tickers "${{ github.event.inputs.tickers }}" --out out
+          else
+            python download_options.py --file request.txt --out out
+          fi
+
+      - name: Publish to the 'options' branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out
+          git init -q -b options
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -q -m "Put chains as of $(date -u +%FT%TZ)"
+          git push -q --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" options

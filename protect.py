@@ -44,6 +44,7 @@ DEFAULTS = dict(
     shortlist=150,      # candidates by |correlation| with the anchor (SPY always included)
     max_gross=2.0,      # max total hedge dollars per $1 of anchor
     group_size=5,
+    buy_only=0,         # 1 = hedges must all be purchases (no shorting)
 )
 
 
@@ -92,10 +93,11 @@ def realized_vr(C, idx, W):
 
 def shortlist(ctx, a, cfg):
     sd = np.sqrt(np.diag(ctx.C_tr))
-    corr = np.abs(ctx.C_tr[a] / (sd * sd[a] + 1e-18))
-    corr[a] = -1
+    c = ctx.C_tr[a] / (sd * sd[a] + 1e-18)
+    corr = -c if cfg["buy_only"] else np.abs(c)      # buy-only: most opposite-moving names first
+    corr[a] = -np.inf
     picked = list(np.argsort(-corr)[: cfg["shortlist"]])
-    if "SPY" in ctx.ix and ctx.ix["SPY"] not in picked and ctx.ix["SPY"] != a:
+    if not cfg["buy_only"] and "SPY" in ctx.ix and ctx.ix["SPY"] not in picked and ctx.ix["SPY"] != a:
         picked.append(ctx.ix["SPY"])
     return np.array(picked)
 
@@ -105,7 +107,10 @@ def score(ctx, idx, cfg):
     W, vr_tr = batch_ols(ctx.C_tr, idx)
     vr_va = realized_vr(ctx.C_va, idx, W)
     gross = np.abs(W[:, 1:]).sum(1)
-    sc = np.where(gross <= cfg["max_gross"], np.minimum(vr_tr, vr_va), -np.inf)
+    ok = gross <= cfg["max_gross"]
+    if cfg["buy_only"]:
+        ok &= (W[:, 1:] > 0).all(1)
+    sc = np.where(ok, np.minimum(vr_tr, vr_va), -np.inf)
     return sc, W, vr_tr, vr_va
 
 
@@ -239,7 +244,8 @@ def main():
     singles = np.stack([np.full(len(sl), a), sl], 1)
     s1, *_ = score(ctx, singles, cfg)
     best1 = evaluate(ctx, singles[int(np.argmax(s1))])
-    spy = evaluate(ctx, [a, ctx.ix["SPY"]]) if "SPY" in ctx.ix and a != ctx.ix["SPY"] else None
+    spy = (evaluate(ctx, [a, ctx.ix["SPY"]]) if "SPY" in ctx.ix and a != ctx.ix["SPY"] and not cfg["buy_only"]
+           else None)
     best_ev = evaluate(ctx, best_idx)
 
     print(f"Scored {len(idx):,} three-leg hedges from a shortlist of {len(sl)}.\n")
