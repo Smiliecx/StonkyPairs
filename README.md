@@ -32,7 +32,7 @@ different families.
 
 ```bash
 pip install -r requirements.txt
-git clone --branch data --depth 1 https://github.com/<owner>/<repo>.git data   # latest prices
+git clone --branch data --depth 1 https://github.com/Smiliecx/StonkyPairs.git data   # latest prices
 
 python hedge.py DELL                      # search, groups, report (~1.5 min)
 python hedge.py DELL --pick MU,CRM,SPY    # evaluate one exact basket (seconds)
