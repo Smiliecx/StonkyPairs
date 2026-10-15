@@ -1,0 +1,48 @@
+# AI Infrastructure - the companies building and supplying AI data centers.
+# One ticker per line; text after '#' is ignored. Edit freely.
+
+# Accelerators and chip designers
+NVDA
+AMD
+AVGO
+MRVL
+INTC
+ARM
+# Foundry and chip-making equipment
+TSM
+ASML
+AMAT
+LRCX
+KLAC
+# Memory and storage
+MU
+SNDK
+WDC
+STX
+# Servers and systems
+DELL
+HPE
+SMCI
+# Networking, optics and connectivity
+ANET
+CSCO
+CIEN
+COHR
+CRDO
+LITE
+GLW
+APH
+# Power, cooling and electrical
+VRT
+ETN
+GEV
+PWR
+VST
+CEG
+NRG
+# Data centers and cloud
+EQIX
+DLR
+ORCL
+# Theme ETF
+SMH

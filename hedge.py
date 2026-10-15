@@ -119,11 +119,12 @@ class Context:
 
 # --------------------------------------------------------------- scoring ----
 
-def batch_fit(tab, idx, ridge=1e-6, chunk=200_000):
+def batch_fit(tab, idx, ridge=1e-6, chunk=200_000, norm="anchor"):
     """Box-Tiao fit for many small baskets at once.
     idx: (B, k) asset indices, column 0 = anchor.
     Returns nu (B,) predictability in [0, 1] (lower = more mean-reverting),
-    W (B, k) weights scaled so the anchor = 1, sd (B,) spread std."""
+    W (B, k) weights scaled so the anchor = 1 (norm="anchor") or so gross
+    exposure = 1 (norm="gross"), sd (B,) spread std."""
     out_nu, out_W, out_sd = [], [], []
     k = idx.shape[1]
     eye = np.eye(k)
@@ -139,7 +140,7 @@ def batch_fit(tab, idx, ridge=1e-6, chunk=200_000):
         vals, vecs = np.linalg.eigh(0.5 * (C + np.swapaxes(C, 1, 2)))
         w = np.einsum("bji,bj->bi", Li, vecs[:, :, 0])
         with np.errstate(divide="ignore", invalid="ignore"):
-            W = w / w[:, :1]
+            W = w / w[:, :1] if norm == "anchor" else w / np.abs(w).sum(1, keepdims=True)
             sd = np.sqrt(np.einsum("bi,bij,bj->b", W, Syy, W))
         out_nu.append(vals[:, 0]); out_W.append(W); out_sd.append(sd)
     return np.concatenate(out_nu), np.concatenate(out_W), np.concatenate(out_sd)

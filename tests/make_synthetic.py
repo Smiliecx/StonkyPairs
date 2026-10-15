@@ -10,6 +10,8 @@ sector factors (pure random walks, no real mean reversion), plus three anchors:
   BRKN  clear relationship that stops at the start of the final year
         -> should pass training + validation but BREAK DOWN on unseen data
   NULL  nothing planted -> should report nothing / not beat chance
+  HEDG  daily returns = 0.7*S04_01 - 0.5*S06_02 + 0.6*SPY + noise
+        -> protect.py should hedge it with S04_01, S06_02 and SPY
 """
 import sys
 from pathlib import Path
@@ -65,6 +67,11 @@ rw = np.cumsum(rng.normal(0, 0.02, T))
 sp2[cut:] = sp2[cut] + rw[cut:] - rw[cut]
 df["BRKN"] = sp2 + 0.7 * E - 0.5 * F - 0.6 * G
 info.append(("BRKN", "Planted anchor (breaks)", "Test", "-", "stock"))
+
+# HEDG: returns largely explained by 3 names -> protect.py should pick them
+hr = 0.7 * np.diff(df["S04_01"]) - 0.5 * np.diff(df["S06_02"]) + 0.6 * np.diff(df["SPY"]) + rng.normal(0, 0.006, T - 1)
+df["HEDG"] = np.log(40) + np.concatenate([[0], np.cumsum(hr)])
+info.append(("HEDG", "Planted hedge target", "Test", "-", "stock"))
 
 df["NULL"] = np.log(70) + np.cumsum(1.1 * mkt + 0.9 * sec[:, 4] + rng.normal(0, 0.015, T))
 info.append(("NULL", "No relationship", "Test", "-", "stock"))
