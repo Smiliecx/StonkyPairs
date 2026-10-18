@@ -1,0 +1,73 @@
+{
+ "rulings": [
+  {
+   "finding": "Finding 1 — bull and bear_soft branch values shown with no input-change line (Rule 5)",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 2 — $886M restricted investments in Helena floor but excluded from balance-sheet add",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 3 — organic growth with $0 acq deduction despite $0.08/share recurring bolt-on",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 4 — Alexander +10% EQ uplift applied after the net-debt add",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 5 — latest_share_count_m=561 labelled diluted but is period-end outstanding",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 6 — Simon worked-example PV of flows 44.29 should be 45.28 (display typo)",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [],
+   "script_delta": null
+  }
+ ],
+ "joint_changed_inputs": [],
+ "script_joint_delta": 0.0,
+ "script_adjusted_headline": 49.69678622639172
+}

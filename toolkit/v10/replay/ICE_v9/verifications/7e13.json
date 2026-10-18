@@ -1,0 +1,73 @@
+{
+ "rulings": [
+  {
+   "finding": "1. Marcus forecast_5y table is built on a different growth glide than his fair value",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "2. Alexander's earnings-quality score basis does not reconcile to the score used",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "3. Helena's intangibles-ex-clearing figure switches date between prose and JSON",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "4. Alternative denominator uses a margin basis where STAGE2 prefers a period basis, and omits the required investment-growth statement",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "5. Break-branch input-change lines are under-printed",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "6. Alternative-denominator per-share has a one-digit rounding slip",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  }
+ ],
+ "joint_changed_inputs": [],
+ "script_joint_delta": 0.0,
+ "script_adjusted_headline": 48.2672
+}

@@ -1,0 +1,20 @@
+{
+ "rulings": [
+  {
+   "finding": "1",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [
+    {
+     "path": "investors.Marcus.fair_value_alternative_denominator",
+     "from": 121.0,
+     "to": 150.0
+    }
+   ]
+  }
+ ],
+ "joint_changed_inputs": []
+}

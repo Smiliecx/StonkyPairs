@@ -1,0 +1,84 @@
+{
+ "rulings": [
+  {
+   "finding": "Finding 1 — Black Knight excluded from the normalised acquisition drag",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 2 — forecast_5y year-1 labeled months:6 but carries a full 12-month cash flow; the stub-from-valuation-date timing does not match the schedule",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": true,
+   "spec_change_or_null": "Add a genuine partial-year first-period timing formula (half the year-1 cash flow discounted over the ~0.25y stub from 2026-06-30) in place of the full-year mid-year convention the run actually applies.",
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 3 — quality_tier_modal declared Average on a 4-4 tie with no unique mode",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 4 — Marcus break reference compresses the IMT GAAP-margin path selectively",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 5 — Six seats share identical growth-derivation boilerplate despite different paths",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 6 — FY2025 acquisition cash ($19M) is a non-filing third-party-aggregator figure",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 7 — fair_value_other_acquisition_basis rests on an assumed -1pp/yr organic proxy",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  }
+ ],
+ "joint_changed_inputs": [],
+ "script_joint_delta": 0.0,
+ "script_adjusted_headline": 35.51
+}

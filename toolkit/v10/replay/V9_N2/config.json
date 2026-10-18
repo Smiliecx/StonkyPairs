@@ -1,0 +1,72 @@
+{
+ "ticker": "X",
+ "unit": "USD per share",
+ "as_of": "2026-09-10",
+ "first_v7_ticker": false,
+ "market_inputs": {
+  "path": "x",
+  "sha256": "0",
+  "currency": "USD",
+  "risk_free": 4.95,
+  "erp": 3.89
+ },
+ "runs": [
+  {
+   "token": "r1",
+   "dossier": "A",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "replay/V9_N2/summaries/r1.json"
+  },
+  {
+   "token": "r2",
+   "dossier": "A",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "replay/V9_N2/summaries/r2.json"
+  },
+  {
+   "token": "r3",
+   "dossier": "A",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "replay/V9_N2/summaries/r3.json"
+  },
+  {
+   "token": "r4",
+   "dossier": "B",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "replay/V9_N2/summaries/r4.json"
+  },
+  {
+   "token": "r5",
+   "dossier": "B",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "replay/V9_N2/summaries/r5.json"
+  },
+  {
+   "token": "r6",
+   "dossier": "B",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "replay/V9_N2/summaries/r6.json"
+  }
+ ],
+ "bridge_runs": [],
+ "probe": {},
+ "methodology_note_fields": [],
+ "season_prior_v7_rows": [],
+ "spec_version": "v9",
+ "stage7": "not run",
+ "mandate": "NONE",
+ "verifications": {
+  "r1": "replay/V9_N2/verifications/r1.json",
+  "r2": "replay/V9_N2/verifications/r2.json",
+  "r3": "replay/V9_N2/verifications/r3.json",
+  "r4": "replay/V9_N2/verifications/r4.json",
+  "r5": "replay/V9_N2/verifications/r5.json"
+ },
+ "thin_metrics": []
+}

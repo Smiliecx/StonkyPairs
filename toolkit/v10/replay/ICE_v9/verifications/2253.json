@@ -1,0 +1,155 @@
+{
+ "rulings": [
+  {
+   "finding": "Finding 1 — Break-branch values cannot be reproduced from the stated mechanics (all eight seats)",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [
+    {
+     "path": "investors.Simon.tree.break.value",
+     "from": 6.89,
+     "to": 30.75
+    },
+    {
+     "path": "investors.Marcus.tree.break.value",
+     "from": 15.85,
+     "to": 45.24
+    },
+    {
+     "path": "investors.Sophie.tree.break.value",
+     "from": 12.21,
+     "to": 41.23
+    },
+    {
+     "path": "investors.Claire.tree.break.value",
+     "from": 9.5,
+     "to": 36.25
+    },
+    {
+     "path": "investors.Graham.tree.break.value",
+     "from": 10.41,
+     "to": 35.64
+    },
+    {
+     "path": "investors.Walter.tree.break.value",
+     "from": 12.21,
+     "to": 38.83
+    },
+    {
+     "path": "investors.Helena.tree.break.value",
+     "from": 8.77,
+     "to": 32.62
+    },
+    {
+     "path": "investors.Alexander.tree.break.value",
+     "from": 10.02,
+     "to": 33.55
+    }
+   ],
+   "script_delta": 2.4713555984415976
+  },
+  {
+   "finding": "Finding 2 — Alexander's quality score is set to 58 above its own derived 53",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [
+    {
+     "path": "investors.Alexander.quality_score",
+     "from": 58,
+     "to": 53
+    }
+   ],
+   "script_delta": -0.21728000000000236
+  },
+  {
+   "finding": "Finding 3 — Marcus's growth_basis safe-harbour precondition is not literally met (immaterial)",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 4 — Two-sided label on Sophie pairs the vote's downside with a different catalyst's upside",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "Finding 5 — Peer P/FCF used in the reasonableness check are not converted to the declared basis",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  }
+ ],
+ "joint_changed_inputs": [
+  {
+   "path": "investors.Simon.tree.break.value",
+   "from": 6.89,
+   "to": 30.75
+  },
+  {
+   "path": "investors.Marcus.tree.break.value",
+   "from": 15.85,
+   "to": 45.24
+  },
+  {
+   "path": "investors.Sophie.tree.break.value",
+   "from": 12.21,
+   "to": 41.23
+  },
+  {
+   "path": "investors.Claire.tree.break.value",
+   "from": 9.5,
+   "to": 36.25
+  },
+  {
+   "path": "investors.Graham.tree.break.value",
+   "from": 10.41,
+   "to": 35.64
+  },
+  {
+   "path": "investors.Walter.tree.break.value",
+   "from": 12.21,
+   "to": 38.83
+  },
+  {
+   "path": "investors.Helena.tree.break.value",
+   "from": 8.77,
+   "to": 32.62
+  },
+  {
+   "path": "investors.Alexander.tree.break.value",
+   "from": 10.02,
+   "to": 33.55
+  },
+  {
+   "path": "investors.Alexander.quality_score",
+   "from": 58,
+   "to": 53
+  }
+ ],
+ "script_joint_delta": 2.2540755984416023,
+ "script_adjusted_headline": 40.36065842897155
+}

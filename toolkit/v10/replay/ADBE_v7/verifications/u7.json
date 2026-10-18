@@ -1,0 +1,190 @@
+{
+ "rulings": [
+  {
+   "finding": "F1",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [
+    {
+     "path": "investors.Marcus.fair_value",
+     "from": 1320.8,
+     "to": 1254.92
+    },
+    {
+     "path": "investors.Marcus.tree.base.value",
+     "from": 1320.8,
+     "to": 1254.92
+    },
+    {
+     "path": "investors.Marcus.fair_value_rf_plus_50bp",
+     "from": 1215.94,
+     "to": 1153.71
+    }
+   ],
+   "script_delta": -6.9483
+  },
+  {
+   "finding": "F2",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F3",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F4",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [
+    {
+     "path": "investors.Walter.fair_value",
+     "from": 1146.41,
+     "to": 1024.71
+    },
+    {
+     "path": "investors.Walter.tree.base.value",
+     "from": 1146.41,
+     "to": 1024.71
+    },
+    {
+     "path": "investors.Walter.fair_value_rf_plus_50bp",
+     "from": 1061.05,
+     "to": 949.6
+    }
+   ],
+   "script_delta": -7.9866
+  },
+  {
+   "finding": "F5",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F6",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F7",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F8",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F9",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "MECHANISM",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F10",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F11",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "F12",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": null
+  }
+ ],
+ "joint_changed_inputs": [
+  {
+   "path": "investors.Marcus.fair_value",
+   "from": 1320.8,
+   "to": 1254.92
+  },
+  {
+   "path": "investors.Marcus.tree.base.value",
+   "from": 1320.8,
+   "to": 1254.92
+  },
+  {
+   "path": "investors.Marcus.fair_value_rf_plus_50bp",
+   "from": 1215.94,
+   "to": 1153.71
+  },
+  {
+   "path": "investors.Walter.fair_value",
+   "from": 1146.41,
+   "to": 1024.71
+  },
+  {
+   "path": "investors.Walter.tree.base.value",
+   "from": 1146.41,
+   "to": 1024.71
+  },
+  {
+   "path": "investors.Walter.fair_value_rf_plus_50bp",
+   "from": 1061.05,
+   "to": 949.6
+  }
+ ],
+ "script_joint_delta": -14.9348,
+ "script_adjusted_headline": 696.1381
+}

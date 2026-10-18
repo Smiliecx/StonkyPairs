@@ -1,0 +1,108 @@
+{
+ "spec": "v9",
+ "point": 44.9523366855127,
+ "hw": 4.5444573099916585,
+ "ledger": [
+  {
+   "row": "Break probability −5pp on every headline seat",
+   "point": 46.72459244880873,
+   "change": 1.7722557632960303,
+   "change_sw": 0.19851265442427873,
+   "extra": null
+  },
+  {
+   "row": "Break probability +5pp on every headline seat",
+   "point": 41.964360015983026,
+   "change": -2.9879766695296723,
+   "change_sw": -0.33468712152641683,
+   "extra": null
+  },
+  {
+   "row": "Valuation date rolled to the pack date",
+   "point": 44.9523366855127,
+   "change": 0.0,
+   "change_sw": 0.0,
+   "extra": null
+  },
+  {
+   "row": "Share-count date",
+   "point": 45.143535332957974,
+   "change": 0.19119864744527604,
+   "change_sw": 0.021416407164677215,
+   "extra": null
+  },
+  {
+   "row": "Valuation date and share-count date (both)",
+   "point": 45.143535332957974,
+   "change": 0.19119864744527604,
+   "change_sw": 0.021416407164677215,
+   "extra": null
+  },
+  {
+   "row": "Denominator on the period-weighted count instead of the per-share count",
+   "point": 44.46396778174853,
+   "change": -0.48836890376416875,
+   "change_sw": -0.054702830952682635,
+   "extra": null
+  },
+  {
+   "row": "Acquisitions: every seat on the organic basis",
+   "point": 46.13899198718758,
+   "change": 1.1866553016748824,
+   "change_sw": 0.1329187912381336,
+   "extra": null
+  },
+  {
+   "row": "Acquisitions: every seat including acquisitions",
+   "point": 43.90989002400267,
+   "change": -1.0424466615100272,
+   "change_sw": -0.11676579541048833,
+   "extra": null
+  },
+  {
+   "row": "Alternative denominator: every seat on its run's alternative denominator",
+   "point": 46.25287784762889,
+   "change": 1.3005411621161898,
+   "change_sw": 0.1456752933896916,
+   "extra": "mean absolute per-run change 7.3167; runs above / below / none 4 / 2 / 0 (retained); seats valued 48 of 48"
+  },
+  {
+   "row": "Risk-free +50bp",
+   "point": 40.67471634875872,
+   "change": -4.2776203367539765,
+   "change_sw": -0.47914177245446965,
+   "extra": null
+  },
+  {
+   "row": "Published figure without the single finding whose removal moves it most",
+   "point": 44.540444085772435,
+   "change": -0.4118925997402627,
+   "change_sw": -0.04613662147730237,
+   "extra": "run 2253, finding Finding 1 — Break-branch values cannot be reproduced from the stated mechanics (all eight seats)"
+  },
+  {
+   "row": "Point rule: equal-weighted mean",
+   "point": 46.13357119338955,
+   "change": 1.1812345078768516,
+   "change_sw": 0.13231160113147966,
+   "extra": null
+  },
+  {
+   "row": "Point rule: median",
+   "point": 44.995053137621056,
+   "change": 0.04271645210835828,
+   "change_sw": 0.004784724908919005,
+   "extra": null
+  }
+ ],
+ "retained": [
+  "30d9",
+  "29eb",
+  "7e13",
+  "9d63",
+  "2253",
+  "1060"
+ ],
+ "fv": 71.64245164943546,
+ "blind_point": 44.576657419105764
+}

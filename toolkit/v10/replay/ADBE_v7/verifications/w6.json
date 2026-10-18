@@ -1,0 +1,271 @@
+{
+ "rulings": [
+  {
+   "finding": "1",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [
+    {
+     "path": "investors.Claire.fair_value",
+     "from": 105.23,
+     "to": 121.34
+    },
+    {
+     "path": "investors.Claire.tree.base.value",
+     "from": 105.23,
+     "to": 121.34
+    },
+    {
+     "path": "investors.Claire.fair_value_rf_plus_50bp",
+     "from": 98.78,
+     "to": 113.37
+    }
+   ],
+   "script_delta": 1.3774
+  },
+  {
+   "finding": "2",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [
+    {
+     "path": "investors.Walter.quality_score",
+     "from": 72,
+     "to": 75
+    },
+    {
+     "path": "investors.Walter.quality_tier",
+     "from": "Average",
+     "to": "High Quality"
+    }
+   ],
+   "script_delta": 1.4438
+  },
+  {
+   "finding": "3",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [
+    {
+     "path": "investors.Alexander.quality_score",
+     "from": 76,
+     "to": 74
+    },
+    {
+     "path": "investors.Alexander.quality_tier",
+     "from": "High Quality",
+     "to": "Average"
+    },
+    {
+     "path": "investors.Alexander.fair_value",
+     "from": 131.9,
+     "to": 142.55
+    },
+    {
+     "path": "investors.Alexander.tree.base.value",
+     "from": 131.9,
+     "to": 142.55
+    },
+    {
+     "path": "investors.Alexander.tree.break.value",
+     "from": 35.54,
+     "to": 36.16
+    },
+    {
+     "path": "investors.Alexander.tree.bear.value",
+     "from": 93.92,
+     "to": 100.32
+    },
+    {
+     "path": "investors.Alexander.tree.upside.value",
+     "from": 159.83,
+     "to": 173.97
+    },
+    {
+     "path": "investors.Alexander.fair_value_rf_plus_50bp",
+     "from": 122.67,
+     "to": 131.9
+    }
+   ],
+   "script_delta": -0.8766
+  },
+  {
+   "finding": "4",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "5",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "6",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "7",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "8",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "9",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "10",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "11",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "12",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": true,
+   "tag1": "TRANSFERABLE",
+   "tag2": "MECHANISM",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "13",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": null
+  }
+ ],
+ "joint_changed_inputs": [
+  {
+   "path": "investors.Claire.fair_value",
+   "from": 105.23,
+   "to": 121.34
+  },
+  {
+   "path": "investors.Claire.tree.base.value",
+   "from": 105.23,
+   "to": 121.34
+  },
+  {
+   "path": "investors.Claire.fair_value_rf_plus_50bp",
+   "from": 98.78,
+   "to": 113.37
+  },
+  {
+   "path": "investors.Walter.quality_score",
+   "from": 72,
+   "to": 75
+  },
+  {
+   "path": "investors.Walter.quality_tier",
+   "from": "Average",
+   "to": "High Quality"
+  },
+  {
+   "path": "investors.Alexander.quality_score",
+   "from": 76,
+   "to": 74
+  },
+  {
+   "path": "investors.Alexander.quality_tier",
+   "from": "High Quality",
+   "to": "Average"
+  },
+  {
+   "path": "investors.Alexander.fair_value",
+   "from": 131.9,
+   "to": 142.55
+  },
+  {
+   "path": "investors.Alexander.tree.base.value",
+   "from": 131.9,
+   "to": 142.55
+  },
+  {
+   "path": "investors.Alexander.tree.break.value",
+   "from": 35.54,
+   "to": 36.16
+  },
+  {
+   "path": "investors.Alexander.tree.bear.value",
+   "from": 93.92,
+   "to": 100.32
+  },
+  {
+   "path": "investors.Alexander.tree.upside.value",
+   "from": 159.83,
+   "to": 173.97
+  },
+  {
+   "path": "investors.Alexander.fair_value_rf_plus_50bp",
+   "from": 122.67,
+   "to": 131.9
+  }
+ ],
+ "script_joint_delta": 1.9446,
+ "script_adjusted_headline": 78.0579
+}

@@ -1,0 +1,117 @@
+{
+ "rulings": [
+  {
+   "finding": "1",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION (Rule 3)",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "2",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "3",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "4",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "5",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "6",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "7",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "8",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "9",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "10",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "11",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [],
+   "script_delta": null
+  }
+ ],
+ "joint_changed_inputs": [],
+ "script_joint_delta": 0.0,
+ "script_adjusted_headline": 767.1758884615384
+}

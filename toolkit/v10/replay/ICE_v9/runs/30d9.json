@@ -1,0 +1,771 @@
+{
+ "ticker": "ICE",
+ "unit": "USD millions",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner FCF (OCF - capex - capitalized software - SBC)",
+  "gross_source": "pack Section 3: OCF 4,662 - (capex 373 + cap.software 418) - SBC 238 = 3,633 (FY2025)",
+  "basis_period": "FY2025",
+  "denominator_count_m": 566.0,
+  "period_weighted_count_m": 575.0,
+  "pack_as_of_date": "2026-06-30",
+  "valuation_date": "2026-06-30",
+  "per_share_count_m": 566.0,
+  "per_share_count_date": "2026-06-30",
+  "per_share_count_basis": "period",
+  "latest_share_count_m": 561.0,
+  "latest_share_count_date": "2026-06-30",
+  "balance_sheet_date": "2026-06-30",
+  "balance_sheet_add_per_share": -33.18,
+  "gross_denominator_per_share": 6.4187,
+  "denominator_adjustments": [],
+  "declared_denominator_per_share": 6.4187,
+  "acq_cash_by_year": [
+   {
+    "year": "2021",
+    "amount": 66
+   },
+   {
+    "year": "2022",
+    "amount": 59
+   },
+   {
+    "year": "2023",
+    "amount": 10198
+   },
+   {
+    "year": "2024",
+    "amount": 38
+   },
+   {
+    "year": "2025",
+    "amount": 19
+   }
+  ],
+  "acq_spend_normalised_per_share": 3.6678,
+  "acq_spend_window": "FY2021-FY2025 (5y)",
+  "recent_acquisitions": [
+   {
+    "name": "Black Knight",
+    "close_date": "2023-09-05",
+    "months_in_basis_period": 0
+   },
+   {
+    "name": "ICE Digital Trust",
+    "close_date": "2025-05-01",
+    "months_in_basis_period": 0
+   }
+  ],
+  "alternative_denominator_type": "SBC-adjusted owner FCF (OCF - capex - capitalized software - SBC)",
+  "alternative_denominator_basis": "period",
+  "alternative_denominator_per_share": 6.4125,
+  "risk_free": 5.22,
+  "erp": 4.27,
+  "macro_base": 9.49,
+  "market_inputs_as_of": "2026-10-08",
+  "erp_departure_reason_or_null": null,
+  "business_type": "Operating (asset-light exchange/data/mortgage-tech compounder with cyclical transaction overlay)",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Simon": 1.0,
+   "Marcus": 1.5,
+   "Sophie": 1.0,
+   "Claire": 1.5,
+   "Graham": 1.2,
+   "Walter": 1.0,
+   "Helena": 1.2,
+   "Alexander": 1.0
+  },
+  "peers_used": [
+   "CME Group",
+   "Nasdaq",
+   "Cboe",
+   "S&P Global"
+  ]
+ },
+ "helena_floor": {
+  "floor_type": "going-concern erosion floor (10x trough owner FCF less net debt; hard-asset/tangible floor is negative)",
+  "floor_per_share_or_null": 12.76,
+  "pack_lines": [
+   "Sec 3 owner FCF trough ~2,600 (FY2022 2,917)",
+   "Sec 6 total debt 19,846 and unrestricted cash 1,067 at 6/30/2026",
+   "Sec 6 tangible book -15,951"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Simon",
+   "fair_value": 40.54,
+   "quality_score": 70,
+   "quality_tier": "Average",
+   "discount_rate": 13.99,
+   "fair_value_rf_plus_50bp": 37.08,
+   "fair_value_macro_base": 97.79,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 11.63,
+   "fair_value_alternative_denominator": 40.47,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 40.54
+    },
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 50.39
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.22,
+     "value": 27.76
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8695,
+   "break_derivation": {
+    "mechanism": "Trust breaks: guidance credibility fails, mortgage+data franchise re-rates as opex overruns and synergy targets slip, owner FCF declines ~3%/yr and multiple compresses.",
+    "reference": "FY2022 owner FCF total fell to 2,917 then IMT GAAP op margin went to (21)% in FY2023 (pack Sec 2); one segment broke within 3 years.",
+    "adjustment_pp": "+5pp above 10% floor for repeated guidance raises and combined CEO/Chair",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1304,
+   "quality_premium": 0.3083,
+   "required_margin": 0.4388,
+   "buy": 22.75,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3905.5,
+     "cash_flow_per_share": 6.9001
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4181.0,
+     "cash_flow_per_share": 7.387
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4457.4,
+     "cash_flow_per_share": 7.8753
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4732.3,
+     "cash_flow_per_share": 8.361
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5003.1,
+     "cash_flow_per_share": 8.8394
+    }
+   ]
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 38.29,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 33.13,
+   "fair_value_macro_base": 59.46,
+   "terminal_growth": 4.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 79.13,
+   "fair_value_alternative_denominator": 38.18,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 38.29
+    },
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 55.84
+    },
+    {
+     "branch": "bear_lowroiic",
+     "p": 0.22,
+     "value": 16.84
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.7854,
+   "break_derivation": {
+    "mechanism": "Incremental ROIC falls below cost of capital; large M&A (Black Knight-type) destroys value, owner FCF declines in absolute terms and the compounding thesis breaks.",
+    "reference": "FY2022 ROIC fell to 7.7% and ROE to 6.4% post-Ellie-Mae/Bakkt (pack Sec 7); value-creation lapsed once in the window.",
+    "adjustment_pp": "+3pp above floor; incremental ROIC ~9-12% sits near the 10% line",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1021,
+   "quality_premium": 0.255,
+   "required_margin": 0.3571,
+   "buy": 24.61,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566. Acq spend 2076M/yr deducted (growth includes acquired).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3923.6,
+     "cash_flow_per_share": 6.9322
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4220.1,
+     "cash_flow_per_share": 7.456
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4520.2,
+     "cash_flow_per_share": 7.9862
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4821.5,
+     "cash_flow_per_share": 8.5186
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5121.5,
+     "cash_flow_per_share": 9.0487
+    }
+   ]
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 77.35,
+   "quality_score": 77,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.24,
+   "fair_value_rf_plus_50bp": 70.02,
+   "fair_value_macro_base": 113.57,
+   "terminal_growth": 4.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 37.81,
+   "fair_value_alternative_denominator": 77.25,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 77.35
+    },
+    {
+     "branch": "bull_catalyst",
+     "p": 0.23,
+     "value": 98.38
+    },
+    {
+     "branch": "bear_cyc",
+     "p": 0.22,
+     "value": 45.55
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.8877,
+   "break_derivation": {
+    "mechanism": "Volatility collapses into a sustained calm (fixed cost base), mortgage stays depressed and Treasury-clearing/new catalysts fail; transaction revenue falls, owner FCF contracts.",
+    "reference": "Pack Sec 12: 'sustained period of stability... lower trading volumes' and 'cost structure largely fixed'; mortgage volume 'decreased substantially' from 2022.",
+    "adjustment_pp": "+3pp above floor; records in Q2/Q3'26 reduce near-term break odds",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1154,
+   "quality_premium": 0.2617,
+   "required_margin": 0.3771,
+   "buy": 48.19,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3941.8,
+     "cash_flow_per_share": 6.9643
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4257.1,
+     "cash_flow_per_share": 7.5215
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4576.4,
+     "cash_flow_per_share": 8.0856
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4896.8,
+     "cash_flow_per_share": 8.6516
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5215.1,
+     "cash_flow_per_share": 9.2139
+    }
+   ]
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 87.99,
+   "quality_score": 82,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 79.13,
+   "fair_value_macro_base": 110.56,
+   "terminal_growth": 4.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 44.24,
+   "fair_value_alternative_denominator": 87.87,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.48,
+     "value": 87.99
+    },
+    {
+     "branch": "bull",
+     "p": 0.17,
+     "value": 104.37
+    },
+    {
+     "branch": "bear_mortgage",
+     "p": 0.23,
+     "value": 61.05
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8846,
+   "break_derivation": {
+    "mechanism": "Moat breaks in mortgage (in-house LOS/lenders displace Encompass) and data (vendor competition), compounding into exchanges; franchise cash flow declines absolutely.",
+    "reference": "Pack Sec 12 names LOS/digital-mortgage competitors and lenders' in-house systems; IMT GAAP op margin was (21)% FY2023, (8)% FY2024 (pack Sec 2).",
+    "adjustment_pp": "+2pp above floor; exchange/clearing moat is near-unassailable, lowering break odds",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1062,
+   "quality_premium": 0.2283,
+   "required_margin": 0.3345,
+   "buy": 58.56,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3923.6,
+     "cash_flow_per_share": 6.9322
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4220.1,
+     "cash_flow_per_share": 7.456
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4520.2,
+     "cash_flow_per_share": 7.9862
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4821.5,
+     "cash_flow_per_share": 8.5186
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5121.5,
+     "cash_flow_per_share": 9.0487
+    }
+   ]
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 87.01,
+   "quality_score": 79,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 78.23,
+   "fair_value_macro_base": 109.37,
+   "terminal_growth": 4.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 43.26,
+   "fair_value_alternative_denominator": 86.89,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 87.01
+    },
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 104.37
+    },
+    {
+     "branch": "bear_slow",
+     "p": 0.23,
+     "value": 54.71
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.8834,
+   "break_derivation": {
+    "mechanism": "Sustainable growth (ROE*retention 7.8%) proves illusory; returns compress below cost of capital, owner FCF declines and terminal value collapses.",
+    "reference": "ROE fell to 6.4% (FY2022) and ROExRetention to 2.6% that year (pack Sec 7); the engine stalled once in 5 years.",
+    "adjustment_pp": "+3pp above floor",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1148,
+   "quality_premium": 0.2483,
+   "required_margin": 0.3632,
+   "buy": 55.41,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3916.4,
+     "cash_flow_per_share": 6.9194
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4205.3,
+     "cash_flow_per_share": 7.4299
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4497.8,
+     "cash_flow_per_share": 7.9467
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4791.7,
+     "cash_flow_per_share": 8.4659
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5084.5,
+     "cash_flow_per_share": 8.9832
+    }
+   ]
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 44.24,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 38.29,
+   "fair_value_macro_base": 59.46,
+   "terminal_growth": 4.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 87.99,
+   "fair_value_alternative_denominator": 44.13,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 44.24
+    },
+    {
+     "branch": "bull",
+     "p": 0.19,
+     "value": 58.7
+    },
+    {
+     "branch": "bear_mgmt",
+     "p": 0.23,
+     "value": 15.29
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.7854,
+   "break_derivation": {
+    "mechanism": "Stewardship fails: a value-destructive large acquisition plus guidance overruns drive ROIIC below cost of capital; owner FCF falls absolutely.",
+    "reference": "Post-Bakkt FY2022 investee losses $1,340M and ROIC 7.7% (pack Sec 7,10); one steward misstep in the window.",
+    "adjustment_pp": "+3pp above floor",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1021,
+   "quality_premium": 0.2683,
+   "required_margin": 0.3704,
+   "buy": 27.85,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566. Acq spend deducted; growth includes acquired.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3923.6,
+     "cash_flow_per_share": 6.9322
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4220.1,
+     "cash_flow_per_share": 7.456
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4520.2,
+     "cash_flow_per_share": 7.9862
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4821.5,
+     "cash_flow_per_share": 8.5186
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5121.5,
+     "cash_flow_per_share": 9.0487
+    }
+   ]
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 62.43,
+   "quality_score": 75,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.49,
+   "fair_value_rf_plus_50bp": 56.67,
+   "fair_value_macro_base": 95.11,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 25.26,
+   "fair_value_alternative_denominator": 62.34,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 62.43
+    },
+    {
+     "branch": "bull",
+     "p": 0.17,
+     "value": 77.46
+    },
+    {
+     "branch": "bear_floor",
+     "p": 0.23,
+     "value": 43.35
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8659,
+   "break_derivation": {
+    "mechanism": "Permanent franchise erosion (mortgage + data + volume reset): owner FCF falls to trough and the business is worth its going-concern erosion floor, not a growth multiple.",
+    "reference": "Pack Sec 12 permanent-erosion risks; IMT GAAP losses FY2023-24; FCF/NI healthy but tangible book -$15,951M (pack Sec 6).",
+    "adjustment_pp": "+5pp above floor; permanent-erosion is the governing bear for a goodwill-heavy franchise",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1299,
+   "quality_premium": 0.275,
+   "required_margin": 0.4049,
+   "buy": 37.15,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566. FCF conversion FCF/NI 1.17x (pack Sec 3). Break branch floored at Helena erosion floor.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3887.3,
+     "cash_flow_per_share": 6.868
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4144.3,
+     "cash_flow_per_share": 7.3221
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4402.2,
+     "cash_flow_per_share": 7.7777
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4659.0,
+     "cash_flow_per_share": 8.2314
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4912.6,
+     "cash_flow_per_share": 8.6795
+    }
+   ]
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 95.05,
+   "quality_score": 85,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.74,
+   "fair_value_rf_plus_50bp": 86.0,
+   "fair_value_macro_base": 124.94,
+   "terminal_growth": 4.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 48.59,
+   "fair_value_alternative_denominator": 94.93,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 95.05
+    },
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 111.91
+    },
+    {
+     "branch": "bear_q",
+     "p": 0.23,
+     "value": 60.55
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 12.76
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.8979,
+   "break_derivation": {
+    "mechanism": "Accounting quality masks deterioration: amortization-heavy mortgage segment GAAP losses prove economic, non-GAAP add-backs ($993M amort) reverse into real cash erosion.",
+    "reference": "IMT GAAP op margin 1% FY2025 vs 41% adjusted; $779M amort + $66M integration (pack Sec 2 finding 3); the GAAP/adjusted gap is structural.",
+    "adjustment_pp": "+3pp above floor",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1167,
+   "quality_premium": 0.205,
+   "required_margin": 0.3217,
+   "buy": 64.47,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF company total = OCF - capex - capitalized software - SBC (pack Section 3). FY2025 base $3,633M. Grown by the seat growth path; terminal via Gordon. Per share at 566M (Q2'26 diluted wtd-avg); BS add = (unrestricted cash 1,067 - total debt 19,846)/566. Earnings-quality uplift +10% applied after DCF (EQ score 85).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3923.6,
+     "cash_flow_per_share": 6.9322
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4220.1,
+     "cash_flow_per_share": 7.456
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4520.2,
+     "cash_flow_per_share": 7.9862
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4821.5,
+     "cash_flow_per_share": 8.5186
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5121.5,
+     "cash_flow_per_share": 9.0487
+    }
+   ]
+  }
+ ],
+ "committee_median_fv": 69.89,
+ "quality_tier_modal": "High Quality",
+ "headline_buy": 42.46
+}

@@ -1,0 +1,45 @@
+{
+ "rulings": [
+  {
+   "finding": "1",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [
+    {
+     "path": "investors.Sophie.fair_value",
+     "from": 120,
+     "to": 108
+    },
+    {
+     "path": "investors.Sophie.tree.base.value",
+     "from": 120,
+     "to": 108
+    },
+    {
+     "path": "investors.Sophie.fair_value_macro_base",
+     "from": 120,
+     "to": 108
+    },
+    {
+     "path": "investors.Sophie.growth_basis",
+     "from": "organic",
+     "to": "including_acquisitions"
+    },
+    {
+     "path": "investors.Sophie.acq_spend_deducted",
+     "from": false,
+     "to": true
+    },
+    {
+     "path": "investors.Sophie.fair_value_other_acquisition_basis",
+     "from": 120,
+     "to": 120
+    }
+   ]
+  }
+ ],
+ "joint_changed_inputs": []
+}

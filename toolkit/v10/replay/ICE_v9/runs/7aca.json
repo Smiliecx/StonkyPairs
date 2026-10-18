@@ -1,0 +1,773 @@
+{
+ "ticker": "ICE",
+ "unit": "USD millions",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner FCF",
+  "gross_source": "pack §3: OCF − capex − capitalized software − SBC (FY2025 = $3,633M)",
+  "basis_period": "FY2025",
+  "denominator_count_m": 566.0,
+  "period_weighted_count_m": 575.0,
+  "pack_as_of_date": "2026-06-30",
+  "valuation_date": "2026-06-30",
+  "per_share_count_m": 566.0,
+  "per_share_count_date": "2026-06-30",
+  "per_share_count_basis": "period",
+  "latest_share_count_m": 566.0,
+  "latest_share_count_date": "2026-06-30",
+  "balance_sheet_date": "2026-06-30",
+  "balance_sheet_add_per_share": -33.1784,
+  "gross_denominator_per_share": 6.4187,
+  "denominator_adjustments": [],
+  "declared_denominator_per_share": 6.4187,
+  "acq_cash_by_year": [
+   {
+    "year": 2021,
+    "amount": 66.0
+   },
+   {
+    "year": 2022,
+    "amount": 59.0
+   },
+   {
+    "year": 2023,
+    "amount": 10198.0
+   },
+   {
+    "year": 2024,
+    "amount": 38.0
+   },
+   {
+    "year": 2025,
+    "amount": 19.0
+   }
+  ],
+  "acq_spend_normalised_per_share": 0.0804,
+  "acq_spend_window": "FY2021,FY2022,FY2024,FY2025 (4yr); FY2023 Black Knight reweighted out as transformational",
+  "recent_acquisitions": [
+   {
+    "name": "Black Knight",
+    "close_date": "2023-09-05",
+    "months_in_basis_period": 0
+   },
+   {
+    "name": "ICE Digital Trust",
+    "close_date": "2025-05-01",
+    "months_in_basis_period": 8
+   }
+  ],
+  "alternative_denominator_type": "SBC-adjusted owner FCF",
+  "alternative_denominator_basis": "period",
+  "alternative_denominator_per_share": 5.9217,
+  "risk_free": 5.22,
+  "erp": 4.27,
+  "macro_base": 9.49,
+  "market_inputs_as_of": "2026-10-08",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating; compounder with cyclical transaction overlay",
+  "guidance_stance": "skeptical",
+  "weights": {
+   "Simon": 1.0,
+   "Marcus": 1.5,
+   "Sophie": 1.0,
+   "Claire": 1.5,
+   "Graham": 1.5,
+   "Walter": 1.0,
+   "Helena": 1.5,
+   "Alexander": 1.0
+  },
+  "peers_used": [
+   "CME Group",
+   "Nasdaq",
+   "Cboe",
+   "S&P Global",
+   "LSEG"
+  ]
+ },
+ "helena_floor": {
+  "floor_type": "no positive asset floor (negative tangible book)",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "§6 unrestricted cash 1,067",
+   "§6 customer A/R net 1,869",
+   "§6 total debt 19,846",
+   "§6 tangible book −15,951"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Simon",
+   "fair_value": 39.82,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 13.99,
+   "fair_value_rf_plus_50bp": 36.7,
+   "fair_value_macro_base": 89.83,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 35.94,
+   "fair_value_alternative_denominator": 34.11,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 55.89
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 39.82
+    },
+    {
+     "branch": "bear",
+     "p": 0.26,
+     "value": 21.77
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 1.41
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.9843,
+   "break_derivation": {
+    "mechanism": "Management trust breaks: repeated guidance raises prove systematic over-promise, mortgage franchise and volumes decline absolutely.",
+    "reference": "no reference in pack_3212.md",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1181,
+   "quality_premium": 0.2817,
+   "required_margin": 0.4,
+   "buy": 23.9,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3887.3,
+     "cash_flow_per_share": 6.868
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4159.4,
+     "cash_flow_per_share": 7.3488
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4409.0,
+     "cash_flow_per_share": 7.7897
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4673.5,
+     "cash_flow_per_share": 8.2571
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 4930.6,
+     "cash_flow_per_share": 8.7113
+    }
+   ]
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 56.85,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 11.49,
+   "fair_value_rf_plus_50bp": 51.94,
+   "fair_value_macro_base": 84.13,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 51.63,
+   "fair_value_alternative_denominator": 49.82,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 80.91
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 56.85
+    },
+    {
+     "branch": "bear",
+     "p": 0.26,
+     "value": 32.72
+    },
+    {
+     "branch": "break",
+     "p": 0.14,
+     "value": 7.2
+    }
+   ],
+   "break_p": 0.14,
+   "break_loss": 0.9144,
+   "break_derivation": {
+    "mechanism": "Incremental ROIC falls below cost of capital; capital deployed on M&A destroys value as FCF declines.",
+    "reference": "IMT GAAP op margin went 25%->(21)%->(8)%->1% FY2020-FY2025 (pack sec 2)",
+    "adjustment_pp": 4.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.128,
+   "quality_premium": 0.295,
+   "required_margin": 0.423,
+   "buy": 32.8,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3869.1,
+     "cash_flow_per_share": 6.8359
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4101.3,
+     "cash_flow_per_share": 7.2461
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4326.9,
+     "cash_flow_per_share": 7.6446
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4543.2,
+     "cash_flow_per_share": 8.0269
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 4747.7,
+     "cash_flow_per_share": 8.3881
+    }
+   ]
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 60.35,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.74,
+   "fair_value_rf_plus_50bp": 55.33,
+   "fair_value_macro_base": 92.61,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 54.92,
+   "fair_value_alternative_denominator": 53.04,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.24,
+     "value": 84.89
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 60.35
+    },
+    {
+     "branch": "bear",
+     "p": 0.24,
+     "value": 33.39
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 6.53
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.9295,
+   "break_derivation": {
+    "mechanism": "New-initiative catalysts (Treasury clearing) fail and volatility collapses; transaction revenue falls with fixed cost base.",
+    "reference": "no reference in pack_3212.md",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1115,
+   "quality_premium": 0.2683,
+   "required_margin": 0.38,
+   "buy": 37.42,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3923.6,
+     "cash_flow_per_share": 6.9322
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4217.9,
+     "cash_flow_per_share": 7.4521
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4513.2,
+     "cash_flow_per_share": 7.9738
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4784.0,
+     "cash_flow_per_share": 8.4522
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 5047.1,
+     "cash_flow_per_share": 8.9171
+    }
+   ]
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 64.72,
+   "quality_score": 82,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 59.03,
+   "fair_value_macro_base": 87.09,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 58.9,
+   "fair_value_alternative_denominator": 57.07,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.22,
+     "value": 92.21
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 64.72
+    },
+    {
+     "branch": "bear",
+     "p": 0.24,
+     "value": 36.68
+    },
+    {
+     "branch": "break",
+     "p": 0.1,
+     "value": 8.63
+    }
+   ],
+   "break_p": 0.1,
+   "break_loss": 0.9009,
+   "break_derivation": {
+    "mechanism": "Moat erodes: in-house LOS/competition take IMT share and energy volume normalises; pricing power lost.",
+    "reference": "IMT recurring revenue growth cut from mid-to-high single to low-single digits mid-2023 (pack sec13)",
+    "adjustment_pp": 0.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.0901,
+   "quality_premium": 0.2283,
+   "required_margin": 0.318,
+   "buy": 44.11,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3887.3,
+     "cash_flow_per_share": 6.868
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4140.0,
+     "cash_flow_per_share": 7.3145
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4388.4,
+     "cash_flow_per_share": 7.7533
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4629.7,
+     "cash_flow_per_share": 8.1798
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 4861.2,
+     "cash_flow_per_share": 8.5888
+    }
+   ]
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 53.77,
+   "quality_score": 75,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.99,
+   "fair_value_rf_plus_50bp": 49.27,
+   "fair_value_macro_base": 86.73,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 48.81,
+   "fair_value_alternative_denominator": 46.97,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 75.99
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 53.77
+    },
+    {
+     "branch": "bear",
+     "p": 0.26,
+     "value": 30.54
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 5.88
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.9323,
+   "break_derivation": {
+    "mechanism": "Negative tangible book + leverage force dilutive capital raise as cash flows decline.",
+    "reference": "no reference in pack_3212.md",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1119,
+   "quality_premium": 0.275,
+   "required_margin": 0.387,
+   "buy": 32.97,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3887.3,
+     "cash_flow_per_share": 6.868
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4140.0,
+     "cash_flow_per_share": 7.3145
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4388.4,
+     "cash_flow_per_share": 7.7533
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4629.7,
+     "cash_flow_per_share": 8.1798
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 4861.2,
+     "cash_flow_per_share": 8.5888
+    }
+   ]
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 51.48,
+   "quality_score": 70,
+   "quality_tier": "Average",
+   "discount_rate": 11.99,
+   "fair_value_rf_plus_50bp": 47.13,
+   "fair_value_macro_base": 83.38,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 46.68,
+   "fair_value_alternative_denominator": 44.86,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 73.06
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 51.48
+    },
+    {
+     "branch": "bear",
+     "p": 0.28,
+     "value": 29.72
+    },
+    {
+     "branch": "break",
+     "p": 0.14,
+     "value": 5.88
+    }
+   ],
+   "break_p": 0.14,
+   "break_loss": 0.9295,
+   "break_derivation": {
+    "mechanism": "Poor capital allocation (another lumpy low-IRR deal) compounds declining core FCF.",
+    "reference": "Black Knight stated expected IRR of 10% (pack sec 9)",
+    "adjustment_pp": 4.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1301,
+   "quality_premium": 0.3083,
+   "required_margin": 0.438,
+   "buy": 28.91,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3869.1,
+     "cash_flow_per_share": 6.8359
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4101.3,
+     "cash_flow_per_share": 7.2461
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4326.9,
+     "cash_flow_per_share": 7.6446
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4543.2,
+     "cash_flow_per_share": 8.0269
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 4747.7,
+     "cash_flow_per_share": 8.3881
+    }
+   ]
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 49.15,
+   "quality_score": 73,
+   "quality_tier": "Average",
+   "discount_rate": 11.74,
+   "fair_value_rf_plus_50bp": 45.02,
+   "fair_value_macro_base": 75.16,
+   "terminal_growth": 2.5,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 44.52,
+   "fair_value_alternative_denominator": 42.71,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 73.24
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 49.15
+    },
+    {
+     "branch": "bear",
+     "p": 0.26,
+     "value": 30.21
+    },
+    {
+     "branch": "break",
+     "p": 0.14,
+     "value": 6.53
+    }
+   ],
+   "break_p": 0.14,
+   "break_loss": 0.9132,
+   "break_derivation": {
+    "mechanism": "Permanent mortgage franchise erosion; no asset floor (negative tangible book) to catch value.",
+    "reference": "Mortgage lending volume decreased substantially from early 2022 (pack sec 12)",
+    "adjustment_pp": 4.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1278,
+   "quality_premium": 0.2883,
+   "required_margin": 0.416,
+   "buy": 28.69,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3851.0,
+     "cash_flow_per_share": 6.8039
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4062.8,
+     "cash_flow_per_share": 7.1781
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4265.9,
+     "cash_flow_per_share": 7.537
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4457.9,
+     "cash_flow_per_share": 7.8761
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 4636.2,
+     "cash_flow_per_share": 8.1912
+    }
+   ]
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 81.29,
+   "quality_score": 86,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 74.22,
+   "fair_value_macro_base": 98.72,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": true,
+   "fair_value_other_acquisition_basis": 74.35,
+   "fair_value_alternative_denominator": 72.35,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.22,
+     "value": 115.11
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 81.29
+    },
+    {
+     "branch": "bear",
+     "p": 0.22,
+     "value": 47.44
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 14.51
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.853,
+   "break_derivation": {
+    "mechanism": "Accounting artifacts (goodwill/non-GAAP) mask deteriorating cash earnings; FCF conversion falls below 0.7.",
+    "reference": "FCF/NI was 0.66x in FY2021 (pack sec 3)",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1024,
+   "quality_premium": 0.197,
+   "required_margin": 0.299,
+   "buy": 56.95,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "SBC-adjusted owner FCF = OCF − capex − capitalized software − SBC (pack §3), FY2025 base $3,633M ÷ 566M = $6.4187/sh, grown along the seat path; company total = per share × 566M. Before any acquisition-spend deduction.",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 6,
+     "cash_flow_total": 3887.3,
+     "cash_flow_per_share": 6.868
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4140.0,
+     "cash_flow_per_share": 7.3145
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 4388.4,
+     "cash_flow_per_share": 7.7533
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 4629.7,
+     "cash_flow_per_share": 8.1798
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 4861.2,
+     "cash_flow_per_share": 8.5888
+    }
+   ]
+  }
+ ],
+ "committee_median_fv": 55.31,
+ "quality_tier_modal": "Average",
+ "headline_buy": 35.5
+}

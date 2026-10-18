@@ -1,0 +1,62 @@
+{
+ "rulings": [
+  {
+   "finding": "Finding 1 — upside and bear_soft branches carry no input-change line (Rule 5 / STAGE2 Mechanics)",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "Finding 2 — comparable check not converted to the declared owner-FCF basis (Rule 1)",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "Finding 3 — period_weighted_count_m is the Q2'26 count (566), not the FY2025 basis-period count (575)",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "Finding 4 — Walter's fair_value_macro_base retains the x1.05 steward grade",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "Finding 5 — denominator and downside levels rest on stated assumptions a reviewer could set differently",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "spec_change_or_null": null,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  }
+ ],
+ "joint_changed_inputs": [],
+ "script_joint_delta": 0.0,
+ "script_adjusted_headline": 41.4
+}

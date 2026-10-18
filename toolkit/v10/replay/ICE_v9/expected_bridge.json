@@ -1,0 +1,7 @@
+{
+ "published": 44.9523366855127,
+ "macro": 60.0418784133439,
+ "macro_no_simon": 60.37592833382294,
+ "off": 48,
+ "note": "ICE v9 (2026-10-13) per-run data; values from bridge.py at toolkit v10 build, checked against the in-test hand computation"
+}

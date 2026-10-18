@@ -1,0 +1,116 @@
+{
+ "ticker": "ADBE",
+ "unit": "USD per share",
+ "as_of": "2026-09-10",
+ "first_v7_ticker": true,
+ "market_inputs": {
+  "path": "market/MARKET_INPUTS_2026-09-10_USD.md",
+  "sha256": "6ed0b9374a54e5c6ea78d78ec7513316a499d9114a2c761c25022adfaf741600",
+  "currency": "USD",
+  "risk_free": 4.95,
+  "erp": 4.09
+ },
+ "runs": [
+  {
+   "token": "u7",
+   "dossier": "A",
+   "k": 0.3525390242024753,
+   "j": 1.3605746888183572,
+   "run_file": "replay/ADBE_v7/summaries/u7.json"
+  },
+  {
+   "token": "w6",
+   "dossier": "A",
+   "k": 3.2323003602936655,
+   "j": 0.7191759415979485,
+   "run_file": "replay/ADBE_v7/summaries/w6.json"
+  },
+  {
+   "token": "g9",
+   "dossier": "A",
+   "k": 2.1290136400967463,
+   "j": 1.6185946651364307,
+   "run_file": "replay/ADBE_v7/summaries/g9.json"
+  },
+  {
+   "token": "m4",
+   "dossier": "A",
+   "k": 0.3063624818755314,
+   "j": 0.7096823584620345,
+   "run_file": "replay/ADBE_v7/summaries/m4.json"
+  },
+  {
+   "token": "g8",
+   "dossier": "B",
+   "k": 0.3010128595465014,
+   "j": 1.37808006827184,
+   "run_file": "replay/ADBE_v7/summaries/g8.json"
+  },
+  {
+   "token": "f8",
+   "dossier": "B",
+   "k": 0.2960143970969084,
+   "j": 0.653285195040974,
+   "run_file": "replay/ADBE_v7/summaries/f8.json"
+  },
+  {
+   "token": "d8",
+   "dossier": "B",
+   "k": 2.6272630139480957,
+   "j": 0.7800887891759832,
+   "run_file": "replay/ADBE_v7/summaries/d8.json"
+  },
+  {
+   "token": "n7",
+   "dossier": "B",
+   "k": 3.3577842800926216,
+   "j": 1.426288280073674,
+   "run_file": "replay/ADBE_v7/summaries/n7.json"
+  }
+ ],
+ "bridge_runs": [
+  {
+   "token": "j6",
+   "dossier": "A",
+   "run_file": "replay/ADBE_v7/summaries/j6.json"
+  },
+  {
+   "token": "p2",
+   "dossier": "B",
+   "run_file": "replay/ADBE_v7/summaries/p2.json"
+  }
+ ],
+ "probe": {
+  "A": {
+   "result": "IDENTIFIED",
+   "confidence": "about 95%",
+   "named": "Adobe Inc. (ADBE)"
+  },
+  "B": {
+   "result": "IDENTIFIED",
+   "confidence": "about 97%",
+   "named": "Adobe Inc. (ADBE)"
+  }
+ },
+ "methodology_note_fields": [],
+ "season_prior_v7_rows": [],
+ "stage7": "not run",
+ "mandate": "NONE",
+ "verifications": {
+  "u7": "replay/ADBE_v7/verifications/u7.json",
+  "w6": "replay/ADBE_v7/verifications/w6.json",
+  "g9": "replay/ADBE_v7/verifications/g9.json",
+  "m4": "replay/ADBE_v7/verifications/m4.json",
+  "g8": "replay/ADBE_v7/verifications/g8.json",
+  "f8": "replay/ADBE_v7/verifications/f8.json",
+  "d8": "replay/ADBE_v7/verifications/d8.json",
+  "n7": "replay/ADBE_v7/verifications/n7.json"
+ },
+ "thin_metrics": [
+  "Share count",
+  "SBC / Stock-based compensation",
+  "Capex",
+  "Cash flow / Operating cash flow and FCF",
+  "Tax"
+ ]
+}

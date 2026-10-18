@@ -1,0 +1,512 @@
+{
+ "ticker": "the Company",
+ "unit": "USD per share",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner FCF per diluted share (OCF - capex - SBC)",
+  "gross_source": "pack_s8.md section 4, TTM Q3 FY2026: Operating cash flow 7,669 minus Capex 152 = 7,517 ($M)",
+  "basis_period": "TTM through Q3 FY2026 (ended 2026-08-28)",
+  "share_count_m": 86.0,
+  "pack_as_of_date": "2026-09-10",
+  "valuation_date": "2026-09-10",
+  "per_share_count_m": 86.0,
+  "per_share_count_date": "2026-08-28",
+  "latest_share_count_m": 86.0,
+  "latest_share_count_date": "2026-08-28",
+  "balance_sheet_date": "2026-08-28",
+  "balance_sheet_add_per_share": -5.98,
+  "gross_denominator_per_share": 87.41,
+  "denominator_adjustments": [
+   {
+    "item": "Stock-based compensation (TTM cash-flow line, $1,470M)",
+    "per_share": -17.1,
+    "reason": "SBC is a real cost (FRAMEWORK owner-FCF definition)"
+   }
+  ],
+  "declared_denominator_per_share": 70.31,
+  "alternative_denominator_type": "TTM GAAP net income per diluted share",
+  "alternative_denominator_per_share": 60.1,
+  "risk_free": 4.95,
+  "erp": 4.09,
+  "macro_base": 9.04,
+  "market_inputs_as_of": "2026-09-10",
+  "erp_departure_reason_or_null": null,
+  "business_type": "Operating; mature subscription-software compounder facing AI transition",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Victor": 1.0,
+   "Simon": 1.25,
+   "Marcus": 1.25,
+   "Sophie": 0.75,
+   "Claire": 1.75,
+   "Max": 0.75,
+   "Graham": 1.0,
+   "Walter": 1.25,
+   "Helena": 0.75,
+   "Alexander": 1.0
+  },
+  "peers_used": []
+ },
+ "helena_floor": {
+  "floor_type": "none (real and collectible assets net of all liabilities negative; tangible book negative)",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "Cash & equivalents 3,094 (Q3 FY2026)",
+   "Short-term investments 908",
+   "Trade receivables, net 1,477",
+   "Total assets 21,277",
+   "Total stockholders' equity 8,349 (total liabilities 12,928)",
+   "Goodwill 9,962",
+   "Other intangibles, net 678"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Victor",
+   "fair_value": 1351.46,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 1257.26,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.15,
+     "value": 1778.87
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1351.46
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 936.3
+    },
+    {
+     "branch": "bear_2",
+     "p": 0.1,
+     "value": 738.37
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 374.37
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.723,
+   "break_derivation": {
+    "mechanism": "Generative-AI substitutes and freemium cannibalisation erode paid seats so owner FCF falls ~10%/yr for five years and the market capitalises the remnant at a distress 7x.",
+    "reference": "1 of 5 named revenue franchises with a pack revenue series (Segment 1, Segment 2, Segment 3, Product group 1, Product group 2) broke over FY2020-FY2025: Segment 3 revenue ~0.36B -> ~0.18B (pack 1.2) and a $50M goodwill impairment (pack 7) = 20% per ~5 years",
+    "adjustment_pp": -5
+   },
+   "tail_term": 0.1084,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3334,
+   "buy": 877.24,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Simon",
+   "fair_value": 1065.55,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 12.04,
+   "fair_value_rf_plus_50bp": 1006.04,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.15,
+     "value": 1332.4
+    },
+    {
+     "branch": "base",
+     "p": 0.47,
+     "value": 1065.55
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 746.63
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 326.22
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.6938,
+   "break_derivation": {
+    "mechanism": "Paid-seat erosion from AI-native tools turns subscription revenue down and owner FCF falls ~10%/yr for five years, exiting at 6x.",
+    "reference": "1 of 3 reportable segments (Segment 3) broke over FY2020-FY2025 (revenue ~0.36B -> ~0.18B, pack 1.2; goodwill impairment Q2 FY2026, pack 7) = 33% per ~5 years",
+    "adjustment_pp": -20
+   },
+   "tail_term": 0.0902,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4152,
+   "buy": 623.13,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 1614.5,
+   "quality_score": 82,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 1489.17,
+   "terminal_growth": 3.5,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 2090.02
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 1614.5
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 1068.62
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 410.77
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7456,
+   "break_derivation": {
+    "mechanism": "Returns on new capital collapse as AI competition commoditises the core tools, so owner FCF declines ~8%/yr for five years and exits at 7x.",
+    "reference": "1 of 5 named revenue franchises with a pack revenue series broke over FY2020-FY2025 (Segment 3, pack 1.2) = 20% per ~5 years",
+    "adjustment_pp": -8
+   },
+   "tail_term": 0.0895,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3145,
+   "buy": 1106.79,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 1345.31,
+   "quality_score": 77,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 1253.71,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.18,
+     "value": 1716.29
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 1345.31
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 887.16
+    },
+    {
+     "branch": "break",
+     "p": 0.17,
+     "value": 362.81
+    }
+   ],
+   "break_p": 0.17,
+   "break_loss": 0.7303,
+   "break_derivation": {
+    "mechanism": "A failed freemium-to-paid conversion leaves the paid base shrinking, owner FCF falls ~10%/yr for five years and exits at 7x.",
+    "reference": "1 of 5 named revenue franchises with a pack revenue series broke over FY2020-FY2025 (Segment 3, pack 1.2) = 20% per ~5 years",
+    "adjustment_pp": -3
+   },
+   "tail_term": 0.1242,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3492,
+   "buy": 875.59,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 1139.01,
+   "quality_score": 68,
+   "quality_tier": "Average",
+   "discount_rate": 10.54,
+   "fair_value_rf_plus_50bp": 1068.87,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.12,
+     "value": 1480.38
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1139.01
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 833.84
+    },
+    {
+     "branch": "break",
+     "p": 0.25,
+     "value": 315.66
+    }
+   ],
+   "break_p": 0.25,
+   "break_loss": 0.7229,
+   "break_derivation": {
+    "mechanism": "AI-native creative tools make the core seat-based suites substitutable, so paid ARR contracts and owner FCF falls ~12%/yr for five years, exiting at 6x.",
+    "reference": "1 of 5 named revenue franchises with a pack revenue series broke over FY2020-FY2025 (Segment 3, pack 1.2) = 20% per ~5 years; Product 7's standalone business also declined faster than expected (pack 7)",
+    "adjustment_pp": 5
+   },
+   "tail_term": 0.1807,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.5057,
+   "buy": 562.99,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Max",
+   "fair_value": 1214.74,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.79,
+   "fair_value_rf_plus_50bp": 1137.45,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.17,
+     "value": 1582.33
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 1214.74
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 855.04
+    },
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 313.07
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.7423,
+   "break_derivation": {
+    "mechanism": "Paid ARR contracts under AI substitution; owner FCF falls ~12%/yr for five years and exits at 6x.",
+    "reference": "1 of 5 named revenue franchises with a pack revenue series broke over FY2020-FY2025 (Segment 3, pack 1.2) = 20% per ~5 years",
+    "adjustment_pp": -2
+   },
+   "tail_term": 0.1336,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3586,
+   "buy": 911.5,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 1339.03,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 1248.21,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.17,
+     "value": 1708.47
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 1339.03
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 907.58
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 371.16
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7228,
+   "break_derivation": {
+    "mechanism": "Seat erosion turns subscription revenue down; owner FCF falls ~10%/yr for five years and exits at 7x.",
+    "reference": "1 of 5 named revenue franchises with a pack revenue series broke over FY2020-FY2025 (Segment 3, pack 1.2) = 20% per ~5 years",
+    "adjustment_pp": -5
+   },
+   "tail_term": 0.1084,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4334,
+   "buy": 758.66,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 1389.61,
+   "quality_score": 70,
+   "quality_tier": "Average",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 1285.36,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.15,
+     "value": 1792.66
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 1389.61
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 899.53
+    },
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 330.97
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.7618,
+   "break_derivation": {
+    "mechanism": "A strategy reset under the new CEO fails to stop paid-seat erosion; owner FCF falls ~10%/yr for five years and exits at 6.5x.",
+    "reference": "1 of 3 reportable segments (Segment 3) broke over FY2020-FY2025 (pack 1.2, 7) = 33% per ~5 years",
+    "adjustment_pp": -15
+   },
+   "tail_term": 0.1371,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4621,
+   "buy": 747.43,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 1314.56,
+   "quality_score": 77,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 1223.31,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.16,
+     "value": 1778.87
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 1314.56
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 936.3
+    },
+    {
+     "branch": "break",
+     "p": 0.14,
+     "value": 320.93
+    }
+   ],
+   "break_p": 0.14,
+   "break_loss": 0.7559,
+   "break_derivation": {
+    "mechanism": "Franchise erosion: owner FCF falls ~12%/yr for five years and the remnant is valued at 6x (her erosion floor).",
+    "reference": "1 of 5 named revenue franchises with a pack revenue series broke over FY2020-FY2025 (Segment 3, pack 1.2) = 20% per ~5 years",
+    "adjustment_pp": -6
+   },
+   "tail_term": 0.1058,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3308,
+   "buy": 879.68,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 1443.35,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 1339.03,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.18,
+     "value": 1854.93
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 1443.35
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 966.88
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 393.89
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7271,
+   "break_derivation": {
+    "mechanism": "AI substitution shrinks the paid base; owner FCF falls ~9%/yr for five years and exits at 7x.",
+    "reference": "no reference in pack_s8.md",
+    "adjustment_pp": 2
+   },
+   "tail_term": 0.0873,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3123,
+   "buy": 992.66,
+   "no_buy": false,
+   "irr_entry": false
+  }
+ ],
+ "committee_median_fv": 1342.17,
+ "quality_tier_modal": "High Quality",
+ "headline_buy": 794.41
+}

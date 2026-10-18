@@ -1,0 +1,504 @@
+{
+ "ticker": "the Company",
+ "unit": "USD per share",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner FCF per share (OCF - capex - SBC)",
+  "gross_source": "pack_b6 §4 TTM Free cash flow 14,597 minus Stock-based compensation 2,854 = FCF minus SBC 11,743 $M",
+  "basis_period": "TTM Q4 FY2025-Q3 FY2026 (ended 2026-08-28)",
+  "share_count_m": 168.5,
+  "pack_as_of_date": "2026-08-28",
+  "valuation_date": "2026-08-28",
+  "per_share_count_m": 164.0,
+  "per_share_count_date": "2026-08-28",
+  "latest_share_count_m": 164.0,
+  "latest_share_count_date": "2026-08-28",
+  "balance_sheet_date": "2026-08-28",
+  "balance_sheet_add_per_share": -6.09,
+  "gross_denominator_per_share": 69.69,
+  "denominator_adjustments": [],
+  "declared_denominator_per_share": 69.69,
+  "alternative_denominator_type": "TTM GAAP net income per diluted share",
+  "alternative_denominator_per_share": 59.57,
+  "risk_free": 4.95,
+  "erp": 4.09,
+  "macro_base": 9.04,
+  "market_inputs_as_of": "2026-09-10",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating; subscription software; mature compounder with technology-disruption risk",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Victor": 1.0,
+   "Simon": 1.5,
+   "Marcus": 1.0,
+   "Sophie": 0.75,
+   "Claire": 1.75,
+   "Max": 0.5,
+   "Graham": 1.0,
+   "Walter": 1.25,
+   "Helena": 1.0,
+   "Alexander": 1.25
+  },
+  "peers_used": []
+ },
+ "helena_floor": {
+  "floor_type": "none (tangible book -4,449 $M and NCAV -12,484 $M at 2026-08-28)",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "§5 Total assets 41,316",
+   "§5 Goodwill 19,344",
+   "§5 Other intangibles, net 1,317",
+   "§5 Total stockholders' equity 16,212",
+   "§5 Total current assets 12,620"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Victor",
+   "fair_value": 1454.65,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 1347.32,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 1734.67
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1454.65
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 1149.27
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 388.51
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7329,
+   "break_derivation": {
+    "mechanism": "AI-native substitutes commoditise the core creative/document subscription so FCF−SBC falls ~40% within three years and the business is re-rated to a distressed 8x trough owner-FCF.",
+    "reference": "pack §2a: of the three segments reported FY2021–FY2025, one (Segment 3) shrank in absolute terms every year (548→353, −36%) and had its goodwill impaired in Q2 FY2026 (§2a, §8): 1 of 3 segments broke over 5 years ≈ 33%.",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1099,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3349,
+   "buy": 1138.41,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Simon",
+   "fair_value": 1074.29,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 12.04,
+   "fair_value_rf_plus_50bp": 1014.91,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.15,
+     "value": 1227.91
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1074.29
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.3,
+     "value": 858.8
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 391.93
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.6352,
+   "break_derivation": {
+    "mechanism": "Disclosure changes are masking a structural decline: FCF−SBC falls 35% within three years as the core subscription base shrinks and the business is re-rated to 8x trough owner-FCF.",
+    "reference": "pack §2a/§8: Segment 3 — 1 of 3 reported segments — declined every year FY2021–FY2025 and was impaired in Q2 FY2026 ≈ 33% over 5 years.",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.0953,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4203,
+   "buy": 622.79,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 1575.14,
+   "quality_score": 85,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.29,
+   "fair_value_rf_plus_50bp": 1445.39,
+   "terminal_growth": 3.5,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 1744.8
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 1575.14
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 1124.28
+    },
+    {
+     "branch": "break",
+     "p": 0.1,
+     "value": 484.8
+    }
+   ],
+   "break_p": 0.1,
+   "break_loss": 0.6922,
+   "break_derivation": {
+    "mechanism": "Incremental returns collapse below the cost of capital as AI tools erode pricing, FCF−SBC falls 30% within three years and the business is re-rated to 9x trough owner-FCF.",
+    "reference": "pack §2a/§8: Segment 3 (1 of 3 reported segments) shrank every year FY2021–FY2025 and was impaired Q2 FY2026 ≈ 33% over 5 years.",
+    "adjustment_pp": -23
+   },
+   "tail_term": 0.0692,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.2942,
+   "buy": 1111.7,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 1410.39,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 1309.68,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull_freemium",
+     "p": 0.1,
+     "value": 1696.4
+    },
+    {
+     "branch": "bull_pricing",
+     "p": 0.1,
+     "value": 1528.96
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1410.39
+    },
+    {
+     "branch": "bear_ceo_arr",
+     "p": 0.25,
+     "value": 1131.96
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 353.71
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7492,
+   "break_derivation": {
+    "mechanism": "The freemium pivot cannibalises paid seats (strategy 'explicitly traded near-term ARR for user acquisition', §9c) and AI substitutes erode pricing, so FCF−SBC falls 40% within three years and the business trades at a distressed 7x.",
+    "reference": "pack §2a/§9b: Segment 3 (1 of 3 reported segments) declined every year FY2021–FY2025; Product line 3 (~$620M) is 'declining faster than expected' (Q1 FY26) — 1 of 3 segments ≈ 33% over 5 years.",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1124,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3374,
+   "buy": 934.55,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 1188.47,
+   "quality_score": 66,
+   "quality_tier": "Average",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 1113.76,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.15,
+     "value": 1390.73
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1188.47
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 968.1
+    },
+    {
+     "branch": "break",
+     "p": 0.25,
+     "value": 274.07
+    }
+   ],
+   "break_p": 0.25,
+   "break_loss": 0.7694,
+   "break_derivation": {
+    "mechanism": "Well-funded AI-native tools take the entry and mid tiers, the freemium strategy fails to convert, and FCF−SBC halves within three years with the multiple at a disruption-level 6x.",
+    "reference": "pack §2a/§8: Segment 3, 1 of 3 reported segments, declined every year FY2021–FY2025 and was impaired ≈ 33% over 5 years.",
+    "adjustment_pp": -8
+   },
+   "tail_term": 0.1923,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.5173,
+   "buy": 573.62,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Max",
+   "fair_value": 1399.0,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 1299.21,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull_q4",
+     "p": 0.2,
+     "value": 1662.51
+    },
+    {
+     "branch": "base",
+     "p": 0.35,
+     "value": 1399.0
+    },
+    {
+     "branch": "bear_q4",
+     "p": 0.25,
+     "value": 1109.05
+    },
+    {
+     "branch": "break",
+     "p": 0.2,
+     "value": 329.0
+    }
+   ],
+   "break_p": 0.2,
+   "break_loss": 0.7648,
+   "break_derivation": {
+    "mechanism": "The Q4 ARR miss is the first visible sign of AI substitution; FCF−SBC falls 45% in three years and the stock is re-rated to a distressed 7x.",
+    "reference": "pack §2a/§8: Segment 3 (1 of 3 reported segments) declined every year FY2021–FY2025 and was impaired ≈ 33% over 5 years.",
+    "adjustment_pp": -13
+   },
+   "tail_term": 0.153,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.378,
+   "buy": 1025.84,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 1352.05,
+   "quality_score": 77,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 1259.4,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.15,
+     "value": 1576.81
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1352.05
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.3,
+     "value": 1075.63
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 411.1
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.6959,
+   "break_derivation": {
+    "mechanism": "Pricing collapses under AI substitution so FCF−SBC falls 35% in three years and the multiple compresses to 8x.",
+    "reference": "pack §2a/§8: 1 of 3 reported segments (Segment 3) declined every year FY2021–FY2025 ≈ 33% over 5 years.",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1044,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3294,
+   "buy": 906.69,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 1340.46,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 1241.28,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.15,
+     "value": 1561.2
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1340.46
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.3,
+     "value": 1034.34
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 349.66
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7392,
+   "break_derivation": {
+    "mechanism": "Capital misallocated into defending a shrinking franchise while FCF−SBC falls 40% in three years; distressed 8x.",
+    "reference": "pack §2a/§8: Segment 3 (1 of 3 reported segments) declined every year FY2021–FY2025 and was impaired ≈ 33% over 5 years.",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1109,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4359,
+   "buy": 756.19,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 1272.47,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 1187.51,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 1468.59
+    },
+    {
+     "branch": "base",
+     "p": 0.35,
+     "value": 1272.47
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 1010.91
+    },
+    {
+     "branch": "break",
+     "p": 0.2,
+     "value": 299.24
+    }
+   ],
+   "break_p": 0.2,
+   "break_loss": 0.7648,
+   "break_derivation": {
+    "mechanism": "Erosion case: the franchise breaks, FCF−SBC falls 45% within three years and the business is worth only her erosion multiple of 6x trough owner-FCF.",
+    "reference": "pack §2a/§8: Segment 3 (1 of 3 reported segments) declined every year FY2021–FY2025 and its goodwill was impaired Q2 FY2026 ≈ 33% over 5 years.",
+    "adjustment_pp": -13
+   },
+   "tail_term": 0.153,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.378,
+   "buy": 791.52,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 1418.55,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 9.64,
+   "fair_value_rf_plus_50bp": 1315.42,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull_1",
+     "p": 0.15,
+     "value": 1670.86
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 1418.55
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.3,
+     "value": 1132.84
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 354.97
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7498,
+   "break_derivation": {
+    "mechanism": "Reported metrics mask a shrinking paid base; FCF−SBC falls 40% in three years and the business trades at 7x.",
+    "reference": "pack §2a/§8: Segment 3 (1 of 3 reported segments) declined every year FY2021–FY2025 and was impaired ≈ 33% over 5 years.",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1125,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4375,
+   "buy": 797.98,
+   "no_buy": false,
+   "irr_entry": false
+  }
+ ],
+ "committee_median_fv": 1375.52,
+ "quality_tier_modal": "High Quality",
+ "headline_buy": 778.06
+}

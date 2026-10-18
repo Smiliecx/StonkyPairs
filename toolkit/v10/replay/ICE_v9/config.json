@@ -1,0 +1,98 @@
+{
+ "ticker": "ICE",
+ "unit": "USD per share",
+ "as_of": "2026-10-08",
+ "model": "claude-opus-4-8",
+ "first_v7_ticker": false,
+ "market_inputs": {
+  "path": "/home/claude/market/MARKET_INPUTS_2026-10-08_USD.md",
+  "sha256": "188be7f18888203cbf7fb5f0e10aebf8d926abd68fa580d47724c8b5a437b0a3",
+  "currency": "USD",
+  "risk_free": 5.22,
+  "erp": 4.27
+ },
+ "runs": [
+  {
+   "token": "30d9",
+   "dossier": "A",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/30d9.json"
+  },
+  {
+   "token": "29eb",
+   "dossier": "A",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/29eb.json"
+  },
+  {
+   "token": "7e13",
+   "dossier": "A",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/7e13.json"
+  },
+  {
+   "token": "7aca",
+   "dossier": "A",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/7aca.json"
+  },
+  {
+   "token": "9d63",
+   "dossier": "B",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/9d63.json"
+  },
+  {
+   "token": "2253",
+   "dossier": "B",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/2253.json"
+  },
+  {
+   "token": "a806",
+   "dossier": "B",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/a806.json"
+  },
+  {
+   "token": "1060",
+   "dossier": "B",
+   "k": 1.0,
+   "j": 1.0,
+   "run_file": "runs/1060.json"
+  }
+ ],
+ "bridge_runs": [],
+ "probe": {},
+ "methodology_note_fields": [],
+ "season_prior_v7_rows": [],
+ "spec_version": "v9",
+ "stage7": "not run",
+ "mandate": "NONE",
+ "verifications": {
+  "30d9": "verifications/30d9.json",
+  "29eb": "verifications/29eb.json",
+  "7e13": "verifications/7e13.json",
+  "7aca": "verifications/7aca.json",
+  "9d63": "verifications/9d63.json",
+  "2253": "verifications/2253.json",
+  "a806": "verifications/a806.json",
+  "1060": "verifications/1060.json"
+ },
+ "thin_metrics": [
+  "Cash flow (A, B)",
+  "Capex (A, B)",
+  "SBC (A, B)",
+  "Share count (A, B)",
+  "Tax (A, B)",
+  "Acquisitions (A, B)"
+ ],
+ "thin_unmatched": []
+}

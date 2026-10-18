@@ -1,0 +1,517 @@
+{
+ "ticker": "ADBE",
+ "unit": "USD per share",
+ "frame": {
+  "denominator_type": "TTM SBC-adjusted owner FCF per share ((OCF - capex - SBC) / diluted shares)",
+  "gross_source": "pack_m2.md s4 Cash Flow Inputs, TTM Q3 FY2026 column: Operating cash flow 10,806; Capex 214; OCF-capex line 10,592 ($M)",
+  "basis_period": "TTM ended 2026-08-28 (Q4 FY2025 + Q1-Q3 FY2026)",
+  "share_count_m": 395.0,
+  "pack_as_of_date": "2026-09-10",
+  "valuation_date": "2026-09-10",
+  "per_share_count_m": 395.0,
+  "per_share_count_date": "2026-08-28",
+  "latest_share_count_m": 395.0,
+  "latest_share_count_date": "2026-08-28",
+  "balance_sheet_date": "2026-08-28",
+  "balance_sheet_add_per_share": -1.833,
+  "gross_denominator_per_share": 26.815,
+  "denominator_adjustments": [
+   {
+    "item": "Stock-based compensation, TTM cash-flow line ($2,071M)",
+    "per_share": -5.243,
+    "reason": "SBC is a real cost; framework requires SBC-adjusted owner FCF; CF line matches the cash basis of the gross figure"
+   }
+  ],
+  "declared_denominator_per_share": 21.572,
+  "alternative_denominator_type": "TTM GAAP net income per share ($7,284M / 395M)",
+  "alternative_denominator_per_share": 18.44,
+  "risk_free": 4.95,
+  "erp": 4.09,
+  "macro_base": 9.04,
+  "market_inputs_as_of": "2026-09-10",
+  "erp_departure_reason_or_null": null,
+  "business_type": "Operating; mature subscription-software compounder with contested AI-substitution durability (not cyclical, not turnaround)",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Victor": 1.0,
+   "Simon": 1.25,
+   "Marcus": 1.25,
+   "Sophie": 0.75,
+   "Claire": 1.75,
+   "Max": 0.5,
+   "Graham": 1.0,
+   "Walter": 1.25,
+   "Helena": 1.0,
+   "Alexander": 1.0
+  },
+  "peers_used": []
+ },
+ "helena_floor": {
+  "floor_type": "none (real and collectible assets net of all liabilities negative; tangible book negative)",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "s5.1 Cash & equivalents Q3 FY2026 4,359",
+   "s5.1 Short-term investments 1,280",
+   "s5.1 Trade receivables, net 2,081",
+   "s5.1 Total assets 29,981",
+   "s5.1 Total stockholders' equity 11,764 (=> total liabilities 18,217)",
+   "s5.1 Goodwill 14,037",
+   "s5.1 Other intangibles, net 956"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Victor",
+   "fair_value": 414.62,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 385.72,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 115.9
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 334.79
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 414.62
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 489.05
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7205,
+   "break_derivation": {
+    "mechanism": "Generative-AI substitutes and Adobe's own freemium shift cut paid Creative/Document seats so that net new ARR turns negative and SBC-adjusted owner FCF falls ~7%/yr in absolute terms, valued at the continuing-decline multiple.",
+    "reference": "1 of 3 reportable segments broke over FY2020-Q3 FY2026: Publishing & Advertising revenue ~0.51B (FY2020) -> ~0.26B (FY2025), -49%, then a $70M goodwill impairment in Q2 FY2026 (pack s1.2, s3.2, s7) = 33.3% per ~6.7 years",
+    "adjustment_pp": -18.3
+   },
+   "tail_term": 0.1081,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4331,
+   "buy": 323.5,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Simon",
+   "fair_value": 335.67,
+   "quality_score": 66,
+   "quality_tier": "Average",
+   "discount_rate": 12.04,
+   "fair_value_rf_plus_50bp": 316.83,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 97.2
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.27,
+     "value": 269.52
+    },
+    {
+     "branch": "base",
+     "p": 0.35,
+     "value": 335.67
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 382.92
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.7104,
+   "break_derivation": {
+    "mechanism": "AI substitution plus a leadership vacuum lets paid-seat erosion run unchecked, so owner FCF falls ~8%/yr in absolute terms and is valued at the continuing-decline multiple.",
+    "reference": "1 of 3 reportable segments (Publishing & Advertising) broke over FY2020-Q3 FY2026 (s1.2, s3.2, s7) = 33.3%",
+    "adjustment_pp": -15.3
+   },
+   "tail_term": 0.1279,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4529,
+   "buy": 183.65,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 441.1,
+   "quality_score": 84,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.29,
+   "fair_value_rf_plus_50bp": 407.34,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 141.58
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 362.59
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 441.1
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 507.61
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.679,
+   "break_derivation": {
+    "mechanism": "AI substitution migrates creative and document workflows off paid Adobe seats, NOPAT and owner FCF fall ~5%/yr in absolute terms, and the continuing-decline multiple applies.",
+    "reference": "1 of 7 named products with a stated performance trend (Stock, Acrobat AI Assistant, Firefly, Express/Acrobat MAU, Frame.io, GenStudio group, Semrush; s7, s8.2) is declining faster than expected (Adobe Stock, Q1 FY2026) over FY2025-Q3 FY2026 = 14.3%",
+    "adjustment_pp": -2.3
+   },
+   "tail_term": 0.0815,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3065,
+   "buy": 305.91,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 450.96,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 418.28,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 126.59
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 356.4
+    },
+    {
+     "branch": "base",
+     "p": 0.35,
+     "value": 450.96
+    },
+    {
+     "branch": "bull_pricing",
+     "p": 0.15,
+     "value": 508.43
+    },
+    {
+     "branch": "bull_ai",
+     "p": 0.1,
+     "value": 552.05
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7193,
+   "break_derivation": {
+    "mechanism": "Freemium cannibalisation and AI substitutes convert paid users to free tiers faster than AI-first ARR replaces them; owner FCF falls ~6%/yr and the continuing-decline multiple applies.",
+    "reference": "1 of 7 named products with a stated performance trend (Adobe Stock: 'steeper decline than we expected', Q1 FY2026; s7, s8.2) = 14.3% over FY2025-Q3 FY2026",
+    "adjustment_pp": 0.7
+   },
+   "tail_term": 0.1079,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4329,
+   "buy": 255.74,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 363.69,
+   "quality_score": 66,
+   "quality_tier": "Average",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 340.06,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.22,
+     "value": 95.05
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.26,
+     "value": 303.5
+    },
+    {
+     "branch": "base",
+     "p": 0.35,
+     "value": 363.69
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.17,
+     "value": 450.39
+    }
+   ],
+   "break_p": 0.22,
+   "break_loss": 0.7387,
+   "break_derivation": {
+    "mechanism": "AI-native tools and free tiers strip pricing power from the creative franchise; paid seats shrink, net new ARR turns negative and owner FCF falls ~10%/yr, valued at the continuing-decline multiple.",
+    "reference": "1 of 3 reportable segments (Publishing & Advertising) broke over FY2020-Q3 FY2026 (s1.2, s3.2, s7) = 33.3%",
+    "adjustment_pp": -11.3
+   },
+   "tail_term": 0.1625,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4875,
+   "buy": 186.39,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Max",
+   "fair_value": 447.98,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 414.62,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 111.32
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.22,
+     "value": 359.32
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 447.98
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 529.32
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.7515,
+   "break_derivation": {
+    "mechanism": "Q4 FY2026 and FY2027 net new ARR keep falling as AI substitutes and freemium erode paid seats; owner FCF falls ~8%/yr and the continuing-decline multiple applies.",
+    "reference": "1 of 3 reportable segments (Publishing & Advertising) broke over FY2020-Q3 FY2026 (s1.2, s3.2, s7) = 33.3%",
+    "adjustment_pp": -15.3
+   },
+   "tail_term": 0.1353,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4603,
+   "buy": 342.52,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 426.91,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 395.72,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 128.65
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 354.94
+    },
+    {
+     "branch": "base",
+     "p": 0.43,
+     "value": 426.91
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 463.79
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.6986,
+   "break_derivation": {
+    "mechanism": "AI substitution erodes renewals over successive contract cycles until owner FCF falls ~6%/yr in absolute terms; the continuing-decline multiple applies.",
+    "reference": "1 of 7 named products with a stated performance trend (Adobe Stock; s7, s8.2) = 14.3% over FY2025-Q3 FY2026",
+    "adjustment_pp": -2.3
+   },
+   "tail_term": 0.0838,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4088,
+   "buy": 252.37,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 418.86,
+   "quality_score": 70,
+   "quality_tier": "Average",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 388.82,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 117.65
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 337.12
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 418.86
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 481.16
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7191,
+   "break_derivation": {
+    "mechanism": "A new CEO meets AI substitution with an acquisition-led defence that fails like Figma, paid seats erode and owner FCF falls ~7%/yr, valued at the continuing-decline multiple.",
+    "reference": "1 of 3 reportable segments (Publishing & Advertising) broke over FY2020-Q3 FY2026 (s1.2, s3.2, s7) = 33.3%",
+    "adjustment_pp": -18.3
+   },
+   "tail_term": 0.1079,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4329,
+   "buy": 237.55,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 387.31,
+   "quality_score": 80,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 361.25,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 102.64
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.15,
+     "value": 337.12
+    },
+    {
+     "branch": "bear_2",
+     "p": 0.12,
+     "value": 280.62
+    },
+    {
+     "branch": "base",
+     "p": 0.38,
+     "value": 387.31
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 468.05
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.735,
+   "break_derivation": {
+    "mechanism": "Franchise erosion from AI substitutes: renewals and pricing decline together, owner FCF falls ~9%/yr in absolute terms, valued at the continuing-decline multiple (Helena's erosion floor).",
+    "reference": "1 of 3 reportable segments (Publishing & Advertising) broke over FY2020-Q3 FY2026 (s1.2, s3.2, s7) = 33.3%",
+    "adjustment_pp": -18.3
+   },
+   "tail_term": 0.1102,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3352,
+   "buy": 257.46,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 460.67,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 426.24,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 128.65
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 369.51
+    },
+    {
+     "branch": "base",
+     "p": 0.43,
+     "value": 460.67
+    },
+    {
+     "branch": "bull_1",
+     "p": 0.2,
+     "value": 529.32
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7207,
+   "break_derivation": {
+    "mechanism": "AI substitution erodes paid seats; owner FCF falls ~6%/yr in absolute terms and the continuing-decline multiple applies.",
+    "reference": "1 of 7 named products with a stated performance trend (Adobe Stock; s7, s8.2) = 14.3% over FY2025-Q3 FY2026",
+    "adjustment_pp": -2.3
+   },
+   "tail_term": 0.0865,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3115,
+   "buy": 317.18,
+   "no_buy": false,
+   "irr_entry": false
+  }
+ ],
+ "committee_median_fv": 422.89,
+ "quality_tier_modal": "Average",
+ "headline_buy": 243.66
+}

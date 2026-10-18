@@ -1,0 +1,766 @@
+{
+ "ticker": "ICE",
+ "unit": "USD millions",
+ "frame": {
+  "denominator_type": "owner_fcf_per_share",
+  "gross_source": "Free cash flow (cash from operations - capex - capitalized software), TTM to Q2'26, minus SBC",
+  "basis_period": "TTM to 2026-06-30",
+  "denominator_count_m": 566.0,
+  "period_weighted_count_m": 566.0,
+  "pack_as_of_date": "2026-10-12",
+  "valuation_date": "2026-10-12",
+  "per_share_count_m": 566.0,
+  "per_share_count_date": "2026-06-30",
+  "per_share_count_basis": "period",
+  "latest_share_count_m": 561.4,
+  "latest_share_count_date": "2026-07-27",
+  "balance_sheet_date": "2026-06-30",
+  "balance_sheet_add_per_share": -33.1784,
+  "gross_denominator_per_share": 8.1996,
+  "denominator_adjustments": [
+   {
+    "item": "less SBC (TTM est $290M)",
+    "per_share": -0.5124,
+    "reason": "SBC is a real owner cost (FRAMEWORK); 1H'26 SBC $145M annualised"
+   }
+  ],
+  "declared_denominator_per_share": 7.6873,
+  "acq_cash_by_year": [
+   {
+    "year": 2025,
+    "amount": 0
+   },
+   {
+    "year": "1H2026",
+    "amount": 0
+   }
+  ],
+  "acq_spend_normalised_per_share": 0.0,
+  "acq_spend_window": "no acquisition-cash-by-year series in pack; recent years $0; Black Knight(2023) cash+stock not broken out",
+  "recent_acquisitions": [
+   {
+    "name": "Black Knight",
+    "close_date": "2023-09-05",
+    "months_in_basis_period": 0
+   },
+   {
+    "name": "MarketAxess (pending)",
+    "close_date": "2027-06-30",
+    "months_in_basis_period": 0
+   }
+  ],
+  "alternative_denominator_type": "owner_fcf_per_share",
+  "alternative_denominator_basis": "period",
+  "alternative_denominator_per_share": 6.4011,
+  "risk_free": 5.22,
+  "erp": 4.27,
+  "macro_base": 9.49,
+  "market_inputs_as_of": "2026-10-08",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating compounder (exchange/clearing/data) with cyclical mortgage-tech leg",
+  "guidance_stance": "credit",
+  "weights": {
+   "Simon": 1.0,
+   "Marcus": 1.5,
+   "Sophie": 1.25,
+   "Claire": 1.5,
+   "Graham": 1.5,
+   "Walter": 1.0,
+   "Helena": 0.75,
+   "Alexander": 1.0
+  },
+  "peers_used": [
+   "CME",
+   "Nasdaq",
+   "Deutsche Börse",
+   "LSEG",
+   "S&P Global"
+  ]
+ },
+ "helena_floor": {
+  "floor_type": "erosion_floor_no_positive_asset_floor",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "Tangible book value -$15,951M (6/30/26)",
+   "NCAV -$22,531M",
+   "Goodwill+intangibles $45,502M > equity $29,551M"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Simon",
+   "fair_value": 79.73,
+   "quality_score": 79.0,
+   "quality_tier": "High Quality",
+   "discount_rate": 12.49,
+   "fair_value_rf_plus_50bp": 73.97,
+   "fair_value_macro_base": 134.6,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 79.73,
+   "fair_value_alternative_denominator": 60.84,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 96.31
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 79.73
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.22,
+     "value": 58.46
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 19.0
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.8589,
+   "break_derivation": {
+    "mechanism": "Mortgage-Tech franchise impairs ($17.6B goodwill) and a disruptor (TXSE/Kalshi) compresses exchange economics; FCF falls absolutely and multiple de-rates.",
+    "reference": "Mortgage Tech GAAP op income swung to losses FY23-24 (-276M,-170M) on rate shock (pack s2,s9); one such break in the 5yr window shown.",
+    "adjustment_pp": 3.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1116,
+   "quality_premium": 0.2483,
+   "required_margin": 0.3599,
+   "buy": 51.03,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4655.6,
+     "cash_flow_per_share": 8.2254
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4966.0,
+     "cash_flow_per_share": 8.7738
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5280.5,
+     "cash_flow_per_share": 9.3294
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5597.3,
+     "cash_flow_per_share": 9.8892
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 5914.5,
+     "cash_flow_per_share": 10.4496
+    }
+   ]
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 120.53,
+   "quality_score": 82.0,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 109.83,
+   "fair_value_macro_base": 147.8,
+   "terminal_growth": 4.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 120.53,
+   "fair_value_alternative_denominator": 94.81,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.22,
+     "value": 144.32
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 120.53
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 88.28
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 21.79
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8526,
+   "break_derivation": {
+    "mechanism": "Incremental ROIC falls below cost of capital (MarketAxess/Polymarket capital misallocated) and acquired-growth engine stalls; absolute FCF declines.",
+    "reference": "Incremental ROIC on capital deployed was only 8.3% incl Black Knight capex (pack s6), near cost of capital; one break in the measured window.",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1023,
+   "quality_premium": 0.2283,
+   "required_margin": 0.3306,
+   "buy": 80.68,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4677.3,
+     "cash_flow_per_share": 8.2638
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 5009.9,
+     "cash_flow_per_share": 8.8515
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5346.7,
+     "cash_flow_per_share": 9.4465
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5685.3,
+     "cash_flow_per_share": 10.0447
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 6023.2,
+     "cash_flow_per_share": 10.6418
+    }
+   ]
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 104.38,
+   "quality_score": 80.0,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 95.96,
+   "fair_value_macro_base": 138.1,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 104.38,
+   "fair_value_alternative_denominator": 81.36,
+   "tree": [
+    {
+     "branch": "bull_catalyst",
+     "p": 0.24,
+     "value": 126.95
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 104.38
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 75.35
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 20.62
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8507,
+   "break_derivation": {
+    "mechanism": "Binary bets resolve against ICE: MarketAxess dilutive, Polymarket (~$2.0B carried, 22% of shares) written down, repo clearing stalls; FCF contracts and multiple compresses.",
+    "reference": "Pack shows Polymarket carried ~$2.0B with remeasurement swings (+$389M Series D gain, s2) - a volatile stake; no franchise break reference, so modeled at minimum-plus.",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1021,
+   "quality_premium": 0.2417,
+   "required_margin": 0.3437,
+   "buy": 68.5,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4677.3,
+     "cash_flow_per_share": 8.2638
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 5009.9,
+     "cash_flow_per_share": 8.8515
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5346.7,
+     "cash_flow_per_share": 9.4465
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5685.3,
+     "cash_flow_per_share": 10.0447
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 6023.2,
+     "cash_flow_per_share": 10.6418
+    }
+   ]
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 91.48,
+   "quality_score": 81.0,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.49,
+   "fair_value_rf_plus_50bp": 84.38,
+   "fair_value_macro_base": 131.74,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 91.48,
+   "fair_value_alternative_denominator": 70.62,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 108.22
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 91.48
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.24,
+     "value": 68.07
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 16.06
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8781,
+   "break_derivation": {
+    "mechanism": "A well-funded entrant captures listings/trading share (TXSE launched Jul'26, $430M raised; Kalshi $22B) and mortgage moat erodes; pricing power inverts, FCF falls.",
+    "reference": "TXSE SEC-approved Sep'25, trading Jul'26, backed by JPM/BlackRock/Schwab/Citadel (pack s13) - a credible <18mo entrant forcing a one-tier downgrade.",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1054,
+   "quality_premium": 0.235,
+   "required_margin": 0.3404,
+   "buy": 60.34,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4655.6,
+     "cash_flow_per_share": 8.2254
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4963.3,
+     "cash_flow_per_share": 8.7692
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5272.2,
+     "cash_flow_per_share": 9.3148
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5579.7,
+     "cash_flow_per_share": 9.8581
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 5883.5,
+     "cash_flow_per_share": 10.3948
+    }
+   ]
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 101.65,
+   "quality_score": 80.0,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 93.43,
+   "fair_value_macro_base": 134.6,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 101.65,
+   "fair_value_alternative_denominator": 79.09,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 121.22
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 101.65
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.22,
+     "value": 77.53
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 20.62
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8468,
+   "break_derivation": {
+    "mechanism": "Rate/leverage shock: 10yr at 5.36% and mortgage >7.4% crush origination volumes while debt refis higher; sustainable growth turns negative, multiple compresses.",
+    "reference": "Mortgage applications fell 5 straight weeks and MBA origination falling 2026->2027 $2.1T->$1.99T (pack s17); Mortgage-Tech already swung to GAAP losses once (s2).",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1016,
+   "quality_premium": 0.2417,
+   "required_margin": 0.3433,
+   "buy": 66.76,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4655.6,
+     "cash_flow_per_share": 8.2254
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4966.0,
+     "cash_flow_per_share": 8.7738
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5280.5,
+     "cash_flow_per_share": 9.3294
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5597.3,
+     "cash_flow_per_share": 9.8892
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 5914.5,
+     "cash_flow_per_share": 10.4496
+    }
+   ]
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 101.65,
+   "quality_score": 78.0,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 93.43,
+   "fair_value_macro_base": 134.6,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 101.65,
+   "fair_value_alternative_denominator": 79.09,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 118.15
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 101.65
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 73.72
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 20.62
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8468,
+   "break_derivation": {
+    "mechanism": "Succession/capital-allocation failure: 71-yr founder-CEO departs abruptly with no named successor while a large all-cash deal underperforms; FCF and multiple fall.",
+    "reference": "Proxy cites only 'progress on succession planning', no successor named (pack s8); MarketAxess all-cash ~$6.0B pending (s7) - concentration of execution risk.",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1016,
+   "quality_premium": 0.255,
+   "required_margin": 0.3566,
+   "buy": 65.4,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4655.6,
+     "cash_flow_per_share": 8.2254
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4966.0,
+     "cash_flow_per_share": 8.7738
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5280.5,
+     "cash_flow_per_share": 9.3294
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5597.3,
+     "cash_flow_per_share": 9.8892
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 5914.5,
+     "cash_flow_per_share": 10.4496
+    }
+   ]
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 76.69,
+   "quality_score": 77.0,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.99,
+   "fair_value_rf_plus_50bp": 71.1,
+   "fair_value_macro_base": 117.59,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 76.69,
+   "fair_value_alternative_denominator": 58.31,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 96.95
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 76.69
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.24,
+     "value": 57.72
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 15.54
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8679,
+   "break_derivation": {
+    "mechanism": "Permanent franchise erosion: with negative tangible book (-$28.43/sh) and no asset floor, a broken franchise is worth only its distressed residual owner-FCF stream.",
+    "reference": "Pack shows tangible book -$15,951M and NCAV -$22,531M (s5) - no collectible net-asset floor; the erosion case governs per Helena's split-floor rule.",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1041,
+   "quality_premium": 0.2617,
+   "required_margin": 0.3658,
+   "buy": 48.63,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4612.1,
+     "cash_flow_per_share": 8.1485
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4876.0,
+     "cash_flow_per_share": 8.6148
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5141.4,
+     "cash_flow_per_share": 9.0838
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5407.1,
+     "cash_flow_per_share": 9.5531
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 5671.4,
+     "cash_flow_per_share": 10.0202
+    }
+   ]
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 93.43,
+   "quality_score": 72.0,
+   "quality_tier": "Average",
+   "discount_rate": 11.49,
+   "fair_value_rf_plus_50bp": 86.17,
+   "fair_value_macro_base": 134.6,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 93.43,
+   "fair_value_alternative_denominator": 72.24,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 108.22
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 93.43
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.24,
+     "value": 68.07
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 20.62
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8468,
+   "break_derivation": {
+    "mechanism": "Goodwill impairment reveals over-paid M&A: $17.6B Mortgage-Tech goodwill tested Q4'26; a large write-down coincides with falling cash earnings and multiple de-rate.",
+    "reference": "Mortgage-Tech goodwill $17,606M with segment GAAP op income ~$14M FY25 / ~1% margin (pack s2,s5); annual impairment test due Q4'26 (s16).",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1016,
+   "quality_premium": 0.295,
+   "required_margin": 0.3966,
+   "buy": 56.37,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner FCF/share = (FCF TTM to Q2'26 $4,641M - SBC ~$290M = $4,351M)/566M = $7.69, grown at the seat organic rate each FY; FCF = cash from operations - capex - capitalized software (pack s3); SBC from cash-flow add-back (pack s3).",
+   "forecast_5y": [
+    {
+     "period_end": "2026-12-31",
+     "months": 12,
+     "cash_flow_total": 4655.6,
+     "cash_flow_per_share": 8.2254
+    },
+    {
+     "period_end": "2027-12-31",
+     "months": 12,
+     "cash_flow_total": 4966.0,
+     "cash_flow_per_share": 8.7738
+    },
+    {
+     "period_end": "2028-12-31",
+     "months": 12,
+     "cash_flow_total": 5280.5,
+     "cash_flow_per_share": 9.3294
+    },
+    {
+     "period_end": "2029-12-31",
+     "months": 12,
+     "cash_flow_total": 5597.3,
+     "cash_flow_per_share": 9.8892
+    },
+    {
+     "period_end": "2030-12-31",
+     "months": 12,
+     "cash_flow_total": 5914.5,
+     "cash_flow_per_share": 10.4496
+    }
+   ]
+  }
+ ],
+ "committee_median_fv": 97.54,
+ "quality_tier_modal": "High Quality",
+ "headline_buy": 63.85
+}

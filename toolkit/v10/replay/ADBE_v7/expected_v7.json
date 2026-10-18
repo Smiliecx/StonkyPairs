@@ -1,0 +1,41 @@
+{
+ "blind_point": 236.4812051744964,
+ "point": 237.86652331873498,
+ "ci": [
+  233.58771230004166,
+  242.1453343374283
+ ],
+ "rep": [
+  231.81537074526747,
+  243.91767589220248
+ ],
+ "fv": 391.28888007661703,
+ "s": 8.405804366416776,
+ "ledger": {
+  "Break probability −5pp on every headline seat": 249.3145458289979,
+  "Break probability +5pp on every headline seat": 223.91042708217515,
+  "Valuation date rolled to the pack date": 237.86652331873498,
+  "Share-count date": 237.86652331873498,
+  "Valuation date and share-count date (both)": 237.86652331873498,
+  "Risk-free +50bp": 221.3187329103968,
+  "Published figure without the single finding whose removal moves it most": 237.1311685613947,
+  "Point rule: equal-weighted mean": 236.6425653948044,
+  "Point rule: median": 239.61292815657757
+ },
+ "blind_rows": {
+  "Break probability −5pp on every headline seat": 248.4362790409202,
+  "Break probability +5pp on every headline seat": 222.411780507759,
+  "Valuation date rolled to the pack date": 236.4812051744964,
+  "Share-count date": 236.4812051744964,
+  "Valuation date and share-count date (both)": 236.4812051744964,
+  "Risk-free +50bp": 220.14748267385082,
+  "v6-rule bridge (own trees, no inheritance)": 214.94165216210783
+ },
+ "s_w": 6.5962557889812405,
+ "memory_p": 0.390625,
+ "headline_sentence": "Published BUY 238 USD per share (80% confidence interval for this pipeline's expected BUY on these packs: 233–243); committee fair value 391; largest sensitivity not in the interval: Risk-free +50bp, −16.55 USD per share.",
+ "contrast_t": 2.8521742999662782,
+ "contrast_p": 0.02909855445245002,
+ "beta_k": -0.012076347889165008,
+ "beta_j": 0.026407645116289125
+}

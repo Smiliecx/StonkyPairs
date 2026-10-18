@@ -1,0 +1,325 @@
+{
+ "ticker": "X",
+ "unit": "USD per share",
+ "frame": {
+  "weights": {
+   "Simon": 1.0,
+   "Marcus": 1.0,
+   "Sophie": 1.0,
+   "Claire": 1.0,
+   "Graham": 1.0,
+   "Walter": 1.0,
+   "Helena": 1.0,
+   "Alexander": 1.0
+  },
+  "valuation_date": "2026-06-30",
+  "pack_as_of_date": "2026-06-30",
+  "per_share_count_m": 100,
+  "latest_share_count_m": 100,
+  "denominator_count_m": 100,
+  "balance_sheet_add_per_share": 0,
+  "acq_spend_normalised_per_share": 0
+ },
+ "quality_tier_modal": "Average",
+ "helena_floor": {
+  "floor_type": "none",
+  "floor_per_share_or_null": null
+ },
+ "investors": [
+  {
+   "investor": "Simon",
+   "fair_value": 100,
+   "fair_value_macro_base": 100,
+   "quality_score": 82.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 95.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 120.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 100
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 84.0
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 40.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 100,
+   "fair_value_alternative_denominator": 80.0
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 110,
+   "fair_value_macro_base": 110,
+   "quality_score": 67.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 104.5,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 132.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 110
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 92.39999999999999
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 44.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 110,
+   "fair_value_alternative_denominator": 88.0
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 120,
+   "fair_value_macro_base": 120,
+   "quality_score": 82.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 114.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 144.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 120
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 100.8
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 48.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 120,
+   "fair_value_alternative_denominator": 96.0
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 130,
+   "fair_value_macro_base": 130,
+   "quality_score": 67.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 123.5,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 156.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 130
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 109.2
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 52.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 130,
+   "fair_value_alternative_denominator": 104.0
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 140,
+   "fair_value_macro_base": 140,
+   "quality_score": 82.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 133.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 168.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 140
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 117.6
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 56.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 140
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 150,
+   "fair_value_macro_base": 150,
+   "quality_score": 67.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 142.5,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 180.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 150
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 126.0
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 60.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 150,
+   "fair_value_alternative_denominator": 120.0
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 160,
+   "fair_value_macro_base": 160,
+   "quality_score": 82.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 152.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 192.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 160
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 134.4
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 64.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 160,
+   "fair_value_alternative_denominator": 128.0
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 170,
+   "fair_value_macro_base": 170,
+   "quality_score": 67.5,
+   "discount_rate": 9.0,
+   "fair_value_rf_plus_50bp": 161.5,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.19999999999999998,
+     "value": 204.0
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 170
+    },
+    {
+     "branch": "bear",
+     "p": 0.19999999999999998,
+     "value": 142.79999999999998
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 68.0
+    }
+   ],
+   "irr_entry": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 170,
+   "fair_value_alternative_denominator": 136.0
+  }
+ ]
+}

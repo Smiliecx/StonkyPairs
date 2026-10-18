@@ -1,0 +1,229 @@
+{
+ "rulings": [
+  {
+   "finding": "1",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "2",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "3",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "4",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [
+    {
+     "path": "investors.Graham.fair_value",
+     "from": 194.04,
+     "to": 209.72
+    },
+    {
+     "path": "investors.Graham.tree.base.value",
+     "from": 194.04,
+     "to": 209.72
+    },
+    {
+     "path": "investors.Graham.tree.upside_g12.value",
+     "from": 219.41,
+     "to": 237.34
+    },
+    {
+     "path": "investors.Graham.tree.bear_1.value",
+     "from": 141.68,
+     "to": 151.44
+    },
+    {
+     "path": "investors.Graham.tree.break.value",
+     "from": 54.16,
+     "to": 55.1
+    },
+    {
+     "path": "investors.Graham.fair_value_rf_plus_50bp",
+     "from": 180.5,
+     "to": 194.04
+    }
+   ],
+   "script_delta": 1.01959
+  },
+  {
+   "finding": "5",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "6",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "7",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "8",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "9",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-GAP",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "10",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "11",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "12",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "13",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  },
+  {
+   "finding": "14",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "15",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "16",
+   "ruling": "CONFIRMED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [],
+   "script_delta": 0.0
+  }
+ ],
+ "joint_changed_inputs": [
+  {
+   "path": "investors.Graham.fair_value",
+   "from": 194.04,
+   "to": 209.72
+  },
+  {
+   "path": "investors.Graham.tree.base.value",
+   "from": 194.04,
+   "to": 209.72
+  },
+  {
+   "path": "investors.Graham.tree.upside_g12.value",
+   "from": 219.41,
+   "to": 237.34
+  },
+  {
+   "path": "investors.Graham.tree.bear_1.value",
+   "from": 141.68,
+   "to": 151.44
+  },
+  {
+   "path": "investors.Graham.tree.break.value",
+   "from": 54.16,
+   "to": 55.1
+  },
+  {
+   "path": "investors.Graham.fair_value_rf_plus_50bp",
+   "from": 180.5,
+   "to": 194.04
+  }
+ ],
+ "script_joint_delta": 1.01959,
+ "script_adjusted_headline": 113.212364
+}

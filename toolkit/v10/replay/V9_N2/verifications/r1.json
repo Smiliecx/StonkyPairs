@@ -1,0 +1,30 @@
+{
+ "rulings": [
+  {
+   "finding": "1",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "ARITHMETIC",
+   "changed_inputs": [
+    {
+     "path": "investors.Simon.fair_value",
+     "from": 100,
+     "to": 90
+    },
+    {
+     "path": "investors.Simon.tree.base.value",
+     "from": 100,
+     "to": 90
+    },
+    {
+     "path": "investors.Simon.fair_value_macro_base",
+     "from": 100,
+     "to": 90
+    }
+   ]
+  }
+ ],
+ "joint_changed_inputs": []
+}

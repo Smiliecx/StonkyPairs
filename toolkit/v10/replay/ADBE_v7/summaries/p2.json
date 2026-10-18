@@ -1,0 +1,505 @@
+{
+ "ticker": "ADBE",
+ "unit": "USD per share",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner FCF (OCF - capex - SBC), TTM",
+  "gross_source": "pack §4 TTM: Operating cash flow 10,806 - Capex 214 = Free cash flow 10,592 ($M)",
+  "basis_period": "TTM Q4 FY2025-Q3 FY2026 (ended 2026-08-28)",
+  "share_count_m": 406.25,
+  "pack_as_of_date": "2026-08-28",
+  "valuation_date": "2026-08-28",
+  "per_share_count_m": 395.0,
+  "per_share_count_date": "2026-08-28",
+  "latest_share_count_m": 395.0,
+  "latest_share_count_date": "2026-08-28",
+  "balance_sheet_date": "2026-08-28",
+  "balance_sheet_add_per_share": -1.83,
+  "gross_denominator_per_share": 26.07,
+  "denominator_adjustments": [
+   {
+    "item": "Stock-based compensation (TTM $2,071M)",
+    "per_share": -5.1,
+    "reason": "SBC is a real cost; owner FCF = FCF - SBC"
+   }
+  ],
+  "declared_denominator_per_share": 20.97,
+  "alternative_denominator_type": "GAAP diluted EPS, TTM (sum of Q4 FY25-Q3 FY26)",
+  "alternative_denominator_per_share": 17.92,
+  "risk_free": 4.95,
+  "erp": 4.09,
+  "macro_base": 9.04,
+  "market_inputs_as_of": "2026-09-10",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating; mature capital-light subscription-software compounder with product/leadership transition risk",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Victor": 1.0,
+   "Simon": 1.25,
+   "Marcus": 1.5,
+   "Sophie": 0.75,
+   "Claire": 1.75,
+   "Max": 0.75,
+   "Graham": 1.0,
+   "Walter": 1.25,
+   "Helena": 1.0,
+   "Alexander": 1.25
+  },
+  "peers_used": []
+ },
+ "helena_floor": {
+  "floor_type": "none (tangible book and NCAV negative)",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "§5 Q3 FY2026 total assets 29,981",
+   "goodwill 14,037",
+   "other intangibles 956",
+   "total stockholders' equity 11,764 (total liabilities 18,217)",
+   "total current assets 9,158"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Victor",
+   "fair_value": 392.28,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 365.16,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 488.72
+    },
+    {
+     "branch": "base",
+     "p": 0.43,
+     "value": 392.28
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 287.26
+    },
+    {
+     "branch": "break",
+     "p": 0.17,
+     "value": 119.27
+    }
+   ],
+   "break_p": 0.17,
+   "break_loss": 0.696,
+   "break_derivation": {
+    "mechanism": "Generative-AI and freemium substitution turns paid-seat net new ARR negative, so owner FCF falls 10%/yr for 4 years and the business is valued at a 7x distress multiple of year-4 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -16
+   },
+   "tail_term": 0.1183,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3433,
+   "buy": 314.51,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Simon",
+   "fair_value": 318.37,
+   "quality_score": 68,
+   "quality_tier": "Average",
+   "discount_rate": 12.04,
+   "fair_value_rf_plus_50bp": 300.67,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 387.71
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 318.37
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 241.43
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 108.55
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.659,
+   "break_derivation": {
+    "mechanism": "Paid-seat churn into lower-priced or free AI tools makes owner FCF fall 8%/yr for 5 years, ending at a 6x distress multiple.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.0989,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4239,
+   "buy": 183.43,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 455.45,
+   "quality_score": 81,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 420.48,
+   "terminal_growth": 3.5,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 573.61
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 455.45
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.22,
+     "value": 327.85
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 140.81
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.6908,
+   "break_derivation": {
+    "mechanism": "Returns on the installed base collapse as AI commoditises creation tools: owner FCF falls 7%/yr for 5 years, valued at 8x year-5 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -21
+   },
+   "tail_term": 0.0829,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3079,
+   "buy": 315.22,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 378.0,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 352.66,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.22,
+     "value": 482.5
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 378.0
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 285.92
+    },
+    {
+     "branch": "break",
+     "p": 0.14,
+     "value": 122.5
+    }
+   ],
+   "break_p": 0.14,
+   "break_loss": 0.6759,
+   "break_derivation": {
+    "mechanism": "Freemium funnel cannibalises paid plans, owner FCF falls 9%/yr for 4 years, valued at 7x year-4 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -19
+   },
+   "tail_term": 0.0946,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4196,
+   "buy": 219.38,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 330.92,
+   "quality_score": 64,
+   "quality_tier": "Average",
+   "discount_rate": 10.54,
+   "fair_value_rf_plus_50bp": 310.72,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.15,
+     "value": 407.38
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 330.92
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 246.96
+    },
+    {
+     "branch": "break",
+     "p": 0.2,
+     "value": 105.18
+    }
+   ],
+   "break_p": 0.2,
+   "break_loss": 0.6822,
+   "break_derivation": {
+    "mechanism": "AI substitution erodes both switching costs and brand pricing power: owner FCF falls 10%/yr for 5 years, valued at 6x year-5 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window); §9b Q1 FY2026: the ~$450M stock business is 'declining faster than expected' (a second named product line in absolute decline)",
+    "adjustment_pp": -13
+   },
+   "tail_term": 0.1364,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4614,
+   "buy": 178.22,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Max",
+   "fair_value": 367.95,
+   "quality_score": 70,
+   "quality_tier": "Average",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 343.41,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.25,
+     "value": 469.65
+    },
+    {
+     "branch": "base",
+     "p": 0.37,
+     "value": 367.95
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 278.44
+    },
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 105.82
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.7124,
+   "break_derivation": {
+    "mechanism": "A visible miss plus AI substitution: owner FCF falls 12%/yr for 3 years, valued at 6x year-3 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -15
+   },
+   "tail_term": 0.1282,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4532,
+   "buy": 292.05,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 427.49,
+   "quality_score": 77,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 394.18,
+   "terminal_growth": 3.5,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 520.93
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 427.49
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.23,
+     "value": 319.05
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 127.14
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7026,
+   "break_derivation": {
+    "mechanism": "Core creative revenue enters absolute decline: owner FCF falls 8%/yr for 5 years, valued at 7x year-5 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -21
+   },
+   "tail_term": 0.0843,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3093,
+   "buy": 295.26,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 396.47,
+   "quality_score": 69,
+   "quality_tier": "Average",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 367.02,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 492.06
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 396.47
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 291.78
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 109.71
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7233,
+   "break_derivation": {
+    "mechanism": "The franchise erodes under new management: owner FCF falls 9%/yr for 5 years, valued at 7x year-5 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1085,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4335,
+   "buy": 224.6,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 396.13,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 367.95,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 495.33
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 396.13
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 296.64
+    },
+    {
+     "branch": "break",
+     "p": 0.16,
+     "value": 107.87
+    }
+   ],
+   "break_p": 0.16,
+   "break_loss": 0.7277,
+   "break_derivation": {
+    "mechanism": "Permanent franchise erosion: owner FCF falls 10%/yr for 5 years, valued at 6x year-5 FCF (Helena's erosion floor).",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -17
+   },
+   "tail_term": 0.1164,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3414,
+   "buy": 260.88,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 371.07,
+   "quality_score": 66,
+   "quality_tier": "Average",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 345.64,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 475.36
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 371.07
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 287.26
+    },
+    {
+     "branch": "break",
+     "p": 0.14,
+     "value": 118.63
+    }
+   ],
+   "break_p": 0.14,
+   "break_loss": 0.6803,
+   "break_derivation": {
+    "mechanism": "Reported ARR masks paid-seat erosion; owner FCF falls 9%/yr for 4 years, valued at 6.5x year-4 FCF.",
+    "reference": "pack §2a and §2 notes: Publishing & Advertising, one of the three segments the pack reports, fell from $398M (FY2021) to $256M (FY2025) and took a $70M goodwill impairment in Q2 FY2026, i.e. 1 of 3 named segments broke over FY2021-FY2026 (about 33% per ~5-year window)",
+    "adjustment_pp": -19
+   },
+   "tail_term": 0.0952,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4202,
+   "buy": 215.13,
+   "no_buy": false,
+   "irr_entry": false
+  }
+ ],
+ "committee_median_fv": 385.14,
+ "quality_tier_modal": "Average",
+ "headline_buy": 234.29
+}

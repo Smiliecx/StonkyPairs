@@ -1,0 +1,771 @@
+{
+ "ticker": "ICE",
+ "unit": "USD millions",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner free cash flow (FCF minus SBC), company total",
+  "gross_source": "FY2025 free cash flow $3,871M (pack §3: CFO $4,662M - capex+capitalised software $791M)",
+  "basis_period": "FY2025",
+  "denominator_count_m": 566.0,
+  "period_weighted_count_m": 566.0,
+  "pack_as_of_date": "2026-06-30",
+  "valuation_date": "2026-06-30",
+  "per_share_count_m": 566.0,
+  "per_share_count_date": "2026-06-30",
+  "per_share_count_basis": "period",
+  "latest_share_count_m": 566.0,
+  "latest_share_count_date": "2026-06-30",
+  "balance_sheet_date": "2026-06-30",
+  "balance_sheet_add_per_share": -33.18,
+  "gross_denominator_per_share": 6.8392,
+  "denominator_adjustments": [
+   {
+    "item": "Subtract SBC (normalised 2.6% of FY25 net revenue = $258M)",
+    "per_share": -0.4558,
+    "reason": "SBC is a real cost; FY25 SBC a pack gap, normalised at 1H'26 run-rate ratio"
+   }
+  ],
+  "declared_denominator_per_share": 6.3834,
+  "acq_cash_by_year": [
+   {
+    "year": 2023,
+    "amount": null
+   },
+   {
+    "year": 2024,
+    "amount": null
+   },
+   {
+    "year": 2025,
+    "amount": null
+   },
+   {
+    "year": 2026,
+    "amount": 0.0
+   }
+  ],
+  "acq_spend_normalised_per_share": 0.0,
+  "acq_spend_window": "FY2023-1H2026",
+  "recent_acquisitions": [
+   {
+    "name": "Black Knight",
+    "close_date": "2023-09-05",
+    "months_in_basis_period": 0
+   },
+   {
+    "name": "MarketAxess (pending)",
+    "close_date": null,
+    "months_in_basis_period": 0
+   }
+  ],
+  "alternative_denominator_type": "SBC-adjusted owner free cash flow (FCF minus SBC), company total",
+  "alternative_denominator_basis": "period",
+  "alternative_denominator_per_share": 7.7138,
+  "risk_free": 5.22,
+  "erp": 4.27,
+  "macro_base": 9.49,
+  "market_inputs_as_of": "2026-10-08",
+  "erp_departure_reason_or_null": null,
+  "business_type": "Operating; high-quality compounder with cyclical transaction overlay and leverage",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Simon": 1.3,
+   "Marcus": 1.5,
+   "Sophie": 1.0,
+   "Claire": 1.5,
+   "Graham": 1.3,
+   "Walter": 1.0,
+   "Helena": 1.2,
+   "Alexander": 1.2
+  },
+  "peers_used": [
+   "CME",
+   "S&P Global"
+  ]
+ },
+ "helena_floor": {
+  "floor_type": "erosion floor: 10x trough FCF minus net debt (asset-light; tangible book and NCAV negative)",
+  "floor_per_share_or_null": 9.22,
+  "pack_lines": [
+   "§3 FY25 FCF $3,871M (trough assumed 0.62x = $2,400M)",
+   "§5 total debt $19,846M",
+   "§5 unrestricted cash $1,067M"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Simon",
+   "fair_value": 49.47,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 12.49,
+   "fair_value_rf_plus_50bp": 45.04,
+   "fair_value_macro_base": 91.63,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 49.47,
+   "fair_value_alternative_denominator": 66.7,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 49.47
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 60.16
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 38.23
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 9.22
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8993,
+   "break_derivation": {
+    "mechanism": "Permanent franchise break: mortgage goodwill impairment + competition + leverage force owner-FCF down and multiple to distress",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1349,
+   "quality_premium": 0.255,
+   "required_margin": 0.3899,
+   "buy": 30.18,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M (FY25 FCF $3,871M - SBC $258M) grown at the seat path; company total before any acquisition deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3865.9,
+     "cash_flow_per_share": 6.8302
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4117.2,
+     "cash_flow_per_share": 7.2742
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4364.2,
+     "cash_flow_per_share": 7.7106
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4604.3,
+     "cash_flow_per_share": 8.1348
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4834.5,
+     "cash_flow_per_share": 8.5415
+    }
+   ]
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 60.6,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 54.97,
+   "fair_value_macro_base": 82.7,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 60.6,
+   "fair_value_alternative_denominator": 80.14,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 60.6
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 73.72
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 47.08
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 9.22
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8885,
+   "break_derivation": {
+    "mechanism": "Permanent franchise break: owner-FCF declines in absolute terms, multiple compresses to distress",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1333,
+   "quality_premium": 0.2817,
+   "required_margin": 0.4149,
+   "buy": 35.45,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M grown at the seat path; company total before any deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3865.9,
+     "cash_flow_per_share": 6.8302
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4097.9,
+     "cash_flow_per_share": 7.2401
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4323.2,
+     "cash_flow_per_share": 7.6382
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4539.4,
+     "cash_flow_per_share": 8.0201
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4743.7,
+     "cash_flow_per_share": 8.381
+    }
+   ]
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 75.02,
+   "quality_score": 80,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 67.69,
+   "fair_value_macro_base": 93.36,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 75.02,
+   "fair_value_alternative_denominator": 97.58,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 75.02
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 91.49
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 58.48
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 9.48
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8985,
+   "break_derivation": {
+    "mechanism": "Permanent franchise break: owner-FCF declines in absolute terms, multiple compresses to distress",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1348,
+   "quality_premium": 0.2417,
+   "required_margin": 0.3764,
+   "buy": 46.78,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M grown at the seat path (catalyst-supported, 8% start); company total before any deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3902.0,
+     "cash_flow_per_share": 6.8941
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4175.2,
+     "cash_flow_per_share": 7.3767
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4425.7,
+     "cash_flow_per_share": 7.8193
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4669.1,
+     "cash_flow_per_share": 8.2493
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4902.6,
+     "cash_flow_per_share": 8.6618
+    }
+   ]
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 68.32,
+   "quality_score": 82,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.69,
+   "fair_value_rf_plus_50bp": 61.81,
+   "fair_value_macro_base": 88.21,
+   "terminal_growth": 3.25,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 68.32,
+   "fair_value_alternative_denominator": 89.48,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 68.32
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 83.19
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 53.2
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 9.22
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8954,
+   "break_derivation": {
+    "mechanism": "Permanent franchise break: TXSE/competition + mortgage impairment force owner-FCF down, multiple to distress",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1343,
+   "quality_premium": 0.2283,
+   "required_margin": 0.3626,
+   "buy": 43.55,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M grown at the seat path; company total before any deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3865.9,
+     "cash_flow_per_share": 6.8302
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4117.2,
+     "cash_flow_per_share": 7.2742
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4364.2,
+     "cash_flow_per_share": 7.7106
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4604.3,
+     "cash_flow_per_share": 8.1348
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4834.5,
+     "cash_flow_per_share": 8.5415
+    }
+   ]
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 85.36,
+   "quality_score": 80,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.99,
+   "fair_value_rf_plus_50bp": 76.46,
+   "fair_value_macro_base": 95.81,
+   "terminal_growth": 3.75,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 85.36,
+   "fair_value_alternative_denominator": 110.06,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 85.36
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 104.86
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 66.24
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 11.2
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8831,
+   "break_derivation": {
+    "mechanism": "Permanent franchise break: owner-FCF declines in absolute terms, multiple compresses to distress",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1325,
+   "quality_premium": 0.2417,
+   "required_margin": 0.3741,
+   "buy": 53.42,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M grown at the seat path; company total before any deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3865.9,
+     "cash_flow_per_share": 6.8302
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4117.2,
+     "cash_flow_per_share": 7.2742
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4364.2,
+     "cash_flow_per_share": 7.7106
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4604.3,
+     "cash_flow_per_share": 8.1348
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4834.5,
+     "cash_flow_per_share": 8.5415
+    }
+   ]
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 67.54,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.69,
+   "fair_value_rf_plus_50bp": 61.18,
+   "fair_value_macro_base": 86.83,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 67.54,
+   "fair_value_alternative_denominator": 88.88,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 67.54
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 82.23
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 52.51
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 9.27
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8933,
+   "break_derivation": {
+    "mechanism": "Permanent franchise break: owner-FCF declines in absolute terms, multiple compresses to distress",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.134,
+   "quality_premium": 0.2683,
+   "required_margin": 0.4023,
+   "buy": 40.37,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M grown at the seat path; steward grade B- (+5%) applied to fair value after discounting; company total before any deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3865.9,
+     "cash_flow_per_share": 6.8302
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4097.9,
+     "cash_flow_per_share": 7.2401
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4323.2,
+     "cash_flow_per_share": 7.6382
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4539.4,
+     "cash_flow_per_share": 8.0201
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4743.7,
+     "cash_flow_per_share": 8.381
+    }
+   ]
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 60.16,
+   "quality_score": 75,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 54.56,
+   "fair_value_macro_base": 82.16,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 60.16,
+   "fair_value_alternative_denominator": 79.61,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 60.16
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 73.22
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 46.69
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 9.22
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8877,
+   "break_derivation": {
+    "mechanism": "Permanent franchise erosion: erosion floor governs; owner-FCF declines in absolute terms",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1332,
+   "quality_premium": 0.275,
+   "required_margin": 0.4082,
+   "buy": 35.61,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M grown at a conservative seat path; company total before any deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3847.8,
+     "cash_flow_per_share": 6.7983
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4078.7,
+     "cash_flow_per_share": 7.2062
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4303.0,
+     "cash_flow_per_share": 7.6025
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4518.2,
+     "cash_flow_per_share": 7.9827
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4721.5,
+     "cash_flow_per_share": 8.3419
+    }
+   ]
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 76.74,
+   "quality_score": 79,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 69.09,
+   "fair_value_macro_base": 91.63,
+   "terminal_growth": 3.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 76.74,
+   "fair_value_alternative_denominator": 99.65,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 76.74
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 93.82
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 59.68
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 10.15
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.8893,
+   "break_derivation": {
+    "mechanism": "Permanent franchise break: owner-FCF declines in absolute terms, multiple compresses to distress",
+    "reference": "no reference in pack_5c13.md",
+    "adjustment_pp": 5,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1334,
+   "quality_premium": 0.2483,
+   "required_margin": 0.3817,
+   "buy": 47.45,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Base owner-FCF $3,613M grown at the seat path; earnings-quality score ~78 (60-79 band) => 0% value adjustment; company total before any deduction; per share /566",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 3865.9,
+     "cash_flow_per_share": 6.8302
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4117.2,
+     "cash_flow_per_share": 7.2742
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 4364.2,
+     "cash_flow_per_share": 7.7106
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 4604.3,
+     "cash_flow_per_share": 8.1348
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 4834.5,
+     "cash_flow_per_share": 8.5415
+    }
+   ]
+  }
+ ],
+ "committee_median_fv": 67.93,
+ "quality_tier_modal": "High Quality",
+ "headline_buy": 41.4
+}

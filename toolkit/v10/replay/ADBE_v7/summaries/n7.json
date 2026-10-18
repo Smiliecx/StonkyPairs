@@ -1,0 +1,508 @@
+{
+ "ticker": "the Company (pack_y7)",
+ "unit": "USD per share",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner FCF per share (OCF - capex - SBC), TTM",
+  "gross_source": "pack_y7 s.4 TTM: OCF 15,412 - capex 305 - SBC 2,954 = FCF minus SBC 12,153 ($M)",
+  "basis_period": "TTM Q4 FY2025-Q3 FY2026 (ended 2026-08-28)",
+  "share_count_m": 1945.5,
+  "pack_as_of_date": "2026-09-10",
+  "valuation_date": "2026-09-10",
+  "per_share_count_m": 1892.0,
+  "per_share_count_date": "2026-08-28",
+  "latest_share_count_m": 1892.0,
+  "latest_share_count_date": "2026-08-28",
+  "balance_sheet_date": "2026-08-28",
+  "balance_sheet_add_per_share": -0.546,
+  "gross_denominator_per_share": 6.247,
+  "denominator_adjustments": [],
+  "declared_denominator_per_share": 6.247,
+  "alternative_denominator_type": "GAAP diluted net income per share, TTM",
+  "alternative_denominator_per_share": 5.34,
+  "risk_free": 4.95,
+  "erp": 4.09,
+  "macro_base": 9.04,
+  "market_inputs_as_of": "2026-09-10",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating; mature subscription-software compounder in strategy transition",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Victor": 1.0,
+   "Simon": 1.5,
+   "Marcus": 1.0,
+   "Sophie": 1.0,
+   "Claire": 2.0,
+   "Max": 0.5,
+   "Graham": 1.5,
+   "Walter": 1.0,
+   "Helena": 1.5,
+   "Alexander": 1.0
+  },
+  "peers_used": []
+ },
+ "helena_floor": {
+  "floor_type": "none (tangible book -$4,606M and NCAV -$12,921M are negative at 2026-08-28)",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "Total assets 42,762",
+   "Total stockholders' equity 16,779",
+   "Goodwill 20,021",
+   "Other intangibles, net 1,364",
+   "Total current assets 13,062",
+   "Cash & equivalents 6,217",
+   "Short-term investments 1,826",
+   "Total debt 9,075",
+   "Deferred revenue current 10,118 / long-term 157"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Victor",
+   "fair_value": 119.04,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 110.6,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 143.22
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 119.04
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 97.47
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 35.78
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.6994,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1049,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3299,
+   "buy": 97.83,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Simon",
+   "fair_value": 91.98,
+   "quality_score": 70,
+   "quality_tier": "Average",
+   "discount_rate": 12.04,
+   "fair_value_rf_plus_50bp": 86.93,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 105.96
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 91.98
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 75.55
+    },
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 28.69
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.6881,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -15
+   },
+   "tail_term": 0.1239,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4489,
+   "buy": 50.69,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 137.67,
+   "quality_score": 84,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 126.8,
+   "terminal_growth": 3.5,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 167.44
+    },
+    {
+     "branch": "base",
+     "p": 0.48,
+     "value": 137.67
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 111.64
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 43.63
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.6831,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -21
+   },
+   "tail_term": 0.082,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.307,
+   "buy": 95.41,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 121.49,
+   "quality_score": 77,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 112.86,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "up_pricing",
+     "p": 0.15,
+     "value": 131.74
+    },
+    {
+     "branch": "up_ai",
+     "p": 0.1,
+     "value": 149.14
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 121.49
+    },
+    {
+     "branch": "bear_transition",
+     "p": 0.2,
+     "value": 106.55
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 37.34
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.6926,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1039,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3289,
+   "buy": 81.53,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 97.55,
+   "quality_score": 66,
+   "quality_tier": "Average",
+   "discount_rate": 10.54,
+   "fair_value_rf_plus_50bp": 91.64,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.15,
+     "value": 115.71
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 97.55
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.25,
+     "value": 82.57
+    },
+    {
+     "branch": "break",
+     "p": 0.2,
+     "value": 28.84
+    }
+   ],
+   "break_p": 0.2,
+   "break_loss": 0.7044,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -13
+   },
+   "tail_term": 0.1409,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4659,
+   "buy": 52.1,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Max",
+   "fair_value": 110.6,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 103.26,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "up_guide",
+     "p": 0.2,
+     "value": 132.22
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 110.6
+    },
+    {
+     "branch": "bear_guide",
+     "p": 0.2,
+     "value": 91.1
+    },
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 30.16
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.7274,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -15
+   },
+   "tail_term": 0.1309,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3559,
+   "buy": 86.42,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 114.67,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 106.81,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.18,
+     "value": 134.76
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 114.67
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.22,
+     "value": 96.12
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 35.51
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.6903,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1035,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3285,
+   "buy": 77.0,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 119.99,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 111.17,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 141.94
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 119.99
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 97.94
+    },
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 34.24
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7146,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1072,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4322,
+   "buy": 68.13,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 111.9,
+   "quality_score": 75,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 104.25,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.18,
+     "value": 131.56
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 111.9
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 93.75
+    },
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 29.81
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.7336,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -15
+   },
+   "tail_term": 0.132,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.357,
+   "buy": 71.95,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 116.63,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 108.39,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 140.34
+    },
+    {
+     "branch": "base",
+     "p": 0.47,
+     "value": 116.63
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.2,
+     "value": 99.49
+    },
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 37.1
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.6819,
+   "break_derivation": {
+    "mechanism": "Generative-AI/freemium substitution erodes paid-seat monetization so owner FCF falls in absolute terms and the multiple compresses to a distress level.",
+    "reference": "33% per ~5 years: Segment 3 (1 of 3 reported segments) broke FY2021-FY2026 (revenue 568->365, dropped as segment, goodwill impaired Q2 FY2026; pack s.2a, s.8, s.9a)",
+    "adjustment_pp": -20
+   },
+   "tail_term": 0.0886,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4136,
+   "buy": 68.39,
+   "no_buy": false,
+   "irr_entry": false
+  }
+ ],
+ "committee_median_fv": 115.65,
+ "quality_tier_modal": "High Quality",
+ "headline_buy": 68.3
+}

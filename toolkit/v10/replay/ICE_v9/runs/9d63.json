@@ -1,0 +1,758 @@
+{
+ "ticker": "ICE",
+ "unit": "USD millions",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner-FCF per share",
+  "gross_source": "TTM free cash flow (pack sec.3) = 4,641M",
+  "basis_period": "TTM to 2026-06-30",
+  "denominator_count_m": 561.0,
+  "period_weighted_count_m": 566.0,
+  "pack_as_of_date": "2026-06-30",
+  "valuation_date": "2026-06-30",
+  "per_share_count_m": 561.0,
+  "per_share_count_date": "2026-06-30",
+  "per_share_count_basis": "point",
+  "latest_share_count_m": 561.4,
+  "latest_share_count_date": "2026-07-27",
+  "balance_sheet_date": "2026-06-30",
+  "balance_sheet_add_per_share": -33.4742,
+  "gross_denominator_per_share": 8.2727,
+  "denominator_adjustments": [
+   {
+    "item": "less normalized TTM SBC (280M)",
+    "per_share": -0.4991,
+    "reason": "SBC is a real cost (FRAMEWORK); FY24 231M, 1H26 145M annualized ~280M"
+   }
+  ],
+  "declared_denominator_per_share": 7.7736,
+  "acq_cash_by_year": [
+   {
+    "year": "FY25",
+    "amount": 0
+   },
+   {
+    "year": "1H26",
+    "amount": 0
+   }
+  ],
+  "acq_spend_normalised_per_share": 0.0,
+  "acq_spend_window": "no acquisition cash in pack_da1b.md (FY25 and 1H26 acquisitions = 0; Black Knight closed 2023 via debt+stock, MarketAxess pending via already-counted new debt)",
+  "recent_acquisitions": [
+   {
+    "name": "MarketAxess (pending, all-cash)",
+    "close_date": "2027-06-30",
+    "months_in_basis_period": 0
+   }
+  ],
+  "alternative_denominator_type": "SBC-adjusted owner-FCF per share",
+  "alternative_denominator_basis": "period",
+  "alternative_denominator_per_share": 5.9958,
+  "risk_free": 5.22,
+  "erp": 4.27,
+  "macro_base": 9.49,
+  "market_inputs_as_of": "2026-10-08",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating; high-quality compounder with cyclical transaction overlay (exchange/data/mortgage-tech)",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Simon": 1.3,
+   "Marcus": 1.6,
+   "Sophie": 1.1,
+   "Claire": 1.4,
+   "Graham": 1.3,
+   "Walter": 1.2,
+   "Helena": 1.1,
+   "Alexander": 1.2
+  },
+  "peers_used": [
+   "CME",
+   "Deutsche Boerse"
+  ]
+ },
+ "helena_floor": {
+  "floor_type": "erosion/liquidation",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "Tangible book value -15,951M / -28.43/sh (6/30/26)",
+   "NCAV -22,531M (6/30/26)",
+   "Total debt 19,846M vs cash 1,067M"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Simon",
+   "fair_value": 63.04,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 12.49,
+   "fair_value_rf_plus_50bp": 58.1,
+   "fair_value_macro_base": 108.75,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 63.04,
+   "fair_value_alternative_denominator": 40.97,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 72.78
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 63.04
+    },
+    {
+     "branch": "bear_slow",
+     "p": 0.23,
+     "value": 45.46
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 14.44
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8672,
+   "break_derivation": {
+    "mechanism": "Governance/trust failure plus benchmark loss collapses pricing power; FCF declines then stabilizes at distress multiple.",
+    "reference": "no reference in pack_da1b.md",
+    "adjustment_pp": 0.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1041,
+   "quality_premium": 0.2817,
+   "required_margin": 0.3857,
+   "buy": 38.73,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4666.4,
+     "cash_flow_per_share": 8.318
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4946.3,
+     "cash_flow_per_share": 8.817
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5243.1,
+     "cash_flow_per_share": 9.346
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5505.1,
+     "cash_flow_per_share": 9.813
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5780.5,
+     "cash_flow_per_share": 10.304
+    }
+   ]
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 80.17,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 73.35,
+   "fair_value_macro_base": 106.95,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 80.17,
+   "fair_value_alternative_denominator": 54.18,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.22,
+     "value": 90.16
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 80.17
+    },
+    {
+     "branch": "bear_slow",
+     "p": 0.21,
+     "value": 57.11
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 22.19
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7925,
+   "break_derivation": {
+    "mechanism": "Incremental ROIC falls below cost of capital; capital deployed destroys value and FCF contracts.",
+    "reference": "Incremental ROIC vs capital deployed only 8.3% (pack sec.6), below ~9.5% macro cost.",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.0951,
+   "quality_premium": 0.295,
+   "required_margin": 0.3901,
+   "buy": 48.9,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4644.5,
+     "cash_flow_per_share": 8.279
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4923.3,
+     "cash_flow_per_share": 8.776
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5193.7,
+     "cash_flow_per_share": 9.258
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5453.5,
+     "cash_flow_per_share": 9.721
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5699.2,
+     "cash_flow_per_share": 10.159
+    }
+   ]
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 78.61,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.49,
+   "fair_value_rf_plus_50bp": 72.08,
+   "fair_value_macro_base": 115.23,
+   "terminal_growth": 3.25,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 78.61,
+   "fair_value_alternative_denominator": 52.98,
+   "tree": [
+    {
+     "branch": "bull_catalysts",
+     "p": 0.22,
+     "value": 90.49
+    },
+    {
+     "branch": "base",
+     "p": 0.43,
+     "value": 78.61
+    },
+    {
+     "branch": "bear_priced_in",
+     "p": 0.23,
+     "value": 55.27
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 18.54
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8391,
+   "break_derivation": {
+    "mechanism": "Priced-in catalysts (MarketAxess, Polymarket, repo clearing) disappoint and mortgage cycle stays frozen; FCF falls.",
+    "reference": "no reference in pack_da1b.md",
+    "adjustment_pp": 0.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1007,
+   "quality_premium": 0.2683,
+   "required_margin": 0.369,
+   "buy": 49.6,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4688.3,
+     "cash_flow_per_share": 8.357
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 5016.5,
+     "cash_flow_per_share": 8.942
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5317.2,
+     "cash_flow_per_share": 9.478
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5609.4,
+     "cash_flow_per_share": 9.999
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5889.9,
+     "cash_flow_per_share": 10.499
+    }
+   ]
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 81.14,
+   "quality_score": 80,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.24,
+   "fair_value_rf_plus_50bp": 74.27,
+   "fair_value_macro_base": 113.88,
+   "terminal_growth": 3.25,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 81.14,
+   "fair_value_alternative_denominator": 54.93,
+   "tree": [
+    {
+     "branch": "bull_moat",
+     "p": 0.2,
+     "value": 89.9
+    },
+    {
+     "branch": "base",
+     "p": 0.47,
+     "value": 81.14
+    },
+    {
+     "branch": "bear_entrant",
+     "p": 0.22,
+     "value": 56.64
+    },
+    {
+     "branch": "break",
+     "p": 0.11,
+     "value": 20.64
+    }
+   ],
+   "break_p": 0.11,
+   "break_loss": 0.8188,
+   "break_derivation": {
+    "mechanism": "Well-funded new entrants (TXSE $430M, Nasdaq/NYSE Texas, Kalshi $22B) erode listing/benchmark moat; multiple compresses.",
+    "reference": "TXSE SEC-approved Sep'25, launched Jul'26, $430M raised; Kalshi >$1B at $22B (pack sec.13).",
+    "adjustment_pp": 1.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.0901,
+   "quality_premium": 0.2417,
+   "required_margin": 0.3317,
+   "buy": 54.23,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4666.4,
+     "cash_flow_per_share": 8.318
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4969.3,
+     "cash_flow_per_share": 8.858
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5267.8,
+     "cash_flow_per_share": 9.39
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5557.3,
+     "cash_flow_per_share": 9.906
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5835.5,
+     "cash_flow_per_share": 10.402
+    }
+   ]
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 76.66,
+   "quality_score": 75,
+   "quality_tier": "High Quality",
+   "discount_rate": 11.24,
+   "fair_value_rf_plus_50bp": 70.24,
+   "fair_value_macro_base": 106.95,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 76.66,
+   "fair_value_alternative_denominator": 51.47,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 86.2
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 76.66
+    },
+    {
+     "branch": "bear_slow",
+     "p": 0.22,
+     "value": 55.08
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 21.08
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8029,
+   "break_derivation": {
+    "mechanism": "Forecast volatility + leverage shock; terminal growth undershoots and rate re-rates to distress.",
+    "reference": "no reference in pack_da1b.md",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.0964,
+   "quality_premium": 0.275,
+   "required_margin": 0.3714,
+   "buy": 48.19,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4644.5,
+     "cash_flow_per_share": 8.279
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4923.3,
+     "cash_flow_per_share": 8.776
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5193.7,
+     "cash_flow_per_share": 9.258
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5453.5,
+     "cash_flow_per_share": 9.721
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5699.2,
+     "cash_flow_per_share": 10.159
+    }
+   ]
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 82.36,
+   "quality_score": 70,
+   "quality_tier": "Average",
+   "discount_rate": 10.74,
+   "fair_value_rf_plus_50bp": 75.21,
+   "fair_value_macro_base": 105.08,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 82.36,
+   "fair_value_alternative_denominator": 55.87,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 91.62
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 82.36
+    },
+    {
+     "branch": "bear_slow",
+     "p": 0.22,
+     "value": 59.35
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 22.9
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7821,
+   "break_derivation": {
+    "mechanism": "Steward mis-allocates (another levered deal like MAX underperforms BK's ~10% IRR); FCF and multiple fall.",
+    "reference": "Black Knight original IRR target only 10% (pack sec.7).",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.0938,
+   "quality_premium": 0.3083,
+   "required_margin": 0.4022,
+   "buy": 49.24,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4622.6,
+     "cash_flow_per_share": 8.24
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4876.8,
+     "cash_flow_per_share": 8.693
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5120.8,
+     "cash_flow_per_share": 9.128
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5376.6,
+     "cash_flow_per_share": 9.584
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5619.0,
+     "cash_flow_per_share": 10.016
+    }
+   ]
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 68.17,
+   "quality_score": 71,
+   "quality_tier": "Average",
+   "discount_rate": 11.49,
+   "fair_value_rf_plus_50bp": 62.56,
+   "fair_value_macro_base": 98.94,
+   "terminal_growth": 2.75,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 68.17,
+   "fair_value_alternative_denominator": 44.92,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 77.14
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 68.17
+    },
+    {
+     "branch": "bear_erosion",
+     "p": 0.25,
+     "value": 44.97
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 15.58
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8425,
+   "break_derivation": {
+    "mechanism": "Permanent mortgage-franchise erosion: $17.6B goodwill impaired, Encompass minimums reset, FCF falls in absolute terms.",
+    "reference": "Mortgage Tech GAAP op income (276) FY23, (170) FY24, 14 FY25; $17.6B goodwill impairment test Q4'26 (pack sec.2,16).",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.1011,
+   "quality_premium": 0.3017,
+   "required_margin": 0.4028,
+   "buy": 40.71,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4600.8,
+     "cash_flow_per_share": 8.201
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4830.8,
+     "cash_flow_per_share": 8.611
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5072.6,
+     "cash_flow_per_share": 9.042
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5300.9,
+     "cash_flow_per_share": 9.449
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5512.9,
+     "cash_flow_per_share": 9.827
+    }
+   ]
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 80.17,
+   "quality_score": 73,
+   "quality_tier": "Average",
+   "discount_rate": 10.99,
+   "fair_value_rf_plus_50bp": 73.35,
+   "fair_value_macro_base": 106.95,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 80.17,
+   "fair_value_alternative_denominator": 54.18,
+   "tree": [
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 89.12
+    },
+    {
+     "branch": "base",
+     "p": 0.46,
+     "value": 80.17
+    },
+    {
+     "branch": "bear_quality",
+     "p": 0.22,
+     "value": 57.55
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 21.75
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7967,
+   "break_derivation": {
+    "mechanism": "Goodwill/intangible concentration (79% of ex-clearing assets) impairs and non-GAAP add-backs reverse; FCF falls.",
+    "reference": "Goodwill+intangibles 79.4% of assets excl clearing (pack sec.5); amort add-backs ~1.0B/yr.",
+    "adjustment_pp": 2.0,
+    "horizon_years": 10
+   },
+   "tail_term": 0.0956,
+   "quality_premium": 0.2883,
+   "required_margin": 0.3839,
+   "buy": 49.39,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "TTM SBC-adjusted owner-FCF per share = (TTM FCF 4,641M - normalized SBC 280M)/561M = 7.77; grown at the seat's g, discounted at the seat's rate; net debt -18,779M/561M added once.",
+   "forecast_5y": [
+    {
+     "period_end": "2027-06-30",
+     "months": 12,
+     "cash_flow_total": 4644.5,
+     "cash_flow_per_share": 8.279
+    },
+    {
+     "period_end": "2028-06-30",
+     "months": 12,
+     "cash_flow_total": 4923.3,
+     "cash_flow_per_share": 8.776
+    },
+    {
+     "period_end": "2029-06-30",
+     "months": 12,
+     "cash_flow_total": 5193.7,
+     "cash_flow_per_share": 9.258
+    },
+    {
+     "period_end": "2030-06-30",
+     "months": 12,
+     "cash_flow_total": 5453.5,
+     "cash_flow_per_share": 9.721
+    },
+    {
+     "period_end": "2031-06-30",
+     "months": 12,
+     "cash_flow_total": 5699.2,
+     "cash_flow_per_share": 10.159
+    }
+   ]
+  }
+ ],
+ "committee_median_fv": 79.39,
+ "quality_tier_modal": "Average",
+ "headline_buy": 47.53
+}

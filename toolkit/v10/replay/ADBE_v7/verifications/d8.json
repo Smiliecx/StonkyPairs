@@ -1,0 +1,361 @@
+{
+ "rulings": [
+  {
+   "finding": "1",
+   "ruling": "CONFIRMED-unquantified",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "2",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "3",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-INCONSISTENCY",
+   "changed_inputs": [
+    {
+     "path": "investors.Simon.fair_value",
+     "from": 111.19,
+     "to": 113.1
+    },
+    {
+     "path": "investors.Simon.tree.base.value",
+     "from": 111.19,
+     "to": 113.1
+    },
+    {
+     "path": "investors.Simon.tree.up_1.value",
+     "from": 130.3,
+     "to": 132.53
+    },
+    {
+     "path": "investors.Simon.fair_value_rf_plus_50bp",
+     "from": 105.04,
+     "to": 106.83
+    },
+    {
+     "path": "investors.Claire.fair_value",
+     "from": 118.68,
+     "to": 120.78
+    },
+    {
+     "path": "investors.Claire.tree.base.value",
+     "from": 118.68,
+     "to": 120.78
+    },
+    {
+     "path": "investors.Claire.tree.up_1.value",
+     "from": 139.7,
+     "to": 142.15
+    },
+    {
+     "path": "investors.Claire.fair_value_rf_plus_50bp",
+     "from": 111.44,
+     "to": 113.39
+    },
+    {
+     "path": "investors.Walter.fair_value",
+     "from": 141.33,
+     "to": 143.87
+    },
+    {
+     "path": "investors.Walter.tree.base.value",
+     "from": 141.33,
+     "to": 143.87
+    },
+    {
+     "path": "investors.Walter.tree.up_1.value",
+     "from": 166.8,
+     "to": 169.77
+    },
+    {
+     "path": "investors.Walter.fair_value_rf_plus_50bp",
+     "from": 131.6,
+     "to": 133.94
+    }
+   ],
+   "script_delta": 0.4983
+  },
+  {
+   "finding": "4",
+   "ruling": "CONFIRMED-unquantified",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "5",
+   "ruling": "CONFIRMED-unquantified",
+   "quantified": false,
+   "mechanism": true,
+   "tag1": "TRANSFERABLE",
+   "tag2": "MECHANISM",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "6",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "7",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [
+    {
+     "path": "investors.Alexander.fair_value",
+     "from": 161.98,
+     "to": 137.68
+    },
+    {
+     "path": "investors.Alexander.tree.base.value",
+     "from": 161.98,
+     "to": 137.68
+    },
+    {
+     "path": "investors.Alexander.tree.up_1.value",
+     "from": 191.43,
+     "to": 162.72
+    },
+    {
+     "path": "investors.Alexander.tree.bear_1.value",
+     "from": 110.72,
+     "to": 94.11
+    },
+    {
+     "path": "investors.Alexander.tree.break.value",
+     "from": 45.65,
+     "to": 38.8
+    },
+    {
+     "path": "investors.Alexander.fair_value_rf_plus_50bp",
+     "from": 149.83,
+     "to": 127.36
+    }
+   ],
+   "script_delta": -1.3449
+  },
+  {
+   "finding": "8",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "TRANSFERABLE",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "9",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "10",
+   "ruling": "REFUTED",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "FRAME-JUDGMENT",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "11",
+   "ruling": "CONFIRMED",
+   "quantified": true,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION (Rule 3)",
+   "changed_inputs": [
+    {
+     "path": "investors.Sophie.fair_value",
+     "from": 161.47,
+     "to": 163.42
+    },
+    {
+     "path": "investors.Sophie.tree.base.value",
+     "from": 161.47,
+     "to": 163.42
+    },
+    {
+     "path": "investors.Sophie.fair_value_rf_plus_50bp",
+     "from": 149.56,
+     "to": 151.37
+    }
+   ],
+   "script_delta": 0.1189
+  },
+  {
+   "finding": "12",
+   "ruling": "CONFIRMED-unquantified",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION (Rule 9)",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "13",
+   "ruling": "CONFIRMED-unquantified",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "RULE-VIOLATION (Rule 5)",
+   "changed_inputs": [],
+   "script_delta": null
+  },
+  {
+   "finding": "14",
+   "ruling": "CONFIRMED-unquantified",
+   "quantified": false,
+   "mechanism": false,
+   "tag1": "SPECIFIC",
+   "tag2": "PACK-CONTRADICTION",
+   "changed_inputs": [],
+   "script_delta": null
+  }
+ ],
+ "joint_changed_inputs": [
+  {
+   "path": "investors.Simon.fair_value",
+   "from": 111.19,
+   "to": 113.1
+  },
+  {
+   "path": "investors.Simon.tree.base.value",
+   "from": 111.19,
+   "to": 113.1
+  },
+  {
+   "path": "investors.Simon.tree.up_1.value",
+   "from": 130.3,
+   "to": 132.53
+  },
+  {
+   "path": "investors.Simon.fair_value_rf_plus_50bp",
+   "from": 105.04,
+   "to": 106.83
+  },
+  {
+   "path": "investors.Claire.fair_value",
+   "from": 118.68,
+   "to": 120.78
+  },
+  {
+   "path": "investors.Claire.tree.base.value",
+   "from": 118.68,
+   "to": 120.78
+  },
+  {
+   "path": "investors.Claire.tree.up_1.value",
+   "from": 139.7,
+   "to": 142.15
+  },
+  {
+   "path": "investors.Claire.fair_value_rf_plus_50bp",
+   "from": 111.44,
+   "to": 113.39
+  },
+  {
+   "path": "investors.Walter.fair_value",
+   "from": 141.33,
+   "to": 143.87
+  },
+  {
+   "path": "investors.Walter.tree.base.value",
+   "from": 141.33,
+   "to": 143.87
+  },
+  {
+   "path": "investors.Walter.tree.up_1.value",
+   "from": 166.8,
+   "to": 169.77
+  },
+  {
+   "path": "investors.Walter.fair_value_rf_plus_50bp",
+   "from": 131.6,
+   "to": 133.94
+  },
+  {
+   "path": "investors.Alexander.fair_value",
+   "from": 161.98,
+   "to": 137.68
+  },
+  {
+   "path": "investors.Alexander.tree.base.value",
+   "from": 161.98,
+   "to": 137.68
+  },
+  {
+   "path": "investors.Alexander.tree.up_1.value",
+   "from": 191.43,
+   "to": 162.72
+  },
+  {
+   "path": "investors.Alexander.tree.bear_1.value",
+   "from": 110.72,
+   "to": 94.11
+  },
+  {
+   "path": "investors.Alexander.tree.break.value",
+   "from": 45.65,
+   "to": 38.8
+  },
+  {
+   "path": "investors.Alexander.fair_value_rf_plus_50bp",
+   "from": 149.83,
+   "to": 127.36
+  },
+  {
+   "path": "investors.Sophie.fair_value",
+   "from": 161.47,
+   "to": 163.42
+  },
+  {
+   "path": "investors.Sophie.tree.base.value",
+   "from": 161.47,
+   "to": 163.42
+  },
+  {
+   "path": "investors.Sophie.fair_value_rf_plus_50bp",
+   "from": 149.56,
+   "to": 151.37
+  }
+ ],
+ "script_joint_delta": -0.7276,
+ "script_adjusted_headline": 81.3146
+}

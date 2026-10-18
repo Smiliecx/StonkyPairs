@@ -1,0 +1,511 @@
+{
+ "ticker": "the Company",
+ "unit": "USD per share",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner FCF per share (OCF - capex - SBC), TTM",
+  "gross_source": "pack_y5 §4 TTM Q3 FY2026: operating cash flow 7,771 - capex 154 - stock-based compensation (CF line) 1,489 = 6,128 ($M)",
+  "basis_period": "TTM ended 2026-08-28 (Q4 FY2025 + Q1-Q3 FY2026)",
+  "share_count_m": 918.0,
+  "pack_as_of_date": "2026-09-10",
+  "valuation_date": "2026-09-10",
+  "per_share_count_m": 918.0,
+  "per_share_count_date": "2026-08-28",
+  "latest_share_count_m": 918.0,
+  "latest_share_count_date": "2026-08-28",
+  "balance_sheet_date": "2026-08-28",
+  "balance_sheet_add_per_share": -0.5664,
+  "gross_denominator_per_share": 6.6754,
+  "denominator_adjustments": [],
+  "declared_denominator_per_share": 6.6754,
+  "alternative_denominator_type": "TTM GAAP net income per share (5,238 / 918)",
+  "alternative_denominator_per_share": 5.7059,
+  "risk_free": 4.95,
+  "erp": 4.09,
+  "macro_base": 9.04,
+  "market_inputs_as_of": "2026-09-10",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating; asset-light subscription software; maturing (decelerating) compounder with AI-disruption risk",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Victor": 1.0,
+   "Simon": 1.3,
+   "Marcus": 1.4,
+   "Sophie": 1.0,
+   "Claire": 1.8,
+   "Max": 0.8,
+   "Graham": 1.2,
+   "Walter": 1.2,
+   "Helena": 0.9,
+   "Alexander": 1.2
+  },
+  "peers_used": []
+ },
+ "helena_floor": {
+  "floor_type": "none (NCAV and tangible book both negative)",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "§5.1 Q3 FY2026 cash & equivalents 3,135",
+   "§5.1 short-term investments 921",
+   "§5.1 trade receivables 1,497",
+   "§5.1 total assets 21,562",
+   "§5.1 total stockholders' equity 8,460 (liabilities 13,102)",
+   "§5.1 goodwill 10,095",
+   "§5.1 other intangibles 688"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Victor",
+   "fair_value": 128.3,
+   "quality_score": 75,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 119.36,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 33.1
+    },
+    {
+     "branch": "bear_2",
+     "p": 0.1,
+     "value": 76.64
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.15,
+     "value": 93.92
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 128.3
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 155.48
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.742,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1113,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3363,
+   "buy": 84.83,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Simon",
+   "fair_value": 83.67,
+   "quality_score": 68,
+   "quality_tier": "Average",
+   "discount_rate": 13.54,
+   "fair_value_rf_plus_50bp": 79.62,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.18,
+     "value": 27.2
+    },
+    {
+     "branch": "bear",
+     "p": 0.25,
+     "value": 64.69
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 83.67
+    },
+    {
+     "branch": "upside",
+     "p": 0.15,
+     "value": 98.07
+    }
+   ],
+   "break_p": 0.18,
+   "break_loss": 0.6749,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -15
+   },
+   "tail_term": 0.1215,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4465,
+   "buy": 46.31,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 146.58,
+   "quality_score": 82,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 135.59,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 39.34
+    },
+    {
+     "branch": "bear",
+     "p": 0.23,
+     "value": 100.32
+    },
+    {
+     "branch": "base",
+     "p": 0.43,
+     "value": 146.58
+    },
+    {
+     "branch": "upside",
+     "p": 0.22,
+     "value": 178.89
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.7316,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -21
+   },
+   "tail_term": 0.0878,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3128,
+   "buy": 100.73,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 142.55,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.54,
+   "fair_value_rf_plus_50bp": 131.9,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 33.66
+    },
+    {
+     "branch": "bear_2",
+     "p": 0.1,
+     "value": 81.42
+    },
+    {
+     "branch": "bear_1",
+     "p": 0.17,
+     "value": 100.32
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 142.55
+    },
+    {
+     "branch": "upside",
+     "p": 0.18,
+     "value": 173.97
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7638,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1146,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3396,
+   "buy": 94.15,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 105.23,
+   "quality_score": 66,
+   "quality_tier": "Average",
+   "discount_rate": 10.54,
+   "fair_value_rf_plus_50bp": 98.78,
+   "terminal_growth": 2.5,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.2,
+     "value": 27.83
+    },
+    {
+     "branch": "bear",
+     "p": 0.25,
+     "value": 88.27
+    },
+    {
+     "branch": "base",
+     "p": 0.4,
+     "value": 105.23
+    },
+    {
+     "branch": "upside",
+     "p": 0.15,
+     "value": 126.06
+    }
+   ],
+   "break_p": 0.2,
+   "break_loss": 0.7355,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -13
+   },
+   "tail_term": 0.1471,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4721,
+   "buy": 55.55,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Max",
+   "fair_value": 123.68,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 115.32,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 28.06
+    },
+    {
+     "branch": "bear",
+     "p": 0.25,
+     "value": 91.01
+    },
+    {
+     "branch": "base",
+     "p": 0.35,
+     "value": 123.68
+    },
+    {
+     "branch": "upside",
+     "p": 0.25,
+     "value": 149.39
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7731,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.116,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.441,
+   "buy": 96.11,
+   "no_buy": false,
+   "irr_entry": true
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 119.94,
+   "quality_score": 77,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 111.76,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.14,
+     "value": 33.1
+    },
+    {
+     "branch": "bear",
+     "p": 0.24,
+     "value": 91.56
+    },
+    {
+     "branch": "base",
+     "p": 0.44,
+     "value": 119.94
+    },
+    {
+     "branch": "upside",
+     "p": 0.18,
+     "value": 141.1
+    }
+   ],
+   "break_p": 0.14,
+   "break_loss": 0.724,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -19
+   },
+   "tail_term": 0.1014,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3264,
+   "buy": 80.8,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 120.32,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 10.29,
+   "fair_value_rf_plus_50bp": 112.23,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 32.82
+    },
+    {
+     "branch": "bear",
+     "p": 0.26,
+     "value": 91.01
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 120.32
+    },
+    {
+     "branch": "upside",
+     "p": 0.17,
+     "value": 145.33
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7272,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1091,
+   "base_tier_margin": 0.325,
+   "required_margin": 0.4341,
+   "buy": 68.09,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 133.27,
+   "quality_score": 78,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.79,
+   "fair_value_rf_plus_50bp": 123.68,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.15,
+     "value": 33.38
+    },
+    {
+     "branch": "bear",
+     "p": 0.25,
+     "value": 97.02
+    },
+    {
+     "branch": "base",
+     "p": 0.45,
+     "value": 133.27
+    },
+    {
+     "branch": "upside",
+     "p": 0.15,
+     "value": 162.05
+    }
+   ],
+   "break_p": 0.15,
+   "break_loss": 0.7495,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -18
+   },
+   "tail_term": 0.1124,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.3374,
+   "buy": 88.3,
+   "no_buy": false,
+   "irr_entry": false
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 131.9,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.04,
+   "fair_value_rf_plus_50bp": 122.67,
+   "terminal_growth": 3.0,
+   "tree": [
+    {
+     "branch": "break",
+     "p": 0.13,
+     "value": 35.54
+    },
+    {
+     "branch": "bear",
+     "p": 0.25,
+     "value": 93.92
+    },
+    {
+     "branch": "base",
+     "p": 0.42,
+     "value": 131.9
+    },
+    {
+     "branch": "upside",
+     "p": 0.2,
+     "value": 159.83
+    }
+   ],
+   "break_p": 0.13,
+   "break_loss": 0.7305,
+   "break_derivation": {
+    "mechanism": "generative-AI tools commoditize the core creative/document workflows, so paid seats and pricing fall and owner FCF declines in absolute terms while the market re-rates the franchise to a distress multiple.",
+    "reference": "pack 1.2/3.2/7: Segment 3, one of the three reported segments, shrank in absolute revenue from ~$0.37B (FY2020) to ~$0.19B (FY2025) and took a $50M goodwill impairment in Q2 FY2026 (also: Product 7 standalone 'steeper decline than we expected', Q1 FY2026) -> 1 of 3 named segments broke over FY2020-FY2025 = 33% per 5 years",
+    "adjustment_pp": -20
+   },
+   "tail_term": 0.095,
+   "base_tier_margin": 0.225,
+   "required_margin": 0.32,
+   "buy": 89.7,
+   "no_buy": false,
+   "irr_entry": false
+  }
+ ],
+ "committee_median_fv": 125.99,
+ "quality_tier_modal": "High Quality",
+ "headline_buy": 76.11
+}

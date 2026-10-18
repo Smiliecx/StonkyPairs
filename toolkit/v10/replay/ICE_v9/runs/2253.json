@@ -1,0 +1,758 @@
+{
+ "ticker": "ICE",
+ "unit": "USD millions",
+ "frame": {
+  "denominator_type": "SBC-adjusted owner-FCF per share",
+  "gross_source": "FY2025 Free cash flow $3,871M (pack sec.3)",
+  "basis_period": "FY2025",
+  "denominator_count_m": 566.0,
+  "period_weighted_count_m": 566.0,
+  "pack_as_of_date": "2026-10-12",
+  "valuation_date": "2026-10-12",
+  "per_share_count_m": 566.0,
+  "per_share_count_date": "2026-06-30",
+  "per_share_count_basis": "period",
+  "latest_share_count_m": 561.0,
+  "latest_share_count_date": "2026-06-30",
+  "balance_sheet_date": "2026-06-30",
+  "balance_sheet_add_per_share": -33.18,
+  "gross_denominator_per_share": 6.8392,
+  "denominator_adjustments": [
+   {
+    "item": "less estimated FY25 SBC",
+    "per_share": -0.4381,
+    "reason": "FY25 SBC not found (Data Gaps); estimated at FY24 rate 2.5% x net revenue $9,931M = $248M (true -0.43816/sh; shown as residual so gross+adj=declared exactly); SBC is a real cost"
+   }
+  ],
+  "declared_denominator_per_share": 6.4011,
+  "acq_cash_by_year": [],
+  "acq_spend_normalised_per_share": 0.0,
+  "acq_spend_window": "none — pack gives no acquisition-cash line (Data Gaps); Black Knight (Sep 2023) predates basis period; 1H26 acquisitions $0 (sec.3)",
+  "recent_acquisitions": [
+   {
+    "name": "Black Knight",
+    "close_date": "2023-09-05",
+    "months_in_basis_period": 0
+   },
+   {
+    "name": "MarketAxess (pending)",
+    "close_date": "2027-01-01",
+    "months_in_basis_period": 0
+   }
+  ],
+  "alternative_denominator_type": "SBC-adjusted owner-FCF per share",
+  "alternative_denominator_basis": "period",
+  "alternative_denominator_per_share": 7.6873,
+  "risk_free": 5.22,
+  "erp": 4.27,
+  "macro_base": 9.49,
+  "market_inputs_as_of": "2026-10-08",
+  "erp_departure_reason_or_null": null,
+  "business_type": "operating business; wide-moat exchange/data compounder (not financial by Marcus's >50% lending test)",
+  "guidance_stance": "neutral",
+  "weights": {
+   "Simon": 1.0,
+   "Marcus": 1.6,
+   "Sophie": 1.0,
+   "Claire": 1.6,
+   "Graham": 1.2,
+   "Walter": 1.0,
+   "Helena": 1.2,
+   "Alexander": 1.4
+  },
+  "peers_used": [
+   "CME",
+   "Nasdaq",
+   "Deutsche Börse",
+   "LSEG"
+  ]
+ },
+ "helena_floor": {
+  "floor_type": "none — hard-asset net worth negative",
+  "floor_per_share_or_null": null,
+  "pack_lines": [
+   "Unrestricted cash $1,067M",
+   "Accounts receivable $1,869M",
+   "Total liabilities $144,595M",
+   "Tangible book value -$15,951M (-$28.43/sh)",
+   "NCAV -$22,531M (sec.5)"
+  ]
+ },
+ "investors": [
+  {
+   "investor": "Simon",
+   "fair_value": 44.51,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 12.49,
+   "fair_value_rf_plus_50bp": 40.52,
+   "fair_value_macro_base": 81.4,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 44.51,
+   "fair_value_alternative_denominator": 60.12,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.5,
+     "value": 44.51
+    },
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 53.86
+    },
+    {
+     "branch": "bear_soft",
+     "p": 0.2,
+     "value": 31.51
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 6.89
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.9154,
+   "break_derivation": {
+    "mechanism": "Mortgage Tech goodwill ($17.6B) impairs and a TXSE/Kalshi-led exchange-share loss plus EMIR-3 clearing migration permanently cut owner-FCF, with the multiple compressing to a distressed level.",
+    "reference": "Mortgage Tech GAAP operating income went negative in FY23 (-276) and FY24 (-170) (pack sec.2), a franchise stress event; one such break in the ~5y window shown.",
+    "adjustment_pp": "+0pp to the ~1-in-5y reference ~20%/5y, scaled to 12% over 10y given diversification across Exchanges/FIDS; set 12%.",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1098,
+   "quality_premium": 0.295,
+   "required_margin": 0.4048,
+   "buy": 26.49,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3822.3,
+     "cash_flow_per_share": 6.7531
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 4024.0,
+     "cash_flow_per_share": 7.1095
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4227.4,
+     "cash_flow_per_share": 7.469
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4431.8,
+     "cash_flow_per_share": 7.83
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4636.1,
+     "cash_flow_per_share": 8.191
+    }
+   ]
+  },
+  {
+   "investor": "Marcus",
+   "fair_value": 77.02,
+   "quality_score": 80,
+   "quality_tier": "High Quality",
+   "discount_rate": 9.99,
+   "fair_value_rf_plus_50bp": 69.45,
+   "fair_value_macro_base": 85.77,
+   "terminal_growth": 3.0,
+   "growth_basis": "including_acquisitions",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 77.02,
+   "fair_value_alternative_denominator": 99.17,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.5,
+     "value": 77.02
+    },
+    {
+     "branch": "bull",
+     "p": 0.2,
+     "value": 93.38
+    },
+    {
+     "branch": "bear_roiic",
+     "p": 0.18,
+     "value": 55.02
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 15.85
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8152,
+   "break_derivation": {
+    "mechanism": "Incremental ROIC collapses below the cost of capital as Black Knight synergies stall and mortgage-tech volumes stay depressed, so deployed capital destroys value and FCF falls.",
+    "reference": "Black Knight deal measured against capital deployed shows incremental ROIC with amort add-back of only 8.3% (pack sec.6), already below a 10% hurdle; a franchise-break extension of that.",
+    "adjustment_pp": "Reference deployed-capital ROIIC 8.3% signals strain; set break 12% over 10y (above 10% floor) given otherwise strong 60%+ exchange margins.",
+    "horizon_years": 10
+   },
+   "tail_term": 0.0978,
+   "quality_premium": 0.2417,
+   "required_margin": 0.3395,
+   "buy": 50.87,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3840.4,
+     "cash_flow_per_share": 6.7851
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 4062.3,
+     "cash_flow_per_share": 7.1772
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4288.0,
+     "cash_flow_per_share": 7.5759
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4516.6,
+     "cash_flow_per_share": 7.9799
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4747.5,
+     "cash_flow_per_share": 8.3878
+    }
+   ]
+  },
+  {
+   "investor": "Sophie",
+   "fair_value": 69.45,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 62.83,
+   "fair_value_macro_base": 85.77,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 69.45,
+   "fair_value_alternative_denominator": 90.07,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.48,
+     "value": 69.45
+    },
+    {
+     "branch": "bull_repo",
+     "p": 0.22,
+     "value": 83.98
+    },
+    {
+     "branch": "bear_mktx_fail",
+     "p": 0.18,
+     "value": 49.74
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 12.21
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8576,
+   "break_derivation": {
+    "mechanism": "A binary negative resolution (MarketAxess rejected on Oct 29 vote) coincides with exchange-share loss to TXSE and mortgage-cycle depression, breaking the growth thesis and compressing the multiple.",
+    "reference": "MarketAxess shareholder vote is explicitly two-sided (sec.16: approval satisfies a condition, rejection leaves it unmet); no franchise-break frequency in pack -> no reference frequency for the break itself.",
+    "adjustment_pp": "No reference frequency in pack for a permanent break; anchor at the 12% judgment given concurrent TXSE entry (sec.13) and mortgage headwinds (sec.17).",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1029,
+   "quality_premium": 0.2817,
+   "required_margin": 0.3846,
+   "buy": 42.74,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3840.4,
+     "cash_flow_per_share": 6.7851
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 4062.3,
+     "cash_flow_per_share": 7.1772
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4288.0,
+     "cash_flow_per_share": 7.5759
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4516.6,
+     "cash_flow_per_share": 7.9799
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4747.5,
+     "cash_flow_per_share": 8.3878
+    }
+   ]
+  },
+  {
+   "investor": "Claire",
+   "fair_value": 62.54,
+   "quality_score": 76,
+   "quality_tier": "High Quality",
+   "discount_rate": 10.74,
+   "fair_value_rf_plus_50bp": 56.6,
+   "fair_value_macro_base": 81.4,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 62.54,
+   "fair_value_alternative_denominator": 81.77,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.5,
+     "value": 62.54
+    },
+    {
+     "branch": "bull_moat",
+     "p": 0.18,
+     "value": 75.73
+    },
+    {
+     "branch": "bear_erode",
+     "p": 0.2,
+     "value": 41.45
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 9.5
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8833,
+   "break_derivation": {
+    "mechanism": "TXSE/NYSE-Texas/Nasdaq-Texas and Kalshi capture listings and derivatives share while EMIR-3 migrates EU clearing, eroding the network moat so volumes and FCF fall in absolute terms.",
+    "reference": "A well-funded new entrant (TXSE raised $430M, backers JPMorgan/BlackRock/Schwab/Citadel, sec.13) within 18 months forces a one-tier moat downgrade per Claire's rule; no historical break frequency in pack.",
+    "adjustment_pp": "New-entrant rule caps optimism; no pack break frequency, so set 12% over 10y reflecting the downgrade without assuming the moat has already failed.",
+    "horizon_years": 10
+   },
+   "tail_term": 0.106,
+   "quality_premium": 0.2683,
+   "required_margin": 0.3743,
+   "buy": 39.13,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3822.3,
+     "cash_flow_per_share": 6.7531
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 4024.0,
+     "cash_flow_per_share": 7.1095
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4227.4,
+     "cash_flow_per_share": 7.469
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4431.8,
+     "cash_flow_per_share": 7.83
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4636.1,
+     "cash_flow_per_share": 8.191
+    }
+   ]
+  },
+  {
+   "investor": "Graham",
+   "fair_value": 56.6,
+   "quality_score": 73,
+   "quality_tier": "Average",
+   "discount_rate": 11.24,
+   "fair_value_rf_plus_50bp": 51.34,
+   "fair_value_macro_base": 81.4,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 56.6,
+   "fair_value_alternative_denominator": 74.64,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.5,
+     "value": 56.6
+    },
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 68.47
+    },
+    {
+     "branch": "bear",
+     "p": 0.2,
+     "value": 40.33
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 10.41
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8721,
+   "break_derivation": {
+    "mechanism": "Terminal growth proves unsustainable: moat erosion plus a succession misstep cut ROE-driven reinvestment returns, FCF declines and the terminal multiple compresses.",
+    "reference": "ROE fell from 17.9% (FY21) to 6.4% (FY22) (pack sec.6) — a one-year collapse showing earnings power is not immune; used as a stress reference.",
+    "adjustment_pp": "FY22 ROE collapse was driven by one-off investee losses, not a franchise break; discount that to a 12% permanent-break probability over 10y.",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1046,
+   "quality_premium": 0.2883,
+   "required_margin": 0.393,
+   "buy": 34.36,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3822.3,
+     "cash_flow_per_share": 6.7531
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 4024.0,
+     "cash_flow_per_share": 7.1095
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4227.4,
+     "cash_flow_per_share": 7.469
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4431.8,
+     "cash_flow_per_share": 7.83
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4636.1,
+     "cash_flow_per_share": 8.191
+    }
+   ]
+  },
+  {
+   "investor": "Walter",
+   "fair_value": 65.8,
+   "quality_score": 74,
+   "quality_tier": "Average",
+   "discount_rate": 10.49,
+   "fair_value_rf_plus_50bp": 59.47,
+   "fair_value_macro_base": 81.4,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 65.8,
+   "fair_value_alternative_denominator": 85.69,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.5,
+     "value": 65.8
+    },
+    {
+     "branch": "bull",
+     "p": 0.18,
+     "value": 79.76
+    },
+    {
+     "branch": "bear",
+     "p": 0.2,
+     "value": 46.87
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 12.21
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8499,
+   "break_derivation": {
+    "mechanism": "Capital-allocation strain: Polymarket/MarketAxess spend and stalled Black Knight synergies destroy value while mortgage-tech goodwill ($17.6B) impairs, breaking owner-FCF.",
+    "reference": "Black Knight deployed-capital incremental ROIC of 8.3% (sec.6) and three expense-synergy target revisions ($200->230->275M, sec.7) evidence allocation risk; no franchise-break frequency in pack.",
+    "adjustment_pp": "Allocation strain is real but Exchanges still earns 75% margins; set break 12% over 10y, no reference frequency to adjust from.",
+    "horizon_years": 10
+   },
+   "tail_term": 0.102,
+   "quality_premium": 0.2817,
+   "required_margin": 0.3837,
+   "buy": 40.56,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3822.3,
+     "cash_flow_per_share": 6.7531
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 4024.0,
+     "cash_flow_per_share": 7.1095
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4227.4,
+     "cash_flow_per_share": 7.469
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4431.8,
+     "cash_flow_per_share": 7.83
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4636.1,
+     "cash_flow_per_share": 8.191
+    }
+   ]
+  },
+  {
+   "investor": "Helena",
+   "fair_value": 56.2,
+   "quality_score": 72,
+   "quality_tier": "Average",
+   "discount_rate": 10.74,
+   "fair_value_rf_plus_50bp": 50.97,
+   "fair_value_macro_base": 72.57,
+   "terminal_growth": 2.5,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 56.2,
+   "fair_value_alternative_denominator": 74.16,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.5,
+     "value": 56.2
+    },
+    {
+     "branch": "bull",
+     "p": 0.16,
+     "value": 69.66
+    },
+    {
+     "branch": "bear",
+     "p": 0.22,
+     "value": 41.45
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 8.77
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8792,
+   "break_derivation": {
+    "mechanism": "Permanent franchise erosion: mortgage-tech goodwill ($17.6B) impairs and exchange share is lost, so FCF falls absolutely and, with tangible book already negative, equity is worth only distressed going-concern FCF.",
+    "reference": "FCF/NI dipped to 0.66x in FY21 (pack sec.3) and Mortgage Tech ran GAAP operating losses FY23-24 (sec.2) — the going-concern stress reference; no liquidation floor (tangible book -$28.43/sh, sec.5).",
+    "adjustment_pp": "Negative asset floor means the erosion floor governs and cannot cushion; set break 12% over 10y given diversified cash flows outside mortgage.",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1055,
+   "quality_premium": 0.295,
+   "required_margin": 0.4005,
+   "buy": 33.69,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3804.2,
+     "cash_flow_per_share": 6.7211
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 3985.9,
+     "cash_flow_per_share": 7.0422
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4167.5,
+     "cash_flow_per_share": 7.363
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4348.1,
+     "cash_flow_per_share": 7.6821
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4526.8,
+     "cash_flow_per_share": 7.9979
+    }
+   ]
+  },
+  {
+   "investor": "Alexander",
+   "fair_value": 62.08,
+   "quality_score": 58,
+   "quality_tier": "Below Average",
+   "discount_rate": 9.99,
+   "fair_value_rf_plus_50bp": 55.93,
+   "fair_value_macro_base": 69.19,
+   "terminal_growth": 3.0,
+   "growth_basis": "organic",
+   "acq_spend_deducted": false,
+   "fair_value_other_acquisition_basis": 62.08,
+   "fair_value_alternative_denominator": 80.23,
+   "tree": [
+    {
+     "branch": "base",
+     "p": 0.5,
+     "value": 62.08
+    },
+    {
+     "branch": "bull",
+     "p": 0.16,
+     "value": 75.43
+    },
+    {
+     "branch": "bear",
+     "p": 0.22,
+     "value": 44.13
+    },
+    {
+     "branch": "break",
+     "p": 0.12,
+     "value": 10.02
+    }
+   ],
+   "break_p": 0.12,
+   "break_loss": 0.8552,
+   "break_derivation": {
+    "mechanism": "A goodwill impairment on the $17.6B mortgage-tech balance crystallises overpayment and coincides with volume decline, revealing lower normalized earnings and breaking FCF.",
+    "reference": "Mortgage-tech goodwill is $17.6B (sec.5) with the annual impairment test due Q4'26 (sec.16); Mortgage Tech ran GAAP operating losses in FY23-24 (sec.2). No impairment history in pack = no reference frequency.",
+    "adjustment_pp": "No prior impairment in pack to anchor a frequency; set 12% over 10y given the pending test and depressed origination cycle (sec.17).",
+    "horizon_years": 10
+   },
+   "tail_term": 0.1026,
+   "quality_premium": 0.3725,
+   "required_margin": 0.4751,
+   "buy": 32.59,
+   "at_cap": false,
+   "no_buy": false,
+   "no_buy_reason_or_null": null,
+   "forecast_definition": "Owner-FCF = FY2025 Free cash flow $3,871M (pack sec.3) minus estimated SBC $248M (FY25 SBC not found; FY24 rate 2.5% x net revenue $9,931M). Company-total base grown by the seat's path, discounted, Gordon terminal, /566M shares, plus net-debt per share -$33.18 (net debt $18,779M /566M, sec.5).",
+   "forecast_5y": [
+    {
+     "period_end": "2027-10-12",
+     "months": 12,
+     "cash_flow_total": 3822.3,
+     "cash_flow_per_share": 6.7531
+    },
+    {
+     "period_end": "2028-10-12",
+     "months": 12,
+     "cash_flow_total": 4024.0,
+     "cash_flow_per_share": 7.1095
+    },
+    {
+     "period_end": "2029-10-12",
+     "months": 12,
+     "cash_flow_total": 4227.4,
+     "cash_flow_per_share": 7.469
+    },
+    {
+     "period_end": "2030-10-12",
+     "months": 12,
+     "cash_flow_total": 4431.8,
+     "cash_flow_per_share": 7.83
+    },
+    {
+     "period_end": "2031-10-12",
+     "months": 12,
+     "cash_flow_total": 4636.1,
+     "cash_flow_per_share": 8.191
+    }
+   ]
+  }
+ ],
+ "committee_median_fv": 62.31,
+ "quality_tier_modal": "Average",
+ "headline_buy": 38.11
+}
